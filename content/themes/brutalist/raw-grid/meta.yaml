@@ -1,0 +1,18 @@
+name: "Raw Grid"
+slug: "raw-grid"
+category: "brutalist"
+description: "Exposed structure, thick borders, monospace everything. Design that screams honesty."
+tags: ["brutalist", "raw", "bold", "monospace", "grid", "experimental"]
+mood: ["bold", "experimental"]
+supportsDarkMode: true
+
+fonts:
+  - family: "Space Mono"
+    weights: [400, 700]
+    source: "google"
+  - family: "Space Grotesk"
+    weights: [400, 500, 700]
+    source: "google"
+
+author: "vsaint"
+version: "1.0.0"

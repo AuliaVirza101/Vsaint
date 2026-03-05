@@ -1,0 +1,66 @@
+/* ═══════════════════════════════════════════
+ * Vsaint Theme Tokens: Raw Grid
+ * Category: Brutalist
+ * 
+ * Layer 1 — Design Tokens
+ * Thick borders, raw grids, monospace type.
+ * ═══════════════════════════════════════════ */
+
+[data-theme="raw-grid"] {
+    /* ── Colors ── */
+    --vs-primary: #000000;
+    --vs-primary-fg: #ffffff;
+    --vs-secondary: #f5f5f0;
+    --vs-secondary-fg: #000000;
+    --vs-bg: #f5f5f0;
+    --vs-fg: #000000;
+    --vs-muted: #e8e8e0;
+    --vs-muted-fg: #555555;
+    --vs-border: #000000;
+    --vs-ring: #000000;
+    --vs-accent: #ff3d00;
+    --vs-accent-fg: #ffffff;
+    --vs-destructive: #ff0000;
+    --vs-destructive-fg: #ffffff;
+
+    /* ── Typography ── */
+    --vs-font-sans: "Space Grotesk", system-ui, sans-serif;
+    --vs-font-mono: "Space Mono", "Courier New", monospace;
+    --vs-font-heading: "Space Mono", "Courier New", monospace;
+
+    /* ── Shape ── */
+    --vs-radius: 0px;
+
+    /* ── Depth ── */
+    --vs-shadow-sm: 2px 2px 0 #000000;
+    --vs-shadow-md: 4px 4px 0 #000000;
+    --vs-shadow-lg: 8px 8px 0 #000000;
+
+    /* ── Spacing ── */
+    --vs-space-unit: 4px;
+
+    /* ── Animation ── */
+    --vs-transition: 0ms;
+    --vs-ease: linear;
+}
+
+/* ── Dark Mode ── */
+
+[data-theme="raw-grid"][data-mode="dark"] {
+    --vs-primary: #ffffff;
+    --vs-primary-fg: #000000;
+    --vs-secondary: #222222;
+    --vs-secondary-fg: #ffffff;
+    --vs-bg: #111111;
+    --vs-fg: #ffffff;
+    --vs-muted: #1a1a1a;
+    --vs-muted-fg: #999999;
+    --vs-border: #ffffff;
+    --vs-ring: #ffffff;
+    --vs-accent: #ff3d00;
+    --vs-accent-fg: #ffffff;
+
+    --vs-shadow-sm: 2px 2px 0 #ffffff;
+    --vs-shadow-md: 4px 4px 0 #ffffff;
+    --vs-shadow-lg: 8px 8px 0 #ffffff;
+}

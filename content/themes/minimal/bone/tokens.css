@@ -1,0 +1,42 @@
+/* Bone — Off-white warmth, organic curves, earthy neutrals */
+[data-theme="bone"] {
+    --vs-primary: #7d6b52;
+    --vs-primary-fg: #ffffff;
+    --vs-secondary: #f5f0e8;
+    --vs-secondary-fg: #4a3f30;
+    --vs-bg: #faf7f2;
+    --vs-fg: #4a3f30;
+    --vs-muted: #ede7dc;
+    --vs-muted-fg: #9a8d7c;
+    --vs-border: #ddd5c8;
+    --vs-ring: #7d6b52;
+    --vs-accent: #a08560;
+    --vs-accent-fg: #ffffff;
+    --vs-destructive: #a44b4b;
+    --vs-destructive-fg: #ffffff;
+    --vs-font-sans: "Nunito", system-ui, sans-serif;
+    --vs-font-mono: "Inconsolata", monospace;
+    --vs-font-heading: "Nunito", system-ui, sans-serif;
+    --vs-radius: 12px;
+    --vs-shadow-sm: 0 1px 4px rgba(74, 63, 48, 0.06);
+    --vs-shadow-md: 0 3px 10px rgba(74, 63, 48, 0.08);
+    --vs-shadow-lg: 0 6px 20px rgba(74, 63, 48, 0.1);
+    --vs-space-unit: 4px;
+    --vs-transition: 200ms;
+    --vs-ease: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+[data-theme="bone"][data-mode="dark"] {
+    --vs-primary: #a08560;
+    --vs-primary-fg: #1a1610;
+    --vs-secondary: #2a2418;
+    --vs-secondary-fg: #cdc0a8;
+    --vs-bg: #1a1610;
+    --vs-fg: #cdc0a8;
+    --vs-muted: #221d14;
+    --vs-muted-fg: #887a64;
+    --vs-border: #3a3228;
+    --vs-shadow-sm: 0 1px 4px rgba(0, 0, 0, 0.3);
+    --vs-shadow-md: 0 3px 10px rgba(0, 0, 0, 0.4);
+    --vs-shadow-lg: 0 6px 20px rgba(0, 0, 0, 0.5);
+}

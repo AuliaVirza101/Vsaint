@@ -1,0 +1,40 @@
+/* Ink — Black ink on white paper, editorial precision */
+[data-theme="ink"] {
+    --vs-primary: #111111;
+    --vs-primary-fg: #ffffff;
+    --vs-secondary: #f8f8f8;
+    --vs-secondary-fg: #111111;
+    --vs-bg: #ffffff;
+    --vs-fg: #111111;
+    --vs-muted: #f0f0f0;
+    --vs-muted-fg: #666666;
+    --vs-border: #cccccc;
+    --vs-ring: #111111;
+    --vs-accent: #333333;
+    --vs-accent-fg: #ffffff;
+    --vs-destructive: #aa2222;
+    --vs-destructive-fg: #ffffff;
+    --vs-font-sans: "Playfair Display", Georgia, serif;
+    --vs-font-mono: "Fira Code", monospace;
+    --vs-font-heading: "Playfair Display", Georgia, serif;
+    --vs-radius: 0px;
+    --vs-shadow-sm: none;
+    --vs-shadow-md: none;
+    --vs-shadow-lg: 0 2px 8px rgba(0, 0, 0, 0.08);
+    --vs-space-unit: 4px;
+    --vs-transition: 150ms;
+    --vs-ease: ease;
+}
+
+[data-theme="ink"][data-mode="dark"] {
+    --vs-primary: #eeeeee;
+    --vs-primary-fg: #111111;
+    --vs-secondary: #1a1a1a;
+    --vs-secondary-fg: #dedede;
+    --vs-bg: #0e0e0e;
+    --vs-fg: #dedede;
+    --vs-muted: #161616;
+    --vs-muted-fg: #888888;
+    --vs-border: #333333;
+    --vs-shadow-lg: 0 2px 8px rgba(0, 0, 0, 0.5);
+}

@@ -1,0 +1,565 @@
+/* Nordic Winter Identity — Scandinavian serenity */
+[data-theme="nordic-winter"] .vs-showcase {
+    padding: 32px;
+    background: var(--vs-bg);
+    color: var(--vs-fg);
+    font-family: var(--vs-font-sans);
+    line-height: 1.6;
+}
+
+/* Buttons */
+[data-theme="nordic-winter"] .vs-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-family: var(--vs-font-sans);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1;
+    padding: 10px 20px;
+    border-radius: var(--vs-radius);
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: all var(--vs-transition) var(--vs-ease);
+    outline: none;
+}
+
+[data-theme="nordic-winter"] .vs-btn:focus-visible {
+    box-shadow: 0 0 0 3px rgba(74, 144, 184, 0.2);
+}
+
+[data-theme="nordic-winter"] .vs-btn-primary {
+    background: var(--vs-primary);
+    color: var(--vs-primary-fg);
+    box-shadow: var(--vs-shadow-sm);
+}
+
+[data-theme="nordic-winter"] .vs-btn-primary:hover {
+    box-shadow: var(--vs-shadow-md);
+    transform: translateY(-1px);
+}
+
+[data-theme="nordic-winter"] .vs-btn-secondary {
+    background: var(--vs-secondary);
+    color: var(--vs-secondary-fg);
+}
+
+[data-theme="nordic-winter"] .vs-btn-outline {
+    background: transparent;
+    color: var(--vs-fg);
+    border-color: var(--vs-border);
+}
+
+[data-theme="nordic-winter"] .vs-btn-outline:hover {
+    border-color: var(--vs-primary);
+    color: var(--vs-primary);
+}
+
+[data-theme="nordic-winter"] .vs-btn-ghost {
+    background: transparent;
+    color: var(--vs-fg);
+}
+
+[data-theme="nordic-winter"] .vs-btn-ghost:hover {
+    background: var(--vs-muted);
+}
+
+[data-theme="nordic-winter"] .vs-btn-destructive {
+    background: var(--vs-destructive);
+    color: var(--vs-destructive-fg);
+}
+
+[data-theme="nordic-winter"] .vs-btn-link {
+    background: transparent;
+    color: var(--vs-primary);
+    padding: 0;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    border: none;
+}
+
+[data-theme="nordic-winter"] .vs-btn-sm {
+    font-size: 13px;
+    padding: 8px 14px;
+}
+
+[data-theme="nordic-winter"] .vs-btn-lg {
+    font-size: 16px;
+    padding: 14px 28px;
+}
+
+[data-theme="nordic-winter"] .vs-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+[data-theme="nordic-winter"] .vs-btn-loading {
+    position: relative;
+    color: transparent !important;
+}
+
+[data-theme="nordic-winter"] .vs-btn-loading::after {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border: 2px solid currentColor;
+    border-top-color: transparent;
+    border-radius: 50%;
+    animation: vs-spin 600ms linear infinite;
+}
+
+@keyframes vs-spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Cards */
+[data-theme="nordic-winter"] .vs-card {
+    background: var(--vs-bg);
+    border: 1px solid var(--vs-border);
+    border-radius: var(--vs-radius);
+    overflow: hidden;
+    transition: all var(--vs-transition) var(--vs-ease);
+}
+
+[data-theme="nordic-winter"] .vs-card:hover {
+    box-shadow: var(--vs-shadow-md);
+    transform: translateY(-2px);
+}
+
+[data-theme="nordic-winter"] .vs-card-header {
+    padding: 20px 20px 0;
+}
+
+[data-theme="nordic-winter"] .vs-card-body {
+    padding: 12px 20px;
+}
+
+[data-theme="nordic-winter"] .vs-card-footer {
+    padding: 0 20px 20px;
+    display: flex;
+    gap: 8px;
+}
+
+[data-theme="nordic-winter"] .vs-card-image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+[data-theme="nordic-winter"] .vs-card-pricing {
+    text-align: center;
+    padding: 28px 20px;
+}
+
+[data-theme="nordic-winter"] .vs-card-pricing.featured {
+    background: var(--vs-primary);
+    color: var(--vs-primary-fg);
+}
+
+[data-theme="nordic-winter"] .vs-card-pricing .price {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1;
+    margin: 12px 0;
+}
+
+[data-theme="nordic-winter"] .vs-card-pricing .period {
+    font-size: 14px;
+    opacity: 0.6;
+}
+
+[data-theme="nordic-winter"] .vs-card-stat {
+    padding: 20px;
+}
+
+[data-theme="nordic-winter"] .vs-card-stat .stat-value {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+[data-theme="nordic-winter"] .vs-card-stat .stat-label {
+    font-size: 13px;
+    color: var(--vs-muted-fg);
+    margin-top: 4px;
+}
+
+/* Forms */
+[data-theme="nordic-winter"] .vs-label {
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 6px;
+}
+
+[data-theme="nordic-winter"] .vs-input {
+    width: 100%;
+    padding: 10px 14px;
+    font-size: 14px;
+    font-family: var(--vs-font-sans);
+    color: var(--vs-fg);
+    background: var(--vs-bg);
+    border: 1px solid var(--vs-border);
+    border-radius: var(--vs-radius);
+    outline: none;
+    transition: border-color var(--vs-transition) var(--vs-ease);
+}
+
+[data-theme="nordic-winter"] .vs-input:focus {
+    border-color: var(--vs-primary);
+    box-shadow: 0 0 0 3px rgba(74, 144, 184, 0.1);
+}
+
+[data-theme="nordic-winter"] .vs-input::placeholder {
+    color: var(--vs-muted-fg);
+}
+
+[data-theme="nordic-winter"] .vs-input-error {
+    border-color: var(--vs-destructive);
+}
+
+[data-theme="nordic-winter"] .vs-input:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+[data-theme="nordic-winter"] .vs-select {
+    width: 100%;
+    padding: 10px 14px;
+    font-size: 14px;
+    font-family: var(--vs-font-sans);
+    color: var(--vs-fg);
+    background: var(--vs-bg);
+    border: 1px solid var(--vs-border);
+    border-radius: var(--vs-radius);
+    outline: none;
+    appearance: none;
+    cursor: pointer;
+}
+
+[data-theme="nordic-winter"] .vs-textarea {
+    width: 100%;
+    padding: 10px 14px;
+    font-size: 14px;
+    font-family: var(--vs-font-sans);
+    color: var(--vs-fg);
+    background: var(--vs-bg);
+    border: 1px solid var(--vs-border);
+    border-radius: var(--vs-radius);
+    outline: none;
+    resize: vertical;
+    min-height: 80px;
+}
+
+[data-theme="nordic-winter"] .vs-textarea:focus {
+    border-color: var(--vs-primary);
+}
+
+[data-theme="nordic-winter"] .vs-form-group {
+    margin-bottom: 20px;
+}
+
+[data-theme="nordic-winter"] .vs-checkbox,
+[data-theme="nordic-winter"] .vs-radio {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+[data-theme="nordic-winter"] .vs-checkbox input,
+[data-theme="nordic-winter"] .vs-radio input {
+    width: 16px;
+    height: 16px;
+    accent-color: var(--vs-primary);
+}
+
+[data-theme="nordic-winter"] .vs-toggle {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+[data-theme="nordic-winter"] .vs-toggle-track {
+    width: 44px;
+    height: 24px;
+    border-radius: 12px;
+    background: var(--vs-border);
+    position: relative;
+    transition: background var(--vs-transition) var(--vs-ease);
+}
+
+[data-theme="nordic-winter"] .vs-toggle-track.active {
+    background: var(--vs-primary);
+}
+
+[data-theme="nordic-winter"] .vs-toggle-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: white;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    transition: transform var(--vs-transition) var(--vs-ease);
+    box-shadow: var(--vs-shadow-sm);
+}
+
+[data-theme="nordic-winter"] .vs-toggle-track.active .vs-toggle-thumb {
+    transform: translateX(20px);
+}
+
+/* Navigation */
+[data-theme="nordic-winter"] .vs-navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 20px;
+    border: 1px solid var(--vs-border);
+    border-radius: var(--vs-radius);
+    background: var(--vs-bg);
+}
+
+[data-theme="nordic-winter"] .vs-navbar-brand {
+    font-size: 17px;
+    font-weight: 600;
+}
+
+[data-theme="nordic-winter"] .vs-navbar-links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+[data-theme="nordic-winter"] .vs-navbar-links a {
+    font-size: 14px;
+    color: var(--vs-muted-fg);
+    text-decoration: none;
+    transition: color var(--vs-transition);
+}
+
+[data-theme="nordic-winter"] .vs-navbar-links a:hover {
+    color: var(--vs-fg);
+}
+
+[data-theme="nordic-winter"] .vs-tabs {
+    display: flex;
+    gap: 0;
+    border-bottom: 1px solid var(--vs-border);
+}
+
+[data-theme="nordic-winter"] .vs-tab {
+    padding: 10px 18px;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--vs-muted-fg);
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    transition: all var(--vs-transition);
+    font-family: var(--vs-font-sans);
+}
+
+[data-theme="nordic-winter"] .vs-tab:hover {
+    color: var(--vs-fg);
+}
+
+[data-theme="nordic-winter"] .vs-tab-active {
+    color: var(--vs-primary);
+    border-bottom-color: var(--vs-primary);
+}
+
+[data-theme="nordic-winter"] .vs-breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    color: var(--vs-muted-fg);
+}
+
+[data-theme="nordic-winter"] .vs-breadcrumb a {
+    color: var(--vs-muted-fg);
+    text-decoration: none;
+}
+
+[data-theme="nordic-winter"] .vs-breadcrumb a:hover {
+    color: var(--vs-fg);
+}
+
+[data-theme="nordic-winter"] .vs-breadcrumb .current {
+    color: var(--vs-fg);
+    font-weight: 500;
+}
+
+/* Badges */
+[data-theme="nordic-winter"] .vs-badge {
+    display: inline-flex;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 3px 10px;
+    border-radius: 999px;
+    background: var(--vs-muted);
+    color: var(--vs-fg);
+}
+
+[data-theme="nordic-winter"] .vs-badge-success {
+    background: #dbeafe;
+    color: #1e40af;
+}
+
+[data-theme="nordic-winter"] .vs-badge-warning {
+    background: #fef3c7;
+    color: #92400e;
+}
+
+[data-theme="nordic-winter"] .vs-badge-destructive {
+    background: #fee2e2;
+    color: #991b1b;
+}
+
+/* Alert */
+[data-theme="nordic-winter"] .vs-alert {
+    display: flex;
+    gap: 12px;
+    padding: 14px;
+    border-radius: var(--vs-radius);
+    font-size: 14px;
+    border: 1px solid var(--vs-border);
+    background: var(--vs-bg);
+}
+
+[data-theme="nordic-winter"] .vs-alert-success {
+    border-color: #93c5fd;
+    background: #eff6ff;
+}
+
+[data-theme="nordic-winter"] .vs-alert-warning {
+    border-color: #fcd34d;
+    background: #fffbeb;
+}
+
+[data-theme="nordic-winter"] .vs-alert-error {
+    border-color: #fca5a5;
+    background: #fef2f2;
+}
+
+/* Progress */
+[data-theme="nordic-winter"] .vs-progress {
+    width: 100%;
+    height: 6px;
+    background: var(--vs-muted);
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+[data-theme="nordic-winter"] .vs-progress-bar {
+    height: 100%;
+    background: var(--vs-primary);
+    border-radius: 3px;
+}
+
+/* Skeleton */
+[data-theme="nordic-winter"] .vs-skeleton {
+    background: linear-gradient(90deg, var(--vs-muted) 25%, var(--vs-border) 50%, var(--vs-muted) 75%);
+    background-size: 200% 100%;
+    animation: vs-shimmer 1.5s ease-in-out infinite;
+    border-radius: var(--vs-radius);
+}
+
+@keyframes vs-shimmer {
+    0% {
+        background-position: 200% 0;
+    }
+
+    100% {
+        background-position: -200% 0;
+    }
+}
+
+/* Typography */
+[data-theme="nordic-winter"] .vs-heading {
+    font-family: var(--vs-font-heading);
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+    color: var(--vs-fg);
+}
+
+[data-theme="nordic-winter"] .vs-h1 {
+    font-size: 36px;
+}
+
+[data-theme="nordic-winter"] .vs-h2 {
+    font-size: 28px;
+}
+
+[data-theme="nordic-winter"] .vs-h3 {
+    font-size: 22px;
+}
+
+[data-theme="nordic-winter"] .vs-h4 {
+    font-size: 18px;
+}
+
+[data-theme="nordic-winter"] .vs-h5 {
+    font-size: 15px;
+}
+
+[data-theme="nordic-winter"] .vs-h6 {
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+[data-theme="nordic-winter"] .vs-body {
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+[data-theme="nordic-winter"] .vs-lead {
+    font-size: 19px;
+    line-height: 1.6;
+    color: var(--vs-muted-fg);
+    font-weight: 300;
+}
+
+[data-theme="nordic-winter"] .vs-blockquote {
+    border-left: 3px solid var(--vs-primary);
+    padding-left: 16px;
+    margin: 0;
+    font-style: italic;
+    color: var(--vs-muted-fg);
+}
+
+[data-theme="nordic-winter"] .vs-code {
+    font-family: var(--vs-font-mono);
+    font-size: 13px;
+    background: var(--vs-muted);
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+
+[data-theme="nordic-winter"] .vs-code-block {
+    font-family: var(--vs-font-mono);
+    font-size: 13px;
+    line-height: 1.6;
+    background: #1e293b;
+    color: #e2e8f0;
+    padding: 20px;
+    border-radius: var(--vs-radius);
+    overflow-x: auto;
+}
+
+[data-theme="nordic-winter"] .vs-divider {
+    border: none;
+    height: 1px;
+    background: var(--vs-border);
+    margin: 24px 0;
+}

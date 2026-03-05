@@ -1,0 +1,16 @@
+name: "Bone"
+slug: "bone"
+category: "minimal"
+description: "Off-white warmth, organic curves, earthy neutrals. Naturally minimal."
+tags: ["minimal", "warm", "neutral", "earthy", "organic"]
+mood: ["warm", "calm"]
+supportsDarkMode: true
+fonts:
+  - family: "Nunito"
+    weights: [300, 400, 500, 600, 700]
+    source: "google"
+  - family: "Inconsolata"
+    weights: [400, 500]
+    source: "google"
+author: "vsaint"
+version: "1.0.0"

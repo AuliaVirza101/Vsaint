@@ -1,0 +1,16 @@
+name: "Thin Line"
+slug: "thin-line"
+category: "minimal"
+description: "Ultra-thin 1px borders, hairline details, delicate precision."
+tags: ["minimal", "thin", "delicate", "precise", "light"]
+mood: ["elegant", "professional"]
+supportsDarkMode: true
+fonts:
+  - family: "Lexend"
+    weights: [300, 400, 500, 600, 700]
+    source: "google"
+  - family: "Red Hat Mono"
+    weights: [400, 500]
+    source: "google"
+author: "vsaint"
+version: "1.0.0"

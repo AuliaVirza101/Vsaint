@@ -1,0 +1,16 @@
+name: "Paper"
+slug: "paper"
+category: "minimal"
+description: "Warm whites and soft shadows. Like writing on premium stationery."
+tags: ["minimal", "warm", "paper", "soft", "organic"]
+mood: ["warm", "professional"]
+supportsDarkMode: true
+fonts:
+  - family: "Source Serif 4"
+    weights: [300, 400, 600, 700]
+    source: "google"
+  - family: "Source Code Pro"
+    weights: [400, 500]
+    source: "google"
+author: "vsaint"
+version: "1.0.0"

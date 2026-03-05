@@ -1,0 +1,16 @@
+name: "Zen Garden"
+slug: "zen-garden"
+category: "minimal"
+description: "Japanese minimalism. Vast emptiness, deliberate placement, inner calm."
+tags: ["minimal", "zen", "japanese", "calm", "whitespace"]
+mood: ["calm", "elegant"]
+supportsDarkMode: true
+fonts:
+  - family: "Noto Sans"
+    weights: [300, 400, 500, 700]
+    source: "google"
+  - family: "Noto Sans Mono"
+    weights: [400, 500]
+    source: "google"
+author: "vsaint"
+version: "1.0.0"

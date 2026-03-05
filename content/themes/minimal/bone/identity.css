@@ -1,0 +1,522 @@
+/* Bone Identity — Off-white warmth, organic curves */
+[data-theme="bone"] .vs-showcase {
+    padding: 32px;
+    background: var(--vs-bg);
+    color: var(--vs-fg);
+    font-family: var(--vs-font-sans);
+    line-height: 1.7;
+}
+
+[data-theme="bone"] .vs-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-family: var(--vs-font-sans);
+    font-weight: 600;
+    font-size: 14px;
+    padding: 11px 22px;
+    border-radius: var(--vs-radius);
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: all var(--vs-transition) var(--vs-ease);
+    outline: none;
+}
+
+[data-theme="bone"] .vs-btn-primary {
+    background: var(--vs-primary);
+    color: var(--vs-primary-fg);
+    box-shadow: var(--vs-shadow-sm);
+}
+
+[data-theme="bone"] .vs-btn-primary:hover {
+    box-shadow: var(--vs-shadow-md);
+    transform: translateY(-1px);
+}
+
+[data-theme="bone"] .vs-btn-secondary {
+    background: var(--vs-secondary);
+    color: var(--vs-secondary-fg);
+}
+
+[data-theme="bone"] .vs-btn-outline {
+    background: transparent;
+    color: var(--vs-fg);
+    border-color: var(--vs-border);
+}
+
+[data-theme="bone"] .vs-btn-outline:hover {
+    border-color: var(--vs-primary);
+}
+
+[data-theme="bone"] .vs-btn-ghost {
+    background: transparent;
+    color: var(--vs-fg);
+}
+
+[data-theme="bone"] .vs-btn-ghost:hover {
+    background: var(--vs-muted);
+}
+
+[data-theme="bone"] .vs-btn-destructive {
+    background: var(--vs-destructive);
+    color: var(--vs-destructive-fg);
+}
+
+[data-theme="bone"] .vs-btn-link {
+    background: transparent;
+    color: var(--vs-primary);
+    padding: 0;
+    text-decoration: underline;
+    border: none;
+}
+
+[data-theme="bone"] .vs-btn-sm {
+    font-size: 13px;
+    padding: 8px 16px;
+}
+
+[data-theme="bone"] .vs-btn-lg {
+    font-size: 16px;
+    padding: 14px 28px;
+}
+
+[data-theme="bone"] .vs-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+[data-theme="bone"] .vs-btn-loading {
+    position: relative;
+    color: transparent !important;
+}
+
+[data-theme="bone"] .vs-btn-loading::after {
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    border: 2px solid var(--vs-muted-fg);
+    border-top-color: transparent;
+    border-radius: 50%;
+    animation: vs-spin-bone 700ms linear infinite;
+}
+
+@keyframes vs-spin-bone {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+[data-theme="bone"] .vs-card {
+    background: var(--vs-bg);
+    border: 1px solid var(--vs-border);
+    border-radius: var(--vs-radius);
+    overflow: hidden;
+    transition: all var(--vs-transition);
+}
+
+[data-theme="bone"] .vs-card:hover {
+    box-shadow: var(--vs-shadow-md);
+    transform: translateY(-2px);
+}
+
+[data-theme="bone"] .vs-card-header {
+    padding: 20px 20px 0;
+}
+
+[data-theme="bone"] .vs-card-body {
+    padding: 12px 20px;
+}
+
+[data-theme="bone"] .vs-card-footer {
+    padding: 0 20px 20px;
+    display: flex;
+    gap: 8px;
+}
+
+[data-theme="bone"] .vs-card-image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    filter: sepia(10%);
+}
+
+[data-theme="bone"] .vs-card-pricing {
+    text-align: center;
+    padding: 28px 20px;
+}
+
+[data-theme="bone"] .vs-card-pricing.featured {
+    background: var(--vs-primary);
+    color: var(--vs-primary-fg);
+}
+
+[data-theme="bone"] .vs-card-pricing .price {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1;
+    margin: 12px 0;
+}
+
+[data-theme="bone"] .vs-card-pricing .period {
+    font-size: 14px;
+    opacity: 0.6;
+}
+
+[data-theme="bone"] .vs-card-stat {
+    padding: 20px;
+}
+
+[data-theme="bone"] .vs-card-stat .stat-value {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+[data-theme="bone"] .vs-card-stat .stat-label {
+    font-size: 13px;
+    color: var(--vs-muted-fg);
+    margin-top: 4px;
+}
+
+[data-theme="bone"] .vs-label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+[data-theme="bone"] .vs-input {
+    width: 100%;
+    padding: 11px 14px;
+    font-size: 14px;
+    font-family: var(--vs-font-sans);
+    color: var(--vs-fg);
+    background: var(--vs-bg);
+    border: 1px solid var(--vs-border);
+    border-radius: var(--vs-radius);
+    outline: none;
+}
+
+[data-theme="bone"] .vs-input:focus {
+    border-color: var(--vs-primary);
+}
+
+[data-theme="bone"] .vs-input::placeholder {
+    color: var(--vs-muted-fg);
+}
+
+[data-theme="bone"] .vs-input-error {
+    border-color: var(--vs-destructive);
+}
+
+[data-theme="bone"] .vs-input:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+[data-theme="bone"] .vs-select {
+    width: 100%;
+    padding: 11px 14px;
+    font-size: 14px;
+    font-family: var(--vs-font-sans);
+    color: var(--vs-fg);
+    background: var(--vs-bg);
+    border: 1px solid var(--vs-border);
+    border-radius: var(--vs-radius);
+    appearance: none;
+}
+
+[data-theme="bone"] .vs-textarea {
+    width: 100%;
+    padding: 11px 14px;
+    font-size: 14px;
+    font-family: var(--vs-font-sans);
+    color: var(--vs-fg);
+    background: var(--vs-bg);
+    border: 1px solid var(--vs-border);
+    border-radius: var(--vs-radius);
+    resize: vertical;
+    min-height: 80px;
+}
+
+[data-theme="bone"] .vs-form-group {
+    margin-bottom: 20px;
+}
+
+[data-theme="bone"] .vs-checkbox,
+[data-theme="bone"] .vs-radio {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+[data-theme="bone"] .vs-checkbox input,
+[data-theme="bone"] .vs-radio input {
+    width: 16px;
+    height: 16px;
+    accent-color: var(--vs-primary);
+}
+
+[data-theme="bone"] .vs-toggle {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+[data-theme="bone"] .vs-toggle-track {
+    width: 44px;
+    height: 24px;
+    border-radius: 12px;
+    background: var(--vs-border);
+    position: relative;
+    transition: background var(--vs-transition);
+}
+
+[data-theme="bone"] .vs-toggle-track.active {
+    background: var(--vs-primary);
+}
+
+[data-theme="bone"] .vs-toggle-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: white;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    transition: transform var(--vs-transition);
+}
+
+[data-theme="bone"] .vs-toggle-track.active .vs-toggle-thumb {
+    transform: translateX(20px);
+}
+
+[data-theme="bone"] .vs-navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 20px;
+    border: 1px solid var(--vs-border);
+    border-radius: var(--vs-radius);
+}
+
+[data-theme="bone"] .vs-navbar-brand {
+    font-size: 17px;
+    font-weight: 700;
+}
+
+[data-theme="bone"] .vs-navbar-links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+[data-theme="bone"] .vs-navbar-links a {
+    font-size: 14px;
+    color: var(--vs-muted-fg);
+    text-decoration: none;
+}
+
+[data-theme="bone"] .vs-navbar-links a:hover {
+    color: var(--vs-fg);
+}
+
+[data-theme="bone"] .vs-tabs {
+    display: flex;
+    border-bottom: 1px solid var(--vs-border);
+}
+
+[data-theme="bone"] .vs-tab {
+    padding: 10px 18px;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--vs-muted-fg);
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    font-family: var(--vs-font-sans);
+}
+
+[data-theme="bone"] .vs-tab:hover {
+    color: var(--vs-fg);
+}
+
+[data-theme="bone"] .vs-tab-active {
+    color: var(--vs-primary);
+    border-bottom-color: var(--vs-primary);
+}
+
+[data-theme="bone"] .vs-breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    color: var(--vs-muted-fg);
+}
+
+[data-theme="bone"] .vs-breadcrumb a {
+    color: var(--vs-muted-fg);
+    text-decoration: none;
+}
+
+[data-theme="bone"] .vs-breadcrumb .current {
+    color: var(--vs-fg);
+    font-weight: 500;
+}
+
+[data-theme="bone"] .vs-badge {
+    display: inline-flex;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 3px 10px;
+    border-radius: 999px;
+    background: var(--vs-muted);
+}
+
+[data-theme="bone"] .vs-badge-success {
+    background: #f0ede4;
+    color: #5a6b3a;
+}
+
+[data-theme="bone"] .vs-badge-warning {
+    background: #f5ede0;
+    color: #8a6b20;
+}
+
+[data-theme="bone"] .vs-badge-destructive {
+    background: #f5e0e0;
+    color: #8a3535;
+}
+
+[data-theme="bone"] .vs-alert {
+    display: flex;
+    gap: 12px;
+    padding: 14px;
+    border-radius: var(--vs-radius);
+    font-size: 14px;
+    border: 1px solid var(--vs-border);
+}
+
+[data-theme="bone"] .vs-alert-success {
+    border-color: #b5b99a;
+}
+
+[data-theme="bone"] .vs-alert-warning {
+    border-color: #d4c090;
+}
+
+[data-theme="bone"] .vs-alert-error {
+    border-color: #d4a0a0;
+}
+
+[data-theme="bone"] .vs-progress {
+    width: 100%;
+    height: 6px;
+    background: var(--vs-muted);
+    border-radius: 3px;
+}
+
+[data-theme="bone"] .vs-progress-bar {
+    height: 100%;
+    background: var(--vs-primary);
+    border-radius: 3px;
+}
+
+[data-theme="bone"] .vs-skeleton {
+    background: var(--vs-muted);
+    border-radius: var(--vs-radius);
+    animation: vs-pulse-bone 1.8s ease-in-out infinite;
+}
+
+@keyframes vs-pulse-bone {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.4;
+    }
+}
+
+[data-theme="bone"] .vs-heading {
+    font-family: var(--vs-font-heading);
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    line-height: 1.25;
+}
+
+[data-theme="bone"] .vs-h1 {
+    font-size: 34px;
+}
+
+[data-theme="bone"] .vs-h2 {
+    font-size: 28px;
+}
+
+[data-theme="bone"] .vs-h3 {
+    font-size: 22px;
+}
+
+[data-theme="bone"] .vs-h4 {
+    font-size: 18px;
+}
+
+[data-theme="bone"] .vs-h5 {
+    font-size: 15px;
+}
+
+[data-theme="bone"] .vs-h6 {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+}
+
+[data-theme="bone"] .vs-body {
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+[data-theme="bone"] .vs-lead {
+    font-size: 19px;
+    line-height: 1.6;
+    color: var(--vs-muted-fg);
+}
+
+[data-theme="bone"] .vs-blockquote {
+    border-left: 3px solid var(--vs-primary);
+    padding-left: 16px;
+    margin: 0;
+    font-style: italic;
+}
+
+[data-theme="bone"] .vs-code {
+    font-family: var(--vs-font-mono);
+    font-size: 13px;
+    background: var(--vs-muted);
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+
+[data-theme="bone"] .vs-code-block {
+    font-family: var(--vs-font-mono);
+    font-size: 13px;
+    background: #2a2418;
+    color: #cdc0a8;
+    padding: 20px;
+    border-radius: var(--vs-radius);
+    overflow-x: auto;
+}
+
+[data-theme="bone"] .vs-divider {
+    border: none;
+    height: 1px;
+    background: var(--vs-border);
+    margin: 24px 0;
+}

@@ -1,0 +1,533 @@
+/* Zen Garden Identity — Japanese minimalism, vast emptiness, deliberate placement */
+[data-theme="zen-garden"] .vs-showcase {
+    padding: 40px;
+    background: var(--vs-bg);
+    color: var(--vs-fg);
+    font-family: var(--vs-font-sans);
+    line-height: 1.8;
+}
+
+[data-theme="zen-garden"] .vs-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-family: var(--vs-font-sans);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1;
+    padding: 11px 24px;
+    border-radius: var(--vs-radius);
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: all var(--vs-transition) var(--vs-ease);
+    outline: none;
+}
+
+[data-theme="zen-garden"] .vs-btn:focus-visible {
+    box-shadow: 0 0 0 2px rgba(92, 122, 94, 0.2);
+}
+
+[data-theme="zen-garden"] .vs-btn-primary {
+    background: var(--vs-primary);
+    color: var(--vs-primary-fg);
+}
+
+[data-theme="zen-garden"] .vs-btn-primary:hover {
+    opacity: 0.9;
+}
+
+[data-theme="zen-garden"] .vs-btn-secondary {
+    background: var(--vs-secondary);
+    color: var(--vs-secondary-fg);
+}
+
+[data-theme="zen-garden"] .vs-btn-outline {
+    background: transparent;
+    color: var(--vs-fg);
+    border-color: var(--vs-border);
+}
+
+[data-theme="zen-garden"] .vs-btn-outline:hover {
+    border-color: var(--vs-primary);
+}
+
+[data-theme="zen-garden"] .vs-btn-ghost {
+    background: transparent;
+    color: var(--vs-fg);
+}
+
+[data-theme="zen-garden"] .vs-btn-ghost:hover {
+    background: var(--vs-muted);
+}
+
+[data-theme="zen-garden"] .vs-btn-destructive {
+    background: var(--vs-destructive);
+    color: var(--vs-destructive-fg);
+}
+
+[data-theme="zen-garden"] .vs-btn-link {
+    background: transparent;
+    color: var(--vs-primary);
+    padding: 0;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    border: none;
+}
+
+[data-theme="zen-garden"] .vs-btn-sm {
+    font-size: 13px;
+    padding: 8px 16px;
+}
+
+[data-theme="zen-garden"] .vs-btn-lg {
+    font-size: 16px;
+    padding: 14px 32px;
+}
+
+[data-theme="zen-garden"] .vs-btn:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+[data-theme="zen-garden"] .vs-btn-loading {
+    position: relative;
+    color: transparent !important;
+}
+
+[data-theme="zen-garden"] .vs-btn-loading::after {
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    border: 1.5px solid var(--vs-muted-fg);
+    border-top-color: transparent;
+    border-radius: 50%;
+    animation: vs-spin-zen 800ms linear infinite;
+}
+
+@keyframes vs-spin-zen {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+[data-theme="zen-garden"] .vs-card {
+    background: var(--vs-bg);
+    border: 1px solid var(--vs-border);
+    border-radius: var(--vs-radius);
+    overflow: hidden;
+    transition: all var(--vs-transition) var(--vs-ease);
+}
+
+[data-theme="zen-garden"] .vs-card:hover {
+    box-shadow: var(--vs-shadow-md);
+}
+
+[data-theme="zen-garden"] .vs-card-header {
+    padding: 24px 24px 0;
+}
+
+[data-theme="zen-garden"] .vs-card-body {
+    padding: 16px 24px;
+}
+
+[data-theme="zen-garden"] .vs-card-footer {
+    padding: 0 24px 24px;
+    display: flex;
+    gap: 8px;
+}
+
+[data-theme="zen-garden"] .vs-card-image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+[data-theme="zen-garden"] .vs-card-pricing {
+    text-align: center;
+    padding: 32px 24px;
+}
+
+[data-theme="zen-garden"] .vs-card-pricing.featured {
+    background: var(--vs-primary);
+    color: var(--vs-primary-fg);
+}
+
+[data-theme="zen-garden"] .vs-card-pricing .price {
+    font-size: 44px;
+    font-weight: 300;
+    line-height: 1;
+    margin: 16px 0;
+}
+
+[data-theme="zen-garden"] .vs-card-pricing .period {
+    font-size: 14px;
+    opacity: 0.6;
+}
+
+[data-theme="zen-garden"] .vs-card-stat {
+    padding: 24px;
+}
+
+[data-theme="zen-garden"] .vs-card-stat .stat-value {
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 1;
+}
+
+[data-theme="zen-garden"] .vs-card-stat .stat-label {
+    font-size: 13px;
+    color: var(--vs-muted-fg);
+    margin-top: 8px;
+}
+
+[data-theme="zen-garden"] .vs-label {
+    display: block;
+    font-size: 13px;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+[data-theme="zen-garden"] .vs-input {
+    width: 100%;
+    padding: 12px 16px;
+    font-size: 14px;
+    font-family: var(--vs-font-sans);
+    color: var(--vs-fg);
+    background: var(--vs-bg);
+    border: 1px solid var(--vs-border);
+    border-radius: var(--vs-radius);
+    outline: none;
+    transition: border-color var(--vs-transition);
+}
+
+[data-theme="zen-garden"] .vs-input:focus {
+    border-color: var(--vs-primary);
+}
+
+[data-theme="zen-garden"] .vs-input::placeholder {
+    color: var(--vs-muted-fg);
+}
+
+[data-theme="zen-garden"] .vs-input-error {
+    border-color: var(--vs-destructive);
+}
+
+[data-theme="zen-garden"] .vs-input:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+[data-theme="zen-garden"] .vs-select {
+    width: 100%;
+    padding: 12px 16px;
+    font-size: 14px;
+    font-family: var(--vs-font-sans);
+    color: var(--vs-fg);
+    background: var(--vs-bg);
+    border: 1px solid var(--vs-border);
+    border-radius: var(--vs-radius);
+    appearance: none;
+}
+
+[data-theme="zen-garden"] .vs-textarea {
+    width: 100%;
+    padding: 12px 16px;
+    font-size: 14px;
+    font-family: var(--vs-font-sans);
+    color: var(--vs-fg);
+    background: var(--vs-bg);
+    border: 1px solid var(--vs-border);
+    border-radius: var(--vs-radius);
+    resize: vertical;
+    min-height: 100px;
+}
+
+[data-theme="zen-garden"] .vs-form-group {
+    margin-bottom: 24px;
+}
+
+[data-theme="zen-garden"] .vs-checkbox,
+[data-theme="zen-garden"] .vs-radio {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+[data-theme="zen-garden"] .vs-checkbox input,
+[data-theme="zen-garden"] .vs-radio input {
+    width: 16px;
+    height: 16px;
+    accent-color: var(--vs-primary);
+}
+
+[data-theme="zen-garden"] .vs-toggle {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+}
+
+[data-theme="zen-garden"] .vs-toggle-track {
+    width: 44px;
+    height: 24px;
+    border-radius: 12px;
+    background: var(--vs-border);
+    position: relative;
+    transition: background var(--vs-transition);
+}
+
+[data-theme="zen-garden"] .vs-toggle-track.active {
+    background: var(--vs-primary);
+}
+
+[data-theme="zen-garden"] .vs-toggle-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: white;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    transition: transform var(--vs-transition);
+}
+
+[data-theme="zen-garden"] .vs-toggle-track.active .vs-toggle-thumb {
+    transform: translateX(20px);
+}
+
+[data-theme="zen-garden"] .vs-navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 24px;
+    border-bottom: 1px solid var(--vs-border);
+    background: var(--vs-bg);
+}
+
+[data-theme="zen-garden"] .vs-navbar-brand {
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+}
+
+[data-theme="zen-garden"] .vs-navbar-links {
+    display: flex;
+    gap: 28px;
+    list-style: none;
+}
+
+[data-theme="zen-garden"] .vs-navbar-links a {
+    font-size: 14px;
+    color: var(--vs-muted-fg);
+    text-decoration: none;
+    font-weight: 300;
+}
+
+[data-theme="zen-garden"] .vs-navbar-links a:hover {
+    color: var(--vs-fg);
+}
+
+[data-theme="zen-garden"] .vs-tabs {
+    display: flex;
+    gap: 0;
+    border-bottom: 1px solid var(--vs-border);
+}
+
+[data-theme="zen-garden"] .vs-tab {
+    padding: 12px 20px;
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--vs-muted-fg);
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    border-bottom: 1px solid transparent;
+    font-family: var(--vs-font-sans);
+}
+
+[data-theme="zen-garden"] .vs-tab:hover {
+    color: var(--vs-fg);
+}
+
+[data-theme="zen-garden"] .vs-tab-active {
+    color: var(--vs-primary);
+    border-bottom-color: var(--vs-primary);
+}
+
+[data-theme="zen-garden"] .vs-breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    color: var(--vs-muted-fg);
+}
+
+[data-theme="zen-garden"] .vs-breadcrumb a {
+    color: var(--vs-muted-fg);
+    text-decoration: none;
+}
+
+[data-theme="zen-garden"] .vs-breadcrumb .current {
+    color: var(--vs-fg);
+}
+
+[data-theme="zen-garden"] .vs-badge {
+    display: inline-flex;
+    font-size: 12px;
+    font-weight: 400;
+    padding: 4px 12px;
+    border-radius: 999px;
+    background: var(--vs-muted);
+}
+
+[data-theme="zen-garden"] .vs-badge-success {
+    background: #edf5e0;
+    color: #4a6b2a;
+}
+
+[data-theme="zen-garden"] .vs-badge-warning {
+    background: #fdf5e0;
+    color: #8a7020;
+}
+
+[data-theme="zen-garden"] .vs-badge-destructive {
+    background: #fce8e8;
+    color: #8a3030;
+}
+
+[data-theme="zen-garden"] .vs-alert {
+    display: flex;
+    gap: 12px;
+    padding: 16px;
+    border-radius: var(--vs-radius);
+    font-size: 14px;
+    border: 1px solid var(--vs-border);
+}
+
+[data-theme="zen-garden"] .vs-alert-success {
+    border-color: #b5c99a;
+}
+
+[data-theme="zen-garden"] .vs-alert-warning {
+    border-color: #e0d090;
+}
+
+[data-theme="zen-garden"] .vs-alert-error {
+    border-color: #d4a0a0;
+}
+
+[data-theme="zen-garden"] .vs-progress {
+    width: 100%;
+    height: 4px;
+    background: var(--vs-muted);
+    border-radius: 2px;
+}
+
+[data-theme="zen-garden"] .vs-progress-bar {
+    height: 100%;
+    background: var(--vs-primary);
+    border-radius: 2px;
+}
+
+[data-theme="zen-garden"] .vs-skeleton {
+    background: var(--vs-muted);
+    border-radius: var(--vs-radius);
+    animation: vs-pulse-zen 2s ease-in-out infinite;
+}
+
+@keyframes vs-pulse-zen {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.3;
+    }
+}
+
+[data-theme="zen-garden"] .vs-heading {
+    font-family: var(--vs-font-heading);
+    font-weight: 300;
+    letter-spacing: 0.01em;
+    line-height: 1.3;
+}
+
+[data-theme="zen-garden"] .vs-h1 {
+    font-size: 36px;
+}
+
+[data-theme="zen-garden"] .vs-h2 {
+    font-size: 28px;
+}
+
+[data-theme="zen-garden"] .vs-h3 {
+    font-size: 22px;
+}
+
+[data-theme="zen-garden"] .vs-h4 {
+    font-size: 18px;
+}
+
+[data-theme="zen-garden"] .vs-h5 {
+    font-size: 15px;
+}
+
+[data-theme="zen-garden"] .vs-h6 {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    font-weight: 500;
+}
+
+[data-theme="zen-garden"] .vs-body {
+    font-size: 15px;
+    line-height: 1.9;
+}
+
+[data-theme="zen-garden"] .vs-lead {
+    font-size: 18px;
+    line-height: 1.7;
+    color: var(--vs-muted-fg);
+    font-weight: 300;
+}
+
+[data-theme="zen-garden"] .vs-blockquote {
+    border-left: 2px solid var(--vs-primary);
+    padding-left: 20px;
+    margin: 0;
+    font-style: italic;
+    font-weight: 300;
+}
+
+[data-theme="zen-garden"] .vs-code {
+    font-family: var(--vs-font-mono);
+    font-size: 13px;
+    background: var(--vs-muted);
+    padding: 2px 6px;
+    border-radius: 3px;
+}
+
+[data-theme="zen-garden"] .vs-code-block {
+    font-family: var(--vs-font-mono);
+    font-size: 13px;
+    line-height: 1.7;
+    background: #2a2c28;
+    color: #c5c3b8;
+    padding: 24px;
+    border-radius: var(--vs-radius);
+    overflow-x: auto;
+}
+
+[data-theme="zen-garden"] .vs-divider {
+    border: none;
+    height: 1px;
+    background: var(--vs-border);
+    margin: 32px 0;
+}

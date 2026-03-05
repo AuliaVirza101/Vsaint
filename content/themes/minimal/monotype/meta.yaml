@@ -1,0 +1,16 @@
+name: "Monotype"
+slug: "monotype"
+category: "minimal"
+description: "One typeface to rule them all. Pure typographic hierarchy, nothing else."
+tags: ["minimal", "typography", "monochrome", "grid", "strict"]
+mood: ["professional", "clean"]
+supportsDarkMode: true
+fonts:
+  - family: "DM Sans"
+    weights: [300, 400, 500, 600, 700]
+    source: "google"
+  - family: "DM Mono"
+    weights: [400, 500]
+    source: "google"
+author: "vsaint"
+version: "1.0.0"

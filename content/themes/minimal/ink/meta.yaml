@@ -1,0 +1,16 @@
+name: "Ink"
+slug: "ink"
+category: "minimal"
+description: "Black ink on white paper. Calligraphic weight, editorial precision."
+tags: ["minimal", "ink", "editorial", "black", "white"]
+mood: ["bold", "elegant"]
+supportsDarkMode: true
+fonts:
+  - family: "Playfair Display"
+    weights: [400, 500, 600, 700, 900]
+    source: "google"
+  - family: "Fira Code"
+    weights: [400, 500]
+    source: "google"
+author: "vsaint"
+version: "1.0.0"

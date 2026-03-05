@@ -1,0 +1,42 @@
+/* Zen Garden — Japanese minimalism, vast emptiness */
+[data-theme="zen-garden"] {
+    --vs-primary: #5c7a5e;
+    --vs-primary-fg: #ffffff;
+    --vs-secondary: #f4f2ed;
+    --vs-secondary-fg: #3a3a32;
+    --vs-bg: #faf9f5;
+    --vs-fg: #3a3a32;
+    --vs-muted: #edebe4;
+    --vs-muted-fg: #8a8878;
+    --vs-border: #dfdcd3;
+    --vs-ring: #5c7a5e;
+    --vs-accent: #7a9b6d;
+    --vs-accent-fg: #ffffff;
+    --vs-destructive: #b54a4a;
+    --vs-destructive-fg: #ffffff;
+    --vs-font-sans: "Noto Sans", system-ui, sans-serif;
+    --vs-font-mono: "Noto Sans Mono", monospace;
+    --vs-font-heading: "Noto Sans", system-ui, sans-serif;
+    --vs-radius: 6px;
+    --vs-shadow-sm: 0 1px 3px rgba(58, 58, 50, 0.04);
+    --vs-shadow-md: 0 2px 8px rgba(58, 58, 50, 0.06);
+    --vs-shadow-lg: 0 4px 16px rgba(58, 58, 50, 0.08);
+    --vs-space-unit: 4px;
+    --vs-transition: 300ms;
+    --vs-ease: cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+[data-theme="zen-garden"][data-mode="dark"] {
+    --vs-primary: #7a9b6d;
+    --vs-primary-fg: #1a1c18;
+    --vs-secondary: #222420;
+    --vs-secondary-fg: #c5c3b8;
+    --vs-bg: #1a1c18;
+    --vs-fg: #c5c3b8;
+    --vs-muted: #1e201c;
+    --vs-muted-fg: #7a7a6e;
+    --vs-border: #333530;
+    --vs-shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.3);
+    --vs-shadow-md: 0 2px 8px rgba(0, 0, 0, 0.4);
+    --vs-shadow-lg: 0 4px 16px rgba(0, 0, 0, 0.5);
+}

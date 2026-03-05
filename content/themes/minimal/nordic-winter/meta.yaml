@@ -1,0 +1,16 @@
+name: "Nordic Winter"
+slug: "nordic-winter"
+category: "minimal"
+description: "Cool greys, icy blues, and frosty whitespace. Scandinavian serenity."
+tags: ["minimal", "cool", "nordic", "icy", "whitespace"]
+mood: ["cool", "professional"]
+supportsDarkMode: true
+fonts:
+  - family: "Inter"
+    weights: [300, 400, 500, 600, 700]
+    source: "google"
+  - family: "IBM Plex Mono"
+    weights: [400, 500]
+    source: "google"
+author: "vsaint"
+version: "1.0.0"

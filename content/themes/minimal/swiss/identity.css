@@ -1,0 +1,538 @@
+/* Swiss Identity — International Typographic Style, grid perfection, red accent */
+[data-theme="swiss"] .vs-showcase {
+    padding: 32px;
+    background: var(--vs-bg);
+    color: var(--vs-fg);
+    font-family: var(--vs-font-sans);
+    line-height: 1.5;
+}
+
+[data-theme="swiss"] .vs-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-family: var(--vs-font-sans);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1;
+    padding: 10px 20px;
+    border-radius: var(--vs-radius);
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: all var(--vs-transition) var(--vs-ease);
+    outline: none;
+}
+
+[data-theme="swiss"] .vs-btn:focus-visible {
+    box-shadow: 0 0 0 2px var(--vs-ring);
+}
+
+[data-theme="swiss"] .vs-btn-primary {
+    background: var(--vs-primary);
+    color: var(--vs-primary-fg);
+}
+
+[data-theme="swiss"] .vs-btn-primary:hover {
+    opacity: 0.9;
+}
+
+[data-theme="swiss"] .vs-btn-secondary {
+    background: var(--vs-secondary);
+    color: var(--vs-secondary-fg);
+}
+
+[data-theme="swiss"] .vs-btn-outline {
+    background: transparent;
+    color: var(--vs-fg);
+    border-color: var(--vs-border);
+}
+
+[data-theme="swiss"] .vs-btn-outline:hover {
+    border-color: var(--vs-fg);
+}
+
+[data-theme="swiss"] .vs-btn-ghost {
+    background: transparent;
+    color: var(--vs-fg);
+}
+
+[data-theme="swiss"] .vs-btn-ghost:hover {
+    background: var(--vs-muted);
+}
+
+[data-theme="swiss"] .vs-btn-destructive {
+    background: var(--vs-destructive);
+    color: var(--vs-destructive-fg);
+}
+
+[data-theme="swiss"] .vs-btn-link {
+    background: transparent;
+    color: var(--vs-primary);
+    padding: 0;
+    text-decoration: none;
+    border: none;
+    border-bottom: 1px solid var(--vs-primary);
+}
+
+[data-theme="swiss"] .vs-btn-sm {
+    font-size: 12px;
+    padding: 8px 14px;
+}
+
+[data-theme="swiss"] .vs-btn-lg {
+    font-size: 16px;
+    padding: 12px 24px;
+}
+
+[data-theme="swiss"] .vs-btn:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+[data-theme="swiss"] .vs-btn-loading {
+    position: relative;
+    color: transparent !important;
+}
+
+[data-theme="swiss"] .vs-btn-loading::after {
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    border: 2px solid var(--vs-muted-fg);
+    border-top-color: transparent;
+    border-radius: 50%;
+    animation: vs-spin-sw 500ms linear infinite;
+}
+
+@keyframes vs-spin-sw {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+[data-theme="swiss"] .vs-card {
+    background: var(--vs-bg);
+    border: 1px solid var(--vs-border);
+    border-radius: var(--vs-radius);
+    overflow: hidden;
+}
+
+[data-theme="swiss"] .vs-card:hover {
+    box-shadow: var(--vs-shadow-md);
+}
+
+[data-theme="swiss"] .vs-card-header {
+    padding: 20px 20px 0;
+}
+
+[data-theme="swiss"] .vs-card-body {
+    padding: 12px 20px;
+}
+
+[data-theme="swiss"] .vs-card-footer {
+    padding: 0 20px 20px;
+    display: flex;
+    gap: 8px;
+}
+
+[data-theme="swiss"] .vs-card-image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+[data-theme="swiss"] .vs-card-pricing {
+    text-align: center;
+    padding: 28px 20px;
+}
+
+[data-theme="swiss"] .vs-card-pricing.featured {
+    background: var(--vs-primary);
+    color: var(--vs-primary-fg);
+}
+
+[data-theme="swiss"] .vs-card-pricing .price {
+    font-size: 56px;
+    font-weight: 900;
+    line-height: 1;
+    margin: 12px 0;
+}
+
+[data-theme="swiss"] .vs-card-pricing .period {
+    font-size: 14px;
+    opacity: 0.5;
+}
+
+[data-theme="swiss"] .vs-card-stat {
+    padding: 20px;
+}
+
+[data-theme="swiss"] .vs-card-stat .stat-value {
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 1;
+}
+
+[data-theme="swiss"] .vs-card-stat .stat-label {
+    font-size: 11px;
+    color: var(--vs-muted-fg);
+    margin-top: 4px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+[data-theme="swiss"] .vs-label {
+    display: block;
+    font-size: 12px;
+    font-weight: 500;
+    margin-bottom: 4px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+[data-theme="swiss"] .vs-input {
+    width: 100%;
+    padding: 10px 12px;
+    font-size: 14px;
+    font-family: var(--vs-font-sans);
+    color: var(--vs-fg);
+    background: var(--vs-bg);
+    border: 1px solid var(--vs-border);
+    border-radius: var(--vs-radius);
+    outline: none;
+}
+
+[data-theme="swiss"] .vs-input:focus {
+    border-color: var(--vs-primary);
+}
+
+[data-theme="swiss"] .vs-input::placeholder {
+    color: var(--vs-muted-fg);
+}
+
+[data-theme="swiss"] .vs-input-error {
+    border-color: var(--vs-destructive);
+}
+
+[data-theme="swiss"] .vs-input:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+[data-theme="swiss"] .vs-select {
+    width: 100%;
+    padding: 10px 12px;
+    font-size: 14px;
+    font-family: var(--vs-font-sans);
+    color: var(--vs-fg);
+    background: var(--vs-bg);
+    border: 1px solid var(--vs-border);
+    border-radius: var(--vs-radius);
+    appearance: none;
+}
+
+[data-theme="swiss"] .vs-textarea {
+    width: 100%;
+    padding: 10px 12px;
+    font-size: 14px;
+    font-family: var(--vs-font-sans);
+    color: var(--vs-fg);
+    background: var(--vs-bg);
+    border: 1px solid var(--vs-border);
+    border-radius: var(--vs-radius);
+    resize: vertical;
+    min-height: 80px;
+}
+
+[data-theme="swiss"] .vs-form-group {
+    margin-bottom: 16px;
+}
+
+[data-theme="swiss"] .vs-checkbox,
+[data-theme="swiss"] .vs-radio {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+[data-theme="swiss"] .vs-checkbox input,
+[data-theme="swiss"] .vs-radio input {
+    width: 16px;
+    height: 16px;
+    accent-color: var(--vs-primary);
+}
+
+[data-theme="swiss"] .vs-toggle {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+[data-theme="swiss"] .vs-toggle-track {
+    width: 40px;
+    height: 20px;
+    border-radius: 10px;
+    background: var(--vs-border);
+    position: relative;
+    transition: background var(--vs-transition);
+}
+
+[data-theme="swiss"] .vs-toggle-track.active {
+    background: var(--vs-primary);
+}
+
+[data-theme="swiss"] .vs-toggle-thumb {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: white;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    transition: transform var(--vs-transition);
+}
+
+[data-theme="swiss"] .vs-toggle-track.active .vs-toggle-thumb {
+    transform: translateX(20px);
+}
+
+[data-theme="swiss"] .vs-navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 20px;
+    background: var(--vs-primary);
+    color: var(--vs-primary-fg);
+    border-radius: var(--vs-radius);
+}
+
+[data-theme="swiss"] .vs-navbar-brand {
+    font-size: 16px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+[data-theme="swiss"] .vs-navbar-links {
+    display: flex;
+    gap: 16px;
+    list-style: none;
+}
+
+[data-theme="swiss"] .vs-navbar-links a {
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+}
+
+[data-theme="swiss"] .vs-navbar-links a:hover {
+    color: white;
+}
+
+[data-theme="swiss"] .vs-tabs {
+    display: flex;
+    gap: 0;
+    border-bottom: 2px solid var(--vs-border);
+}
+
+[data-theme="swiss"] .vs-tab {
+    padding: 10px 16px;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--vs-muted-fg);
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    margin-bottom: -2px;
+    font-family: var(--vs-font-sans);
+}
+
+[data-theme="swiss"] .vs-tab:hover {
+    color: var(--vs-fg);
+}
+
+[data-theme="swiss"] .vs-tab-active {
+    color: var(--vs-primary);
+    border-bottom-color: var(--vs-primary);
+}
+
+[data-theme="swiss"] .vs-breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 13px;
+    color: var(--vs-muted-fg);
+}
+
+[data-theme="swiss"] .vs-breadcrumb a {
+    color: var(--vs-muted-fg);
+    text-decoration: none;
+}
+
+[data-theme="swiss"] .vs-breadcrumb .current {
+    color: var(--vs-fg);
+    font-weight: 500;
+}
+
+[data-theme="swiss"] .vs-badge {
+    display: inline-flex;
+    font-size: 11px;
+    font-weight: 500;
+    padding: 2px 8px;
+    border-radius: var(--vs-radius);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    background: var(--vs-muted);
+}
+
+[data-theme="swiss"] .vs-badge-success {
+    background: #e8f5e9;
+    color: #2e7d32;
+}
+
+[data-theme="swiss"] .vs-badge-warning {
+    background: #fff8e1;
+    color: #ef6c00;
+}
+
+[data-theme="swiss"] .vs-badge-destructive {
+    background: #ffebee;
+    color: #c62828;
+}
+
+[data-theme="swiss"] .vs-alert {
+    display: flex;
+    gap: 12px;
+    padding: 14px;
+    border-radius: var(--vs-radius);
+    font-size: 14px;
+    border-left: 4px solid var(--vs-border);
+    background: var(--vs-muted);
+}
+
+[data-theme="swiss"] .vs-alert-success {
+    border-left-color: #2e7d32;
+}
+
+[data-theme="swiss"] .vs-alert-warning {
+    border-left-color: #ef6c00;
+}
+
+[data-theme="swiss"] .vs-alert-error {
+    border-left-color: var(--vs-destructive);
+}
+
+[data-theme="swiss"] .vs-progress {
+    width: 100%;
+    height: 4px;
+    background: var(--vs-muted);
+    border-radius: 0;
+}
+
+[data-theme="swiss"] .vs-progress-bar {
+    height: 100%;
+    background: var(--vs-primary);
+    border-radius: 0;
+}
+
+[data-theme="swiss"] .vs-skeleton {
+    background: var(--vs-muted);
+    border-radius: var(--vs-radius);
+    animation: vs-pulse-sw 1.2s ease-in-out infinite;
+}
+
+@keyframes vs-pulse-sw {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+}
+
+[data-theme="swiss"] .vs-heading {
+    font-family: var(--vs-font-heading);
+    font-weight: 900;
+    letter-spacing: -0.02em;
+    line-height: 1.1;
+}
+
+[data-theme="swiss"] .vs-h1 {
+    font-size: 48px;
+}
+
+[data-theme="swiss"] .vs-h2 {
+    font-size: 36px;
+}
+
+[data-theme="swiss"] .vs-h3 {
+    font-size: 24px;
+}
+
+[data-theme="swiss"] .vs-h4 {
+    font-size: 18px;
+}
+
+[data-theme="swiss"] .vs-h5 {
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+[data-theme="swiss"] .vs-h6 {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--vs-primary);
+}
+
+[data-theme="swiss"] .vs-body {
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+[data-theme="swiss"] .vs-lead {
+    font-size: 20px;
+    line-height: 1.5;
+    color: var(--vs-muted-fg);
+}
+
+[data-theme="swiss"] .vs-blockquote {
+    border-left: 4px solid var(--vs-primary);
+    padding-left: 16px;
+    margin: 0;
+}
+
+[data-theme="swiss"] .vs-code {
+    font-family: var(--vs-font-mono);
+    font-size: 13px;
+    background: var(--vs-muted);
+    padding: 2px 6px;
+    border-radius: 2px;
+}
+
+[data-theme="swiss"] .vs-code-block {
+    font-family: var(--vs-font-mono);
+    font-size: 13px;
+    line-height: 1.5;
+    background: #1d1d1d;
+    color: #e0e0e0;
+    padding: 20px;
+    border-radius: var(--vs-radius);
+    overflow-x: auto;
+}
+
+[data-theme="swiss"] .vs-divider {
+    border: none;
+    height: 2px;
+    background: var(--vs-border);
+    margin: 24px 0;
+}

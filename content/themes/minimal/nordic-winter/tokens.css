@@ -1,0 +1,42 @@
+/* Nordic Winter — Cool greys, icy blues, Scandinavian serenity */
+[data-theme="nordic-winter"] {
+    --vs-primary: #4a90b8;
+    --vs-primary-fg: #ffffff;
+    --vs-secondary: #f0f4f8;
+    --vs-secondary-fg: #2c3e50;
+    --vs-bg: #f8fafb;
+    --vs-fg: #2c3e50;
+    --vs-muted: #e8eef3;
+    --vs-muted-fg: #7f8c9b;
+    --vs-border: #d4dde6;
+    --vs-ring: #4a90b8;
+    --vs-accent: #5ba3cf;
+    --vs-accent-fg: #ffffff;
+    --vs-destructive: #c0392b;
+    --vs-destructive-fg: #ffffff;
+    --vs-font-sans: "Inter", system-ui, sans-serif;
+    --vs-font-mono: "IBM Plex Mono", monospace;
+    --vs-font-heading: "Inter", system-ui, sans-serif;
+    --vs-radius: 8px;
+    --vs-shadow-sm: 0 1px 3px rgba(44, 62, 80, 0.06);
+    --vs-shadow-md: 0 4px 12px rgba(44, 62, 80, 0.08);
+    --vs-shadow-lg: 0 8px 24px rgba(44, 62, 80, 0.1);
+    --vs-space-unit: 4px;
+    --vs-transition: 180ms;
+    --vs-ease: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+[data-theme="nordic-winter"][data-mode="dark"] {
+    --vs-primary: #6bafd4;
+    --vs-primary-fg: #0d1b2a;
+    --vs-secondary: #1b2838;
+    --vs-secondary-fg: #c8d6e5;
+    --vs-bg: #0d1b2a;
+    --vs-fg: #c8d6e5;
+    --vs-muted: #152233;
+    --vs-muted-fg: #6b7f95;
+    --vs-border: #243447;
+    --vs-shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.3);
+    --vs-shadow-md: 0 4px 12px rgba(0, 0, 0, 0.4);
+    --vs-shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.5);
+}

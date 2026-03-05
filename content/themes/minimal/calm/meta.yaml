@@ -1,0 +1,16 @@
+name: "Calm"
+slug: "calm"
+category: "minimal"
+description: "Soft pastels, gentle transitions, and stress-free spacing."
+tags: ["minimal", "pastel", "soft", "gentle", "relaxing"]
+mood: ["calm", "cool"]
+supportsDarkMode: true
+fonts:
+  - family: "Quicksand"
+    weights: [300, 400, 500, 600, 700]
+    source: "google"
+  - family: "Overpass Mono"
+    weights: [400, 500]
+    source: "google"
+author: "vsaint"
+version: "1.0.0"

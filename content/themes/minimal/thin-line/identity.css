@@ -1,0 +1,524 @@
+/* Thin Line Identity — Ultra-thin borders, hairline precision */
+[data-theme="thin-line"] .vs-showcase {
+    padding: 32px;
+    background: var(--vs-bg);
+    color: var(--vs-fg);
+    font-family: var(--vs-font-sans);
+    line-height: 1.6;
+}
+
+[data-theme="thin-line"] .vs-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-family: var(--vs-font-sans);
+    font-weight: 500;
+    font-size: 14px;
+    padding: 10px 20px;
+    border-radius: var(--vs-radius);
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: all var(--vs-transition) var(--vs-ease);
+    outline: none;
+}
+
+[data-theme="thin-line"] .vs-btn:focus-visible {
+    box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.15);
+}
+
+[data-theme="thin-line"] .vs-btn-primary {
+    background: var(--vs-primary);
+    color: var(--vs-primary-fg);
+}
+
+[data-theme="thin-line"] .vs-btn-primary:hover {
+    opacity: 0.9;
+    transform: translateY(-1px);
+}
+
+[data-theme="thin-line"] .vs-btn-secondary {
+    background: var(--vs-secondary);
+    color: var(--vs-secondary-fg);
+}
+
+[data-theme="thin-line"] .vs-btn-outline {
+    background: transparent;
+    color: var(--vs-fg);
+    border-color: var(--vs-border);
+}
+
+[data-theme="thin-line"] .vs-btn-outline:hover {
+    border-color: var(--vs-primary);
+    color: var(--vs-primary);
+}
+
+[data-theme="thin-line"] .vs-btn-ghost {
+    background: transparent;
+    color: var(--vs-fg);
+}
+
+[data-theme="thin-line"] .vs-btn-ghost:hover {
+    background: var(--vs-muted);
+}
+
+[data-theme="thin-line"] .vs-btn-destructive {
+    background: var(--vs-destructive);
+    color: var(--vs-destructive-fg);
+}
+
+[data-theme="thin-line"] .vs-btn-link {
+    background: transparent;
+    color: var(--vs-primary);
+    padding: 0;
+    text-decoration: underline;
+    border: none;
+}
+
+[data-theme="thin-line"] .vs-btn-sm {
+    font-size: 13px;
+    padding: 7px 14px;
+}
+
+[data-theme="thin-line"] .vs-btn-lg {
+    font-size: 16px;
+    padding: 13px 26px;
+}
+
+[data-theme="thin-line"] .vs-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+[data-theme="thin-line"] .vs-btn-loading {
+    position: relative;
+    color: transparent !important;
+}
+
+[data-theme="thin-line"] .vs-btn-loading::after {
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    border: 1.5px solid var(--vs-muted-fg);
+    border-top-color: transparent;
+    border-radius: 50%;
+    animation: vs-spin-tl 600ms linear infinite;
+}
+
+@keyframes vs-spin-tl {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+[data-theme="thin-line"] .vs-card {
+    background: var(--vs-bg);
+    border: 1px solid var(--vs-border);
+    border-radius: var(--vs-radius);
+    overflow: hidden;
+    transition: all var(--vs-transition);
+}
+
+[data-theme="thin-line"] .vs-card:hover {
+    box-shadow: var(--vs-shadow-md);
+}
+
+[data-theme="thin-line"] .vs-card-header {
+    padding: 20px 20px 0;
+}
+
+[data-theme="thin-line"] .vs-card-body {
+    padding: 12px 20px;
+}
+
+[data-theme="thin-line"] .vs-card-footer {
+    padding: 0 20px 20px;
+    display: flex;
+    gap: 8px;
+}
+
+[data-theme="thin-line"] .vs-card-image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+[data-theme="thin-line"] .vs-card-pricing {
+    text-align: center;
+    padding: 28px 20px;
+}
+
+[data-theme="thin-line"] .vs-card-pricing.featured {
+    background: var(--vs-primary);
+    color: var(--vs-primary-fg);
+}
+
+[data-theme="thin-line"] .vs-card-pricing .price {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1;
+    margin: 12px 0;
+}
+
+[data-theme="thin-line"] .vs-card-pricing .period {
+    font-size: 14px;
+    opacity: 0.5;
+}
+
+[data-theme="thin-line"] .vs-card-stat {
+    padding: 20px;
+}
+
+[data-theme="thin-line"] .vs-card-stat .stat-value {
+    font-size: 32px;
+    font-weight: 600;
+}
+
+[data-theme="thin-line"] .vs-card-stat .stat-label {
+    font-size: 13px;
+    color: var(--vs-muted-fg);
+    margin-top: 4px;
+}
+
+[data-theme="thin-line"] .vs-label {
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 6px;
+}
+
+[data-theme="thin-line"] .vs-input {
+    width: 100%;
+    padding: 10px 14px;
+    font-size: 14px;
+    font-family: var(--vs-font-sans);
+    color: var(--vs-fg);
+    background: var(--vs-bg);
+    border: 1px solid var(--vs-border);
+    border-radius: var(--vs-radius);
+    outline: none;
+}
+
+[data-theme="thin-line"] .vs-input:focus {
+    border-color: var(--vs-primary);
+    box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.08);
+}
+
+[data-theme="thin-line"] .vs-input::placeholder {
+    color: var(--vs-muted-fg);
+}
+
+[data-theme="thin-line"] .vs-input-error {
+    border-color: var(--vs-destructive);
+}
+
+[data-theme="thin-line"] .vs-input:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+[data-theme="thin-line"] .vs-select {
+    width: 100%;
+    padding: 10px 14px;
+    font-size: 14px;
+    font-family: var(--vs-font-sans);
+    color: var(--vs-fg);
+    background: var(--vs-bg);
+    border: 1px solid var(--vs-border);
+    border-radius: var(--vs-radius);
+    appearance: none;
+}
+
+[data-theme="thin-line"] .vs-textarea {
+    width: 100%;
+    padding: 10px 14px;
+    font-size: 14px;
+    font-family: var(--vs-font-sans);
+    color: var(--vs-fg);
+    background: var(--vs-bg);
+    border: 1px solid var(--vs-border);
+    border-radius: var(--vs-radius);
+    resize: vertical;
+    min-height: 80px;
+}
+
+[data-theme="thin-line"] .vs-form-group {
+    margin-bottom: 20px;
+}
+
+[data-theme="thin-line"] .vs-checkbox,
+[data-theme="thin-line"] .vs-radio {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+[data-theme="thin-line"] .vs-checkbox input,
+[data-theme="thin-line"] .vs-radio input {
+    width: 16px;
+    height: 16px;
+    accent-color: var(--vs-primary);
+}
+
+[data-theme="thin-line"] .vs-toggle {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+[data-theme="thin-line"] .vs-toggle-track {
+    width: 44px;
+    height: 24px;
+    border-radius: 12px;
+    background: var(--vs-border);
+    position: relative;
+    transition: background var(--vs-transition);
+}
+
+[data-theme="thin-line"] .vs-toggle-track.active {
+    background: var(--vs-primary);
+}
+
+[data-theme="thin-line"] .vs-toggle-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: white;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    transition: transform var(--vs-transition);
+}
+
+[data-theme="thin-line"] .vs-toggle-track.active .vs-toggle-thumb {
+    transform: translateX(20px);
+}
+
+[data-theme="thin-line"] .vs-navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 20px;
+    border-bottom: 1px solid var(--vs-border);
+}
+
+[data-theme="thin-line"] .vs-navbar-brand {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+[data-theme="thin-line"] .vs-navbar-links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+[data-theme="thin-line"] .vs-navbar-links a {
+    font-size: 14px;
+    color: var(--vs-muted-fg);
+    text-decoration: none;
+}
+
+[data-theme="thin-line"] .vs-navbar-links a:hover {
+    color: var(--vs-primary);
+}
+
+[data-theme="thin-line"] .vs-tabs {
+    display: flex;
+    border-bottom: 1px solid var(--vs-border);
+}
+
+[data-theme="thin-line"] .vs-tab {
+    padding: 10px 18px;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--vs-muted-fg);
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    font-family: var(--vs-font-sans);
+}
+
+[data-theme="thin-line"] .vs-tab:hover {
+    color: var(--vs-fg);
+}
+
+[data-theme="thin-line"] .vs-tab-active {
+    color: var(--vs-primary);
+    border-bottom-color: var(--vs-primary);
+}
+
+[data-theme="thin-line"] .vs-breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    color: var(--vs-muted-fg);
+}
+
+[data-theme="thin-line"] .vs-breadcrumb a {
+    color: var(--vs-muted-fg);
+    text-decoration: none;
+}
+
+[data-theme="thin-line"] .vs-breadcrumb .current {
+    color: var(--vs-fg);
+    font-weight: 500;
+}
+
+[data-theme="thin-line"] .vs-badge {
+    display: inline-flex;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 3px 10px;
+    border-radius: 999px;
+    background: var(--vs-muted);
+}
+
+[data-theme="thin-line"] .vs-badge-success {
+    background: #eff6ff;
+    color: #1d4ed8;
+}
+
+[data-theme="thin-line"] .vs-badge-warning {
+    background: #fffbeb;
+    color: #b45309;
+}
+
+[data-theme="thin-line"] .vs-badge-destructive {
+    background: #fef2f2;
+    color: #dc2626;
+}
+
+[data-theme="thin-line"] .vs-alert {
+    display: flex;
+    gap: 12px;
+    padding: 14px;
+    border-radius: var(--vs-radius);
+    font-size: 14px;
+    border: 1px solid var(--vs-border);
+}
+
+[data-theme="thin-line"] .vs-alert-success {
+    border-color: #93c5fd;
+}
+
+[data-theme="thin-line"] .vs-alert-warning {
+    border-color: #fcd34d;
+}
+
+[data-theme="thin-line"] .vs-alert-error {
+    border-color: #fca5a5;
+}
+
+[data-theme="thin-line"] .vs-progress {
+    width: 100%;
+    height: 4px;
+    background: var(--vs-muted);
+    border-radius: 2px;
+}
+
+[data-theme="thin-line"] .vs-progress-bar {
+    height: 100%;
+    background: var(--vs-primary);
+    border-radius: 2px;
+}
+
+[data-theme="thin-line"] .vs-skeleton {
+    background: linear-gradient(90deg, var(--vs-muted) 25%, var(--vs-border) 50%, var(--vs-muted) 75%);
+    background-size: 200% 100%;
+    animation: vs-shimmer-tl 1.5s ease-in-out infinite;
+    border-radius: var(--vs-radius);
+}
+
+@keyframes vs-shimmer-tl {
+    0% {
+        background-position: 200% 0;
+    }
+
+    100% {
+        background-position: -200% 0;
+    }
+}
+
+[data-theme="thin-line"] .vs-heading {
+    font-family: var(--vs-font-heading);
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+}
+
+[data-theme="thin-line"] .vs-h1 {
+    font-size: 36px;
+}
+
+[data-theme="thin-line"] .vs-h2 {
+    font-size: 28px;
+}
+
+[data-theme="thin-line"] .vs-h3 {
+    font-size: 22px;
+}
+
+[data-theme="thin-line"] .vs-h4 {
+    font-size: 18px;
+}
+
+[data-theme="thin-line"] .vs-h5 {
+    font-size: 15px;
+}
+
+[data-theme="thin-line"] .vs-h6 {
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+[data-theme="thin-line"] .vs-body {
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+[data-theme="thin-line"] .vs-lead {
+    font-size: 19px;
+    line-height: 1.6;
+    color: var(--vs-muted-fg);
+    font-weight: 300;
+}
+
+[data-theme="thin-line"] .vs-blockquote {
+    border-left: 2px solid var(--vs-primary);
+    padding-left: 16px;
+    margin: 0;
+    font-style: italic;
+}
+
+[data-theme="thin-line"] .vs-code {
+    font-family: var(--vs-font-mono);
+    font-size: 13px;
+    background: var(--vs-muted);
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+
+[data-theme="thin-line"] .vs-code-block {
+    font-family: var(--vs-font-mono);
+    font-size: 13px;
+    background: #1e293b;
+    color: #e2e8f0;
+    padding: 20px;
+    border-radius: var(--vs-radius);
+    overflow-x: auto;
+}
+
+[data-theme="thin-line"] .vs-divider {
+    border: none;
+    height: 1px;
+    background: var(--vs-border);
+    margin: 24px 0;
+}

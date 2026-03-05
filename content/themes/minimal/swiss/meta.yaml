@@ -1,0 +1,16 @@
+name: "Swiss"
+slug: "swiss"
+category: "minimal"
+description: "International Typographic Style. Grid perfection, Helvetica spirit."
+tags: ["minimal", "swiss", "grid", "typographic", "international"]
+mood: ["professional", "bold"]
+supportsDarkMode: true
+fonts:
+  - family: "Roboto"
+    weights: [300, 400, 500, 700, 900]
+    source: "google"
+  - family: "Roboto Mono"
+    weights: [400, 500]
+    source: "google"
+author: "vsaint"
+version: "1.0.0"

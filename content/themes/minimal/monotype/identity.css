@@ -1,0 +1,542 @@
+/* Monotype Identity — Pure typographic hierarchy, nothing else */
+[data-theme="monotype"] .vs-showcase {
+    padding: 32px;
+    background: var(--vs-bg);
+    color: var(--vs-fg);
+    font-family: var(--vs-font-sans);
+    line-height: 1.6;
+}
+
+[data-theme="monotype"] .vs-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-family: var(--vs-font-sans);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1;
+    padding: 10px 20px;
+    border-radius: var(--vs-radius);
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: all var(--vs-transition) var(--vs-ease);
+    outline: none;
+    letter-spacing: 0.01em;
+}
+
+[data-theme="monotype"] .vs-btn:focus-visible {
+    box-shadow: 0 0 0 2px var(--vs-ring);
+}
+
+[data-theme="monotype"] .vs-btn-primary {
+    background: var(--vs-primary);
+    color: var(--vs-primary-fg);
+}
+
+[data-theme="monotype"] .vs-btn-primary:hover {
+    opacity: 0.85;
+}
+
+[data-theme="monotype"] .vs-btn-secondary {
+    background: var(--vs-secondary);
+    color: var(--vs-secondary-fg);
+}
+
+[data-theme="monotype"] .vs-btn-outline {
+    background: transparent;
+    color: var(--vs-fg);
+    border-color: var(--vs-border);
+}
+
+[data-theme="monotype"] .vs-btn-outline:hover {
+    background: var(--vs-muted);
+}
+
+[data-theme="monotype"] .vs-btn-ghost {
+    background: transparent;
+    color: var(--vs-fg);
+}
+
+[data-theme="monotype"] .vs-btn-ghost:hover {
+    background: var(--vs-muted);
+}
+
+[data-theme="monotype"] .vs-btn-destructive {
+    background: var(--vs-destructive);
+    color: var(--vs-destructive-fg);
+}
+
+[data-theme="monotype"] .vs-btn-link {
+    background: transparent;
+    color: var(--vs-fg);
+    padding: 0;
+    text-decoration: underline;
+    border: none;
+}
+
+[data-theme="monotype"] .vs-btn-sm {
+    font-size: 13px;
+    padding: 7px 14px;
+}
+
+[data-theme="monotype"] .vs-btn-lg {
+    font-size: 16px;
+    padding: 13px 26px;
+}
+
+[data-theme="monotype"] .vs-btn:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+[data-theme="monotype"] .vs-btn-loading {
+    position: relative;
+    color: transparent !important;
+}
+
+[data-theme="monotype"] .vs-btn-loading::after {
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    border: 2px solid var(--vs-muted-fg);
+    border-top-color: transparent;
+    border-radius: 50%;
+    animation: vs-spin-mt 600ms linear infinite;
+}
+
+@keyframes vs-spin-mt {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+[data-theme="monotype"] .vs-card {
+    background: var(--vs-bg);
+    border: 1px solid var(--vs-border);
+    border-radius: var(--vs-radius);
+    overflow: hidden;
+}
+
+[data-theme="monotype"] .vs-card:hover {
+    box-shadow: var(--vs-shadow-md);
+}
+
+[data-theme="monotype"] .vs-card-header {
+    padding: 20px 20px 0;
+}
+
+[data-theme="monotype"] .vs-card-body {
+    padding: 12px 20px;
+}
+
+[data-theme="monotype"] .vs-card-footer {
+    padding: 0 20px 20px;
+    display: flex;
+    gap: 8px;
+}
+
+[data-theme="monotype"] .vs-card-image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    filter: grayscale(50%);
+}
+
+[data-theme="monotype"] .vs-card-pricing {
+    text-align: center;
+    padding: 28px 20px;
+}
+
+[data-theme="monotype"] .vs-card-pricing.featured {
+    background: var(--vs-primary);
+    color: var(--vs-primary-fg);
+}
+
+[data-theme="monotype"] .vs-card-pricing .price {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1;
+    margin: 12px 0;
+}
+
+[data-theme="monotype"] .vs-card-pricing .period {
+    font-size: 14px;
+    opacity: 0.5;
+}
+
+[data-theme="monotype"] .vs-card-stat {
+    padding: 20px;
+}
+
+[data-theme="monotype"] .vs-card-stat .stat-value {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+[data-theme="monotype"] .vs-card-stat .stat-label {
+    font-size: 12px;
+    color: var(--vs-muted-fg);
+    margin-top: 4px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+[data-theme="monotype"] .vs-label {
+    display: block;
+    font-size: 13px;
+    font-weight: 500;
+    margin-bottom: 6px;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+}
+
+[data-theme="monotype"] .vs-input {
+    width: 100%;
+    padding: 10px 12px;
+    font-size: 14px;
+    font-family: var(--vs-font-sans);
+    color: var(--vs-fg);
+    background: var(--vs-bg);
+    border: 1px solid var(--vs-border);
+    border-radius: var(--vs-radius);
+    outline: none;
+}
+
+[data-theme="monotype"] .vs-input:focus {
+    border-color: var(--vs-ring);
+}
+
+[data-theme="monotype"] .vs-input::placeholder {
+    color: var(--vs-muted-fg);
+}
+
+[data-theme="monotype"] .vs-input-error {
+    border-color: var(--vs-destructive);
+}
+
+[data-theme="monotype"] .vs-input:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+[data-theme="monotype"] .vs-select {
+    width: 100%;
+    padding: 10px 12px;
+    font-size: 14px;
+    font-family: var(--vs-font-sans);
+    color: var(--vs-fg);
+    background: var(--vs-bg);
+    border: 1px solid var(--vs-border);
+    border-radius: var(--vs-radius);
+    appearance: none;
+    cursor: pointer;
+}
+
+[data-theme="monotype"] .vs-textarea {
+    width: 100%;
+    padding: 10px 12px;
+    font-size: 14px;
+    font-family: var(--vs-font-sans);
+    color: var(--vs-fg);
+    background: var(--vs-bg);
+    border: 1px solid var(--vs-border);
+    border-radius: var(--vs-radius);
+    resize: vertical;
+    min-height: 80px;
+}
+
+[data-theme="monotype"] .vs-form-group {
+    margin-bottom: 20px;
+}
+
+[data-theme="monotype"] .vs-checkbox,
+[data-theme="monotype"] .vs-radio {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+[data-theme="monotype"] .vs-checkbox input,
+[data-theme="monotype"] .vs-radio input {
+    width: 16px;
+    height: 16px;
+    accent-color: var(--vs-primary);
+}
+
+[data-theme="monotype"] .vs-toggle {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+[data-theme="monotype"] .vs-toggle-track {
+    width: 40px;
+    height: 22px;
+    border-radius: 11px;
+    background: var(--vs-border);
+    position: relative;
+    transition: background var(--vs-transition);
+}
+
+[data-theme="monotype"] .vs-toggle-track.active {
+    background: var(--vs-primary);
+}
+
+[data-theme="monotype"] .vs-toggle-thumb {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: white;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    transition: transform var(--vs-transition);
+}
+
+[data-theme="monotype"] .vs-toggle-track.active .vs-toggle-thumb {
+    transform: translateX(18px);
+}
+
+[data-theme="monotype"] .vs-navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 20px;
+    border-bottom: 1px solid var(--vs-border);
+    background: var(--vs-bg);
+}
+
+[data-theme="monotype"] .vs-navbar-brand {
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+[data-theme="monotype"] .vs-navbar-links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+[data-theme="monotype"] .vs-navbar-links a {
+    font-size: 14px;
+    color: var(--vs-muted-fg);
+    text-decoration: none;
+}
+
+[data-theme="monotype"] .vs-navbar-links a:hover {
+    color: var(--vs-fg);
+}
+
+[data-theme="monotype"] .vs-tabs {
+    display: flex;
+    gap: 0;
+    border-bottom: 1px solid var(--vs-border);
+}
+
+[data-theme="monotype"] .vs-tab {
+    padding: 10px 18px;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--vs-muted-fg);
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    font-family: var(--vs-font-sans);
+}
+
+[data-theme="monotype"] .vs-tab:hover {
+    color: var(--vs-fg);
+}
+
+[data-theme="monotype"] .vs-tab-active {
+    color: var(--vs-fg);
+    border-bottom-color: var(--vs-primary);
+}
+
+[data-theme="monotype"] .vs-breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    color: var(--vs-muted-fg);
+}
+
+[data-theme="monotype"] .vs-breadcrumb a {
+    color: var(--vs-muted-fg);
+    text-decoration: none;
+}
+
+[data-theme="monotype"] .vs-breadcrumb a:hover {
+    color: var(--vs-fg);
+}
+
+[data-theme="monotype"] .vs-breadcrumb .current {
+    color: var(--vs-fg);
+    font-weight: 500;
+}
+
+[data-theme="monotype"] .vs-badge {
+    display: inline-flex;
+    font-size: 11px;
+    font-weight: 500;
+    padding: 3px 8px;
+    border-radius: var(--vs-radius);
+    background: var(--vs-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+[data-theme="monotype"] .vs-badge-success {
+    background: #e8f5e9;
+    color: #2e7d32;
+}
+
+[data-theme="monotype"] .vs-badge-warning {
+    background: #fff8e1;
+    color: #f57f17;
+}
+
+[data-theme="monotype"] .vs-badge-destructive {
+    background: #ffebee;
+    color: #c62828;
+}
+
+[data-theme="monotype"] .vs-alert {
+    display: flex;
+    gap: 12px;
+    padding: 14px;
+    border-radius: var(--vs-radius);
+    font-size: 14px;
+    border: 1px solid var(--vs-border);
+}
+
+[data-theme="monotype"] .vs-alert-success {
+    border-color: #a5d6a7;
+}
+
+[data-theme="monotype"] .vs-alert-warning {
+    border-color: #ffe082;
+}
+
+[data-theme="monotype"] .vs-alert-error {
+    border-color: #ef9a9a;
+}
+
+[data-theme="monotype"] .vs-progress {
+    width: 100%;
+    height: 4px;
+    background: var(--vs-muted);
+    border-radius: 2px;
+}
+
+[data-theme="monotype"] .vs-progress-bar {
+    height: 100%;
+    background: var(--vs-primary);
+    border-radius: 2px;
+}
+
+[data-theme="monotype"] .vs-skeleton {
+    background: var(--vs-muted);
+    border-radius: var(--vs-radius);
+    animation: vs-pulse-mt 1.5s ease-in-out infinite;
+}
+
+@keyframes vs-pulse-mt {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+}
+
+[data-theme="monotype"] .vs-heading {
+    font-family: var(--vs-font-heading);
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    line-height: 1.2;
+}
+
+[data-theme="monotype"] .vs-h1 {
+    font-size: 40px;
+}
+
+[data-theme="monotype"] .vs-h2 {
+    font-size: 32px;
+}
+
+[data-theme="monotype"] .vs-h3 {
+    font-size: 24px;
+}
+
+[data-theme="monotype"] .vs-h4 {
+    font-size: 20px;
+}
+
+[data-theme="monotype"] .vs-h5 {
+    font-size: 16px;
+}
+
+[data-theme="monotype"] .vs-h6 {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+[data-theme="monotype"] .vs-body {
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+[data-theme="monotype"] .vs-lead {
+    font-size: 20px;
+    line-height: 1.5;
+    color: var(--vs-muted-fg);
+}
+
+[data-theme="monotype"] .vs-blockquote {
+    border-left: 2px solid var(--vs-primary);
+    padding-left: 16px;
+    margin: 0;
+    font-style: italic;
+}
+
+[data-theme="monotype"] .vs-code {
+    font-family: var(--vs-font-mono);
+    font-size: 13px;
+    background: var(--vs-muted);
+    padding: 2px 6px;
+    border-radius: 2px;
+}
+
+[data-theme="monotype"] .vs-code-block {
+    font-family: var(--vs-font-mono);
+    font-size: 13px;
+    line-height: 1.6;
+    background: var(--vs-primary);
+    color: var(--vs-primary-fg);
+    padding: 20px;
+    border-radius: var(--vs-radius);
+    overflow-x: auto;
+}
+
+[data-theme="monotype"] .vs-divider {
+    border: none;
+    height: 1px;
+    background: var(--vs-border);
+    margin: 24px 0;
+}

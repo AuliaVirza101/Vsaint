@@ -6,6 +6,11 @@ import { SHOWCASE_TABS } from "@/types/theme";
 import { ThemePreview } from "@/components/preview/ThemePreview";
 import { ComponentTabs } from "@/components/preview/ComponentTabs";
 import { ButtonShowcase } from "@/components/preview/showcase/ButtonShowcase";
+import { CardShowcase } from "@/components/preview/showcase/CardShowcase";
+import { FormShowcase } from "@/components/preview/showcase/FormShowcase";
+import { NavigationShowcase } from "@/components/preview/showcase/NavigationShowcase";
+import { FeedbackShowcase } from "@/components/preview/showcase/FeedbackShowcase";
+import { TypographyShowcase } from "@/components/preview/showcase/TypographyShowcase";
 import { CopyPanel } from "@/components/copy/CopyPanel";
 import Link from "next/link";
 
@@ -83,31 +88,11 @@ export function ThemeDetailClient({ theme }: ThemeDetailClientProps) {
                         />
                         <ThemePreview theme={theme} mode={mode}>
                             {activeTab === "buttons" && <ButtonShowcase />}
-                            {activeTab === "cards" && (
-                                <div className="vs-body" style={{ color: "var(--vs-muted-fg)" }}>
-                                    Card showcase coming soon...
-                                </div>
-                            )}
-                            {activeTab === "forms" && (
-                                <div className="vs-body" style={{ color: "var(--vs-muted-fg)" }}>
-                                    Form showcase coming soon...
-                                </div>
-                            )}
-                            {activeTab === "navigation" && (
-                                <div className="vs-body" style={{ color: "var(--vs-muted-fg)" }}>
-                                    Navigation showcase coming soon...
-                                </div>
-                            )}
-                            {activeTab === "feedback" && (
-                                <div className="vs-body" style={{ color: "var(--vs-muted-fg)" }}>
-                                    Feedback showcase coming soon...
-                                </div>
-                            )}
-                            {activeTab === "typography" && (
-                                <div className="vs-body" style={{ color: "var(--vs-muted-fg)" }}>
-                                    Typography showcase coming soon...
-                                </div>
-                            )}
+                            {activeTab === "cards" && <CardShowcase />}
+                            {activeTab === "forms" && <FormShowcase />}
+                            {activeTab === "navigation" && <NavigationShowcase />}
+                            {activeTab === "feedback" && <FeedbackShowcase />}
+                            {activeTab === "typography" && <TypographyShowcase />}
                         </ThemePreview>
                     </div>
 

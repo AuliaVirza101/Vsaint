@@ -1,5 +1,5 @@
 import { getAllThemes } from "@/lib/themes";
-import { ThemeGrid } from "@/components/gallery/ThemeGrid";
+import { GalleryClient } from "@/components/gallery/GalleryClient";
 
 export default function Home() {
     const themes = getAllThemes();
@@ -31,18 +31,11 @@ export default function Home() {
                 </div>
             </section>
 
-            {/* Gallery */}
+            {/* Gallery with Search & Filter */}
             <main className="max-w-7xl mx-auto px-6 pb-20">
-                <div className="flex items-center justify-between mb-8">
-                    <h2 className="text-lg font-semibold text-zinc-900 dark:text-zinc-100">
-                        All Themes
-                    </h2>
-                    <span className="text-sm text-zinc-400 dark:text-zinc-500">
-                        {themes.length} {themes.length === 1 ? "theme" : "themes"}
-                    </span>
-                </div>
-                <ThemeGrid themes={themes} />
+                <GalleryClient themes={themes} />
             </main>
         </>
     );
 }
+

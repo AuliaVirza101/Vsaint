@@ -1,0 +1,16 @@
+name: "Arcade"
+slug: "arcade"
+category: "retro-y2k"
+description: "Neon cabinet colors, pixel-perfect, game over."
+tags: ["retro-y2k", "arcade"]
+mood: ["playful", "creative"]
+supportsDarkMode: true
+fonts:
+  - family: "Inter"
+    weights: [400, 500, 600, 700]
+    source: "google"
+  - family: "JetBrains Mono"
+    weights: [400, 500]
+    source: "google"
+author: "vsaint"
+version: "1.0.0"

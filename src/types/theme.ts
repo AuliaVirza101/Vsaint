@@ -13,7 +13,9 @@ export type ThemeCategory =
     | "corporate"
     | "playful"
     | "retro-y2k"
-    | "nature-organic";
+    | "nature-organic"
+    | "elegant"
+    | "experimental";
 
 export const THEME_CATEGORIES: { slug: ThemeCategory; label: string }[] = [
     { slug: "minimal", label: "Minimal" },
@@ -26,6 +28,8 @@ export const THEME_CATEGORIES: { slug: ThemeCategory; label: string }[] = [
     { slug: "playful", label: "Playful" },
     { slug: "retro-y2k", label: "Retro / Y2K" },
     { slug: "nature-organic", label: "Nature / Organic" },
+    { slug: "elegant", label: "Elegant / Luxury" },
+    { slug: "experimental", label: "Experimental" },
 ];
 
 // ─── Moods ───────────────────────────────────────────────────

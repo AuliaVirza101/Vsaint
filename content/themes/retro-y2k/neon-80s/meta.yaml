@@ -1,0 +1,16 @@
+name: "Neon 80s"
+slug: "neon-80s"
+category: "retro-y2k"
+description: "Hot pink and electric blue, Miami Vice."
+tags: ["retro-y2k", "neon", "80s"]
+mood: ["playful", "creative"]
+supportsDarkMode: true
+fonts:
+  - family: "Inter"
+    weights: [400, 500, 600, 700]
+    source: "google"
+  - family: "JetBrains Mono"
+    weights: [400, 500]
+    source: "google"
+author: "vsaint"
+version: "1.0.0"

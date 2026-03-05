@@ -1,0 +1,50 @@
+/* ═══════════════════════════════════════════
+ * Vsaint Theme Tokens: Neon Noir
+ * Category: Dark / Cyberpunk
+ * 
+ * Layer 1 — Design Tokens
+ * Electric neon on obsidian. Glows in the dark.
+ * ═══════════════════════════════════════════ */
+
+[data-theme="stealth"] {
+    /* ── Colors ── */
+    --vs-primary: #00ff88;
+    --vs-primary-fg: #0a0a0a;
+    --vs-secondary: #1a1a2e;
+    --vs-secondary-fg: #e0e0e0;
+    --vs-bg: #0a0a0a;
+    --vs-fg: #e0e0e0;
+    --vs-muted: #141428;
+    --vs-muted-fg: #666680;
+    --vs-border: #1f1f3a;
+    --vs-ring: #00ff88;
+    --vs-accent: #ff00ff;
+    --vs-accent-fg: #ffffff;
+    --vs-destructive: #ff2d55;
+    --vs-destructive-fg: #ffffff;
+
+    /* ── Neon Glow ── */
+    --vs-glow-primary: 0 0 20px rgba(0, 255, 136, 0.3);
+    --vs-glow-accent: 0 0 20px rgba(255, 0, 255, 0.3);
+    --vs-glow-destructive: 0 0 20px rgba(255, 45, 85, 0.3);
+
+    /* ── Typography ── */
+    --vs-font-sans: "Orbitron", system-ui, sans-serif;
+    --vs-font-mono: "Share Tech Mono", monospace;
+    --vs-font-heading: "Orbitron", system-ui, sans-serif;
+
+    /* ── Shape ── */
+    --vs-radius: 4px;
+
+    /* ── Depth ── */
+    --vs-shadow-sm: 0 0 8px rgba(0, 255, 136, 0.1);
+    --vs-shadow-md: 0 0 16px rgba(0, 255, 136, 0.15);
+    --vs-shadow-lg: 0 0 32px rgba(0, 255, 136, 0.2);
+
+    /* ── Spacing ── */
+    --vs-space-unit: 4px;
+
+    /* ── Animation ── */
+    --vs-transition: 200ms;
+    --vs-ease: cubic-bezier(0.16, 1, 0.3, 1);
+}

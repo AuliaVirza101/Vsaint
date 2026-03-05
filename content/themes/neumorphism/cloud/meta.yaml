@@ -1,0 +1,16 @@
+name: "Cloud"
+slug: "cloud"
+category: "neumorphism"
+description: "Floating cloud shapes, airy white, heavenly."
+tags: ["neumorphism", "cloud"]
+mood: ["clean", "warm"]
+supportsDarkMode: true
+fonts:
+  - family: "Inter"
+    weights: [400, 500, 600, 700]
+    source: "google"
+  - family: "JetBrains Mono"
+    weights: [400, 500]
+    source: "google"
+author: "vsaint"
+version: "1.0.0"

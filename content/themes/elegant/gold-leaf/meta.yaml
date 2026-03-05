@@ -1,0 +1,16 @@
+name: "Gold Leaf"
+slug: "gold-leaf"
+category: "elegant"
+description: "Midnight black, gold accents, thin delicate lines."
+tags: ["elegant", "gold", "leaf"]
+mood: ["elegant", "luxurious"]
+supportsDarkMode: true
+fonts:
+  - family: "Inter"
+    weights: [400, 500, 600, 700]
+    source: "google"
+  - family: "JetBrains Mono"
+    weights: [400, 500]
+    source: "google"
+author: "vsaint"
+version: "1.0.0"

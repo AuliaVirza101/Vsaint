@@ -1,0 +1,16 @@
+name: "Lava Lamp"
+slug: "lava-lamp"
+category: "experimental"
+description: "Morphing blob shapes, psychedelic colors."
+tags: ["experimental", "lava", "lamp"]
+mood: ["experimental", "bold"]
+supportsDarkMode: true
+fonts:
+  - family: "Inter"
+    weights: [400, 500, 600, 700]
+    source: "google"
+  - family: "JetBrains Mono"
+    weights: [400, 500]
+    source: "google"
+author: "vsaint"
+version: "1.0.0"

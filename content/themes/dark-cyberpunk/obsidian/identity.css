@@ -1,0 +1,673 @@
+/* ═══════════════════════════════════════════
+ * Vsaint Theme Identity: Neon Noir
+ * Category: Dark / Cyberpunk
+ * 
+ * Layer 2 — Design Identity
+ * What makes Neon Noir feel like Neon Noir:
+ * - Neon glow effects on focus and hover
+ * - Animated border pulses
+ * - Monospace futuristic typography
+ * - Obsidian dark surfaces
+ * - Electric green primary with magenta accent
+ * - Scan-line and flicker decorative effects
+ * ═══════════════════════════════════════════ */
+
+/* ── Showcase Container ── */
+
+[data-theme="obsidian"] .vs-showcase {
+    padding: 32px;
+    background: var(--vs-bg);
+    color: var(--vs-fg);
+    font-family: var(--vs-font-mono);
+    line-height: 1.6;
+    position: relative;
+}
+
+/* Subtle scan-line overlay */
+[data-theme="obsidian"] .vs-showcase::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: repeating-linear-gradient(0deg,
+            transparent,
+            transparent 2px,
+            rgba(0, 255, 136, 0.015) 2px,
+            rgba(0, 255, 136, 0.015) 4px);
+    pointer-events: none;
+    z-index: 1;
+}
+
+[data-theme="obsidian"] .vs-showcase>* {
+    position: relative;
+    z-index: 2;
+}
+
+/* ── Buttons ── */
+
+[data-theme="obsidian"] .vs-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-family: var(--vs-font-sans);
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1;
+    padding: 12px 24px;
+    border-radius: var(--vs-radius);
+    border: 1px solid var(--vs-border);
+    cursor: pointer;
+    transition: all var(--vs-transition) var(--vs-ease);
+    outline: none;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+}
+
+[data-theme="obsidian"] .vs-btn:focus-visible {
+    box-shadow: var(--vs-glow-primary);
+}
+
+[data-theme="obsidian"] .vs-btn-primary {
+    background: transparent;
+    color: var(--vs-primary);
+    border-color: var(--vs-primary);
+    box-shadow: var(--vs-glow-primary), inset 0 0 20px rgba(0, 255, 136, 0.05);
+}
+
+[data-theme="obsidian"] .vs-btn-primary:hover {
+    background: var(--vs-primary);
+    color: var(--vs-primary-fg);
+    box-shadow: var(--vs-glow-primary), 0 0 40px rgba(0, 255, 136, 0.2);
+}
+
+[data-theme="obsidian"] .vs-btn-secondary {
+    background: var(--vs-secondary);
+    color: var(--vs-secondary-fg);
+    border-color: var(--vs-border);
+}
+
+[data-theme="obsidian"] .vs-btn-secondary:hover {
+    border-color: var(--vs-primary);
+    box-shadow: var(--vs-glow-primary);
+}
+
+[data-theme="obsidian"] .vs-btn-outline {
+    background: transparent;
+    color: var(--vs-fg);
+    border-color: var(--vs-border);
+}
+
+[data-theme="obsidian"] .vs-btn-outline:hover {
+    border-color: var(--vs-accent);
+    color: var(--vs-accent);
+    box-shadow: var(--vs-glow-accent);
+}
+
+[data-theme="obsidian"] .vs-btn-ghost {
+    background: transparent;
+    color: var(--vs-fg);
+    border-color: transparent;
+}
+
+[data-theme="obsidian"] .vs-btn-ghost:hover {
+    color: var(--vs-primary);
+}
+
+[data-theme="obsidian"] .vs-btn-destructive {
+    background: transparent;
+    color: var(--vs-destructive);
+    border-color: var(--vs-destructive);
+    box-shadow: var(--vs-glow-destructive);
+}
+
+[data-theme="obsidian"] .vs-btn-destructive:hover {
+    background: var(--vs-destructive);
+    color: var(--vs-destructive-fg);
+}
+
+[data-theme="obsidian"] .vs-btn-link {
+    background: transparent;
+    color: var(--vs-primary);
+    border: none;
+    padding: 0;
+    text-decoration: none;
+    letter-spacing: 0.15em;
+}
+
+[data-theme="obsidian"] .vs-btn-link:hover {
+    text-shadow: 0 0 8px rgba(0, 255, 136, 0.5);
+}
+
+[data-theme="obsidian"] .vs-btn-sm {
+    font-size: 10px;
+    padding: 8px 16px;
+}
+
+[data-theme="obsidian"] .vs-btn-lg {
+    font-size: 14px;
+    padding: 16px 32px;
+}
+
+[data-theme="obsidian"] .vs-btn:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+}
+
+[data-theme="obsidian"] .vs-btn-loading {
+    position: relative;
+    color: transparent !important;
+}
+
+[data-theme="obsidian"] .vs-btn-loading::after {
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    border: 2px solid var(--vs-primary);
+    border-right-color: transparent;
+    border-radius: 50%;
+    animation: vs-spin-neon 600ms linear infinite;
+    box-shadow: 0 0 8px rgba(0, 255, 136, 0.3);
+}
+
+@keyframes vs-spin-neon {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* ── Cards ── */
+
+[data-theme="obsidian"] .vs-card {
+    background: var(--vs-secondary);
+    border: 1px solid var(--vs-border);
+    border-radius: var(--vs-radius);
+    overflow: hidden;
+    transition: all var(--vs-transition) var(--vs-ease);
+}
+
+[data-theme="obsidian"] .vs-card:hover {
+    border-color: var(--vs-primary);
+    box-shadow: var(--vs-glow-primary);
+}
+
+[data-theme="obsidian"] .vs-card-header {
+    padding: 20px 20px 0;
+}
+
+[data-theme="obsidian"] .vs-card-body {
+    padding: 12px 20px;
+}
+
+[data-theme="obsidian"] .vs-card-footer {
+    padding: 0 20px 20px;
+    display: flex;
+    gap: 8px;
+}
+
+[data-theme="obsidian"] .vs-card-image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+[data-theme="obsidian"] .vs-card-pricing {
+    text-align: center;
+    padding: 28px 20px;
+}
+
+[data-theme="obsidian"] .vs-card-pricing.featured {
+    border-color: var(--vs-primary);
+    box-shadow: var(--vs-glow-primary);
+}
+
+[data-theme="obsidian"] .vs-card-pricing .price {
+    font-family: var(--vs-font-sans);
+    font-size: 52px;
+    font-weight: 900;
+    line-height: 1;
+    margin: 12px 0;
+    color: var(--vs-primary);
+    text-shadow: 0 0 20px rgba(0, 255, 136, 0.3);
+}
+
+[data-theme="obsidian"] .vs-card-pricing .period {
+    font-size: 14px;
+    color: var(--vs-muted-fg);
+}
+
+[data-theme="obsidian"] .vs-card-stat {
+    padding: 20px;
+}
+
+[data-theme="obsidian"] .vs-card-stat .stat-value {
+    font-family: var(--vs-font-sans);
+    font-size: 32px;
+    font-weight: 900;
+    color: var(--vs-primary);
+    text-shadow: 0 0 10px rgba(0, 255, 136, 0.2);
+}
+
+[data-theme="obsidian"] .vs-card-stat .stat-label {
+    font-family: var(--vs-font-mono);
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--vs-muted-fg);
+    margin-top: 4px;
+}
+
+/* ── Forms ── */
+
+[data-theme="obsidian"] .vs-label {
+    display: block;
+    font-family: var(--vs-font-mono);
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 6px;
+    color: var(--vs-muted-fg);
+}
+
+[data-theme="obsidian"] .vs-input {
+    width: 100%;
+    padding: 12px;
+    font-size: 14px;
+    font-family: var(--vs-font-mono);
+    color: var(--vs-fg);
+    background: var(--vs-muted);
+    border: 1px solid var(--vs-border);
+    border-radius: var(--vs-radius);
+    outline: none;
+    transition: all var(--vs-transition) var(--vs-ease);
+}
+
+[data-theme="obsidian"] .vs-input:focus {
+    border-color: var(--vs-primary);
+    box-shadow: var(--vs-glow-primary);
+}
+
+[data-theme="obsidian"] .vs-input::placeholder {
+    color: var(--vs-muted-fg);
+}
+
+[data-theme="obsidian"] .vs-input-error {
+    border-color: var(--vs-destructive);
+    box-shadow: var(--vs-glow-destructive);
+}
+
+[data-theme="obsidian"] .vs-input:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+}
+
+[data-theme="obsidian"] .vs-select {
+    width: 100%;
+    padding: 12px;
+    font-size: 14px;
+    font-family: var(--vs-font-mono);
+    color: var(--vs-fg);
+    background: var(--vs-muted);
+    border: 1px solid var(--vs-border);
+    border-radius: var(--vs-radius);
+    outline: none;
+    appearance: none;
+    cursor: pointer;
+}
+
+[data-theme="obsidian"] .vs-textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 14px;
+    font-family: var(--vs-font-mono);
+    color: var(--vs-fg);
+    background: var(--vs-muted);
+    border: 1px solid var(--vs-border);
+    border-radius: var(--vs-radius);
+    outline: none;
+    resize: vertical;
+    min-height: 80px;
+}
+
+[data-theme="obsidian"] .vs-textarea:focus {
+    border-color: var(--vs-primary);
+    box-shadow: var(--vs-glow-primary);
+}
+
+[data-theme="obsidian"] .vs-form-group {
+    margin-bottom: 20px;
+}
+
+[data-theme="obsidian"] .vs-checkbox,
+[data-theme="obsidian"] .vs-radio {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-family: var(--vs-font-mono);
+    font-size: 13px;
+    cursor: pointer;
+}
+
+[data-theme="obsidian"] .vs-checkbox input,
+[data-theme="obsidian"] .vs-radio input {
+    width: 16px;
+    height: 16px;
+    accent-color: var(--vs-primary);
+}
+
+[data-theme="obsidian"] .vs-toggle {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+[data-theme="obsidian"] .vs-toggle-track {
+    width: 44px;
+    height: 24px;
+    border-radius: 12px;
+    background: var(--vs-muted);
+    border: 1px solid var(--vs-border);
+    position: relative;
+    transition: all var(--vs-transition) var(--vs-ease);
+}
+
+[data-theme="obsidian"] .vs-toggle-track.active {
+    background: var(--vs-primary);
+    border-color: var(--vs-primary);
+    box-shadow: var(--vs-glow-primary);
+}
+
+[data-theme="obsidian"] .vs-toggle-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: var(--vs-fg);
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    transition: transform var(--vs-transition) var(--vs-ease);
+}
+
+[data-theme="obsidian"] .vs-toggle-track.active .vs-toggle-thumb {
+    transform: translateX(20px);
+}
+
+/* ── Navigation ── */
+
+[data-theme="obsidian"] .vs-navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 20px;
+    border: 1px solid var(--vs-border);
+    border-radius: var(--vs-radius);
+    background: var(--vs-secondary);
+}
+
+[data-theme="obsidian"] .vs-navbar-brand {
+    font-family: var(--vs-font-sans);
+    font-size: 16px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: var(--vs-primary);
+    text-shadow: 0 0 10px rgba(0, 255, 136, 0.3);
+}
+
+[data-theme="obsidian"] .vs-navbar-links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+[data-theme="obsidian"] .vs-navbar-links a {
+    font-family: var(--vs-font-mono);
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--vs-muted-fg);
+    text-decoration: none;
+}
+
+[data-theme="obsidian"] .vs-navbar-links a:hover {
+    color: var(--vs-primary);
+    text-shadow: 0 0 8px rgba(0, 255, 136, 0.3);
+}
+
+[data-theme="obsidian"] .vs-tabs {
+    display: flex;
+    gap: 0;
+    border-bottom: 1px solid var(--vs-border);
+}
+
+[data-theme="obsidian"] .vs-tab {
+    padding: 12px 20px;
+    font-family: var(--vs-font-mono);
+    font-size: 11px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--vs-muted-fg);
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    transition: all var(--vs-transition) var(--vs-ease);
+}
+
+[data-theme="obsidian"] .vs-tab:hover {
+    color: var(--vs-fg);
+}
+
+[data-theme="obsidian"] .vs-tab-active {
+    color: var(--vs-primary);
+    border-bottom-color: var(--vs-primary);
+    text-shadow: 0 0 8px rgba(0, 255, 136, 0.3);
+}
+
+[data-theme="obsidian"] .vs-breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-family: var(--vs-font-mono);
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--vs-muted-fg);
+}
+
+[data-theme="obsidian"] .vs-breadcrumb a {
+    color: var(--vs-muted-fg);
+    text-decoration: none;
+}
+
+[data-theme="obsidian"] .vs-breadcrumb a:hover {
+    color: var(--vs-primary);
+}
+
+[data-theme="obsidian"] .vs-breadcrumb .current {
+    color: var(--vs-primary);
+}
+
+/* ── Badges ── */
+
+[data-theme="obsidian"] .vs-badge {
+    display: inline-flex;
+    font-family: var(--vs-font-mono);
+    font-size: 10px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    padding: 4px 12px;
+    border-radius: var(--vs-radius);
+    border: 1px solid var(--vs-border);
+    background: var(--vs-muted);
+}
+
+[data-theme="obsidian"] .vs-badge-success {
+    border-color: #00ff88;
+    color: #00ff88;
+}
+
+[data-theme="obsidian"] .vs-badge-warning {
+    border-color: #ffaa00;
+    color: #ffaa00;
+}
+
+[data-theme="obsidian"] .vs-badge-destructive {
+    border-color: var(--vs-destructive);
+    color: var(--vs-destructive);
+}
+
+/* ── Alert ── */
+
+[data-theme="obsidian"] .vs-alert {
+    display: flex;
+    gap: 12px;
+    padding: 16px;
+    font-family: var(--vs-font-mono);
+    font-size: 13px;
+    border: 1px solid var(--vs-border);
+    border-radius: var(--vs-radius);
+    background: var(--vs-muted);
+}
+
+[data-theme="obsidian"] .vs-alert-success {
+    border-color: #00ff88;
+}
+
+[data-theme="obsidian"] .vs-alert-warning {
+    border-color: #ffaa00;
+}
+
+[data-theme="obsidian"] .vs-alert-error {
+    border-color: var(--vs-destructive);
+}
+
+/* ── Progress ── */
+
+[data-theme="obsidian"] .vs-progress {
+    width: 100%;
+    height: 4px;
+    background: var(--vs-muted);
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+[data-theme="obsidian"] .vs-progress-bar {
+    height: 100%;
+    background: var(--vs-primary);
+    border-radius: 2px;
+    box-shadow: 0 0 8px rgba(0, 255, 136, 0.4);
+}
+
+/* ── Skeleton ── */
+
+[data-theme="obsidian"] .vs-skeleton {
+    background: var(--vs-muted);
+    border-radius: var(--vs-radius);
+    animation: vs-pulse-neon 1.5s ease-in-out infinite;
+}
+
+@keyframes vs-pulse-neon {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.4;
+    }
+}
+
+/* ── Typography ── */
+
+[data-theme="obsidian"] .vs-heading {
+    font-family: var(--vs-font-heading);
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    line-height: 1.1;
+    text-transform: uppercase;
+    color: var(--vs-fg);
+}
+
+[data-theme="obsidian"] .vs-h1 {
+    font-size: 36px;
+    font-weight: 900;
+    color: var(--vs-primary);
+    text-shadow: 0 0 20px rgba(0, 255, 136, 0.3);
+}
+
+[data-theme="obsidian"] .vs-h2 {
+    font-size: 28px;
+}
+
+[data-theme="obsidian"] .vs-h3 {
+    font-size: 22px;
+}
+
+[data-theme="obsidian"] .vs-h4 {
+    font-size: 18px;
+}
+
+[data-theme="obsidian"] .vs-h5 {
+    font-size: 14px;
+}
+
+[data-theme="obsidian"] .vs-h6 {
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    color: var(--vs-primary);
+}
+
+[data-theme="obsidian"] .vs-body {
+    font-family: var(--vs-font-mono);
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+[data-theme="obsidian"] .vs-lead {
+    font-family: var(--vs-font-mono);
+    font-size: 18px;
+    line-height: 1.6;
+    color: var(--vs-muted-fg);
+}
+
+[data-theme="obsidian"] .vs-blockquote {
+    border-left: 3px solid var(--vs-primary);
+    padding-left: 20px;
+    margin: 0;
+    font-style: normal;
+    color: var(--vs-muted-fg);
+    box-shadow: inset 3px 0 10px rgba(0, 255, 136, 0.1);
+}
+
+[data-theme="obsidian"] .vs-code {
+    font-family: var(--vs-font-mono);
+    font-size: 13px;
+    background: var(--vs-muted);
+    padding: 2px 8px;
+    border-radius: var(--vs-radius);
+    color: var(--vs-primary);
+}
+
+[data-theme="obsidian"] .vs-code-block {
+    font-family: var(--vs-font-mono);
+    font-size: 13px;
+    line-height: 1.6;
+    background: var(--vs-muted);
+    padding: 20px;
+    border: 1px solid var(--vs-border);
+    border-radius: var(--vs-radius);
+    overflow-x: auto;
+    color: var(--vs-primary);
+}
+
+[data-theme="obsidian"] .vs-divider {
+    border: none;
+    height: 1px;
+    background: var(--vs-border);
+    margin: 24px 0;
+}

@@ -1,0 +1,76 @@
+/* ═══════════════════════════════════════════
+ * Vsaint Theme Tokens: Frosted
+ * Category: Glassmorphism
+ * 
+ * Layer 1 — Design Tokens
+ * Translucent layers, soft blurs, ethereal.
+ * ═══════════════════════════════════════════ */
+
+[data-theme="aurora"] {
+    /* ── Colors ── */
+    --vs-primary: #6366f1;
+    --vs-primary-fg: #ffffff;
+    --vs-secondary: rgba(255, 255, 255, 0.6);
+    --vs-secondary-fg: #1e1b4b;
+    --vs-bg: linear-gradient(135deg, #e0e7ff 0%, #c7d2fe 50%, #ddd6fe 100%);
+    --vs-bg-solid: #eef2ff;
+    --vs-fg: #1e1b4b;
+    --vs-muted: rgba(255, 255, 255, 0.4);
+    --vs-muted-fg: #6366f1;
+    --vs-border: rgba(255, 255, 255, 0.3);
+    --vs-ring: #6366f1;
+    --vs-accent: #8b5cf6;
+    --vs-accent-fg: #ffffff;
+    --vs-destructive: #ef4444;
+    --vs-destructive-fg: #ffffff;
+
+    /* ── Glass ── */
+    --vs-glass-bg: rgba(255, 255, 255, 0.25);
+    --vs-glass-border: rgba(255, 255, 255, 0.4);
+    --vs-glass-blur: blur(16px);
+
+    /* ── Typography ── */
+    --vs-font-sans: "Plus Jakarta Sans", system-ui, sans-serif;
+    --vs-font-mono: "JetBrains Mono", monospace;
+    --vs-font-heading: "Plus Jakarta Sans", system-ui, sans-serif;
+
+    /* ── Shape ── */
+    --vs-radius: 16px;
+
+    /* ── Depth ── */
+    --vs-shadow-sm: 0 2px 8px rgba(99, 102, 241, 0.08);
+    --vs-shadow-md: 0 4px 16px rgba(99, 102, 241, 0.12);
+    --vs-shadow-lg: 0 8px 32px rgba(99, 102, 241, 0.16);
+
+    /* ── Spacing ── */
+    --vs-space-unit: 4px;
+
+    /* ── Animation ── */
+    --vs-transition: 200ms;
+    --vs-ease: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ── Dark Mode ── */
+
+[data-theme="aurora"][data-mode="dark"] {
+    --vs-primary: #818cf8;
+    --vs-primary-fg: #1e1b4b;
+    --vs-secondary: rgba(30, 27, 75, 0.6);
+    --vs-secondary-fg: #e0e7ff;
+    --vs-bg: linear-gradient(135deg, #1e1b4b 0%, #312e81 50%, #3b0764 100%);
+    --vs-bg-solid: #1e1b4b;
+    --vs-fg: #e0e7ff;
+    --vs-muted: rgba(30, 27, 75, 0.6);
+    --vs-muted-fg: #a5b4fc;
+    --vs-border: rgba(129, 140, 248, 0.2);
+    --vs-ring: #818cf8;
+    --vs-accent: #a78bfa;
+    --vs-accent-fg: #1e1b4b;
+
+    --vs-glass-bg: rgba(30, 27, 75, 0.4);
+    --vs-glass-border: rgba(129, 140, 248, 0.15);
+
+    --vs-shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
+    --vs-shadow-md: 0 4px 16px rgba(0, 0, 0, 0.4);
+    --vs-shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.5);
+}

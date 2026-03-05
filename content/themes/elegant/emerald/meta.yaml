@@ -1,0 +1,16 @@
+name: "Emerald"
+slug: "emerald"
+category: "elegant"
+description: "Deep jewel green, regal sophistication."
+tags: ["elegant", "emerald"]
+mood: ["elegant", "luxurious"]
+supportsDarkMode: true
+fonts:
+  - family: "Inter"
+    weights: [400, 500, 600, 700]
+    source: "google"
+  - family: "JetBrains Mono"
+    weights: [400, 500]
+    source: "google"
+author: "vsaint"
+version: "1.0.0"

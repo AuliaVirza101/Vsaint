@@ -1,0 +1,651 @@
+/* ═══════════════════════════════════════════
+ * Vsaint Theme Identity: Clean Slate
+ * Category: Minimal
+ * 
+ * Layer 2 — Design Identity
+ * What makes Clean Slate feel like Clean Slate:
+ * - Airy whitespace, generous padding
+ * - Whisper-thin borders
+ * - Subtle, restrained animations
+ * - Typography-driven hierarchy
+ * - No visual noise
+ * ═══════════════════════════════════════════ */
+
+/* ── Showcase Container ── */
+
+[data-theme="cloud"] .vs-showcase {
+    padding: 32px;
+    background: var(--vs-bg);
+    color: var(--vs-fg);
+    font-family: var(--vs-font-sans);
+    line-height: 1.6;
+}
+
+/* ── Buttons ── */
+
+[data-theme="cloud"] .vs-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-family: var(--vs-font-sans);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1;
+    padding: 10px 20px;
+    border-radius: var(--vs-radius);
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: all var(--vs-transition) var(--vs-ease);
+    outline: none;
+}
+
+[data-theme="cloud"] .vs-btn:focus-visible {
+    box-shadow: 0 0 0 2px var(--vs-bg), 0 0 0 4px var(--vs-ring);
+}
+
+[data-theme="cloud"] .vs-btn-primary {
+    background: var(--vs-primary);
+    color: var(--vs-primary-fg);
+}
+
+[data-theme="cloud"] .vs-btn-primary:hover {
+    opacity: 0.9;
+}
+
+[data-theme="cloud"] .vs-btn-secondary {
+    background: var(--vs-secondary);
+    color: var(--vs-secondary-fg);
+}
+
+[data-theme="cloud"] .vs-btn-secondary:hover {
+    background: var(--vs-border);
+}
+
+[data-theme="cloud"] .vs-btn-outline {
+    background: transparent;
+    color: var(--vs-fg);
+    border-color: var(--vs-border);
+}
+
+[data-theme="cloud"] .vs-btn-outline:hover {
+    background: var(--vs-muted);
+}
+
+[data-theme="cloud"] .vs-btn-ghost {
+    background: transparent;
+    color: var(--vs-fg);
+}
+
+[data-theme="cloud"] .vs-btn-ghost:hover {
+    background: var(--vs-muted);
+}
+
+[data-theme="cloud"] .vs-btn-destructive {
+    background: var(--vs-destructive);
+    color: var(--vs-destructive-fg);
+}
+
+[data-theme="cloud"] .vs-btn-destructive:hover {
+    opacity: 0.9;
+}
+
+[data-theme="cloud"] .vs-btn-link {
+    background: transparent;
+    color: var(--vs-fg);
+    padding: 0;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    text-decoration-color: var(--vs-border);
+}
+
+[data-theme="cloud"] .vs-btn-link:hover {
+    text-decoration-color: var(--vs-fg);
+}
+
+[data-theme="cloud"] .vs-btn-sm {
+    font-size: 13px;
+    padding: 7px 14px;
+}
+
+[data-theme="cloud"] .vs-btn-lg {
+    font-size: 16px;
+    padding: 14px 28px;
+}
+
+[data-theme="cloud"] .vs-btn:disabled,
+[data-theme="cloud"] .vs-btn[disabled] {
+    opacity: 0.5;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+[data-theme="cloud"] .vs-btn-loading {
+    position: relative;
+    color: transparent !important;
+}
+
+[data-theme="cloud"] .vs-btn-loading::after {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border: 2px solid currentColor;
+    border-right-color: transparent;
+    border-radius: 50%;
+    animation: vs-spin 600ms linear infinite;
+}
+
+@keyframes vs-spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* ── Cards ── */
+
+[data-theme="cloud"] .vs-card {
+    background: var(--vs-bg);
+    border: 1px solid var(--vs-border);
+    border-radius: var(--vs-radius);
+    overflow: hidden;
+    transition: box-shadow var(--vs-transition) var(--vs-ease);
+}
+
+[data-theme="cloud"] .vs-card:hover {
+    box-shadow: var(--vs-shadow-md);
+}
+
+[data-theme="cloud"] .vs-card-header {
+    padding: 24px 24px 0;
+}
+
+[data-theme="cloud"] .vs-card-body {
+    padding: 16px 24px;
+}
+
+[data-theme="cloud"] .vs-card-footer {
+    padding: 0 24px 24px;
+    display: flex;
+    gap: 8px;
+}
+
+[data-theme="cloud"] .vs-card-image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* ── Pricing Card ── */
+
+[data-theme="cloud"] .vs-card-pricing {
+    text-align: center;
+    padding: 32px 24px;
+    position: relative;
+}
+
+[data-theme="cloud"] .vs-card-pricing.featured {
+    border-color: var(--vs-primary);
+    box-shadow: var(--vs-shadow-lg);
+}
+
+[data-theme="cloud"] .vs-card-pricing .price {
+    font-size: 48px;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    line-height: 1;
+    margin: 16px 0;
+}
+
+[data-theme="cloud"] .vs-card-pricing .period {
+    font-size: 14px;
+    color: var(--vs-muted-fg);
+    font-weight: 400;
+}
+
+/* ── Stat Card ── */
+
+[data-theme="cloud"] .vs-card-stat {
+    padding: 24px;
+}
+
+[data-theme="cloud"] .vs-card-stat .stat-value {
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    line-height: 1;
+}
+
+[data-theme="cloud"] .vs-card-stat .stat-label {
+    font-size: 14px;
+    color: var(--vs-muted-fg);
+    margin-top: 4px;
+}
+
+/* ── Forms ── */
+
+[data-theme="cloud"] .vs-label {
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 6px;
+    color: var(--vs-fg);
+}
+
+[data-theme="cloud"] .vs-input {
+    width: 100%;
+    padding: 10px 12px;
+    font-size: 14px;
+    font-family: var(--vs-font-sans);
+    color: var(--vs-fg);
+    background: var(--vs-bg);
+    border: 1px solid var(--vs-border);
+    border-radius: var(--vs-radius);
+    outline: none;
+    transition: border-color var(--vs-transition) var(--vs-ease),
+        box-shadow var(--vs-transition) var(--vs-ease);
+}
+
+[data-theme="cloud"] .vs-input:focus {
+    border-color: var(--vs-ring);
+    box-shadow: 0 0 0 3px rgba(24, 24, 27, 0.08);
+}
+
+[data-theme="cloud"] .vs-input::placeholder {
+    color: var(--vs-muted-fg);
+}
+
+[data-theme="cloud"] .vs-input-error {
+    border-color: var(--vs-destructive);
+}
+
+[data-theme="cloud"] .vs-input-error:focus {
+    box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.1);
+}
+
+[data-theme="cloud"] .vs-input:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    background: var(--vs-muted);
+}
+
+[data-theme="cloud"] .vs-select {
+    width: 100%;
+    padding: 10px 12px;
+    font-size: 14px;
+    font-family: var(--vs-font-sans);
+    color: var(--vs-fg);
+    background: var(--vs-bg);
+    border: 1px solid var(--vs-border);
+    border-radius: var(--vs-radius);
+    outline: none;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath d='M3 5l3 3 3-3' stroke='%236b7280' fill='none' stroke-width='1.5'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    padding-right: 36px;
+    cursor: pointer;
+}
+
+[data-theme="cloud"] .vs-textarea {
+    width: 100%;
+    padding: 10px 12px;
+    font-size: 14px;
+    font-family: var(--vs-font-sans);
+    color: var(--vs-fg);
+    background: var(--vs-bg);
+    border: 1px solid var(--vs-border);
+    border-radius: var(--vs-radius);
+    outline: none;
+    resize: vertical;
+    min-height: 80px;
+    transition: border-color var(--vs-transition) var(--vs-ease);
+}
+
+[data-theme="cloud"] .vs-textarea:focus {
+    border-color: var(--vs-ring);
+    box-shadow: 0 0 0 3px rgba(24, 24, 27, 0.08);
+}
+
+[data-theme="cloud"] .vs-form-group {
+    margin-bottom: 20px;
+}
+
+/* ── Checkbox & Radio ── */
+
+[data-theme="cloud"] .vs-checkbox,
+[data-theme="cloud"] .vs-radio {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    cursor: pointer;
+    user-select: none;
+}
+
+[data-theme="cloud"] .vs-checkbox input,
+[data-theme="cloud"] .vs-radio input {
+    width: 16px;
+    height: 16px;
+    accent-color: var(--vs-primary);
+    cursor: pointer;
+}
+
+/* ── Toggle ── */
+
+[data-theme="cloud"] .vs-toggle {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+[data-theme="cloud"] .vs-toggle-track {
+    width: 44px;
+    height: 24px;
+    border-radius: 12px;
+    background: var(--vs-border);
+    position: relative;
+    transition: background var(--vs-transition) var(--vs-ease);
+}
+
+[data-theme="cloud"] .vs-toggle-track.active {
+    background: var(--vs-primary);
+}
+
+[data-theme="cloud"] .vs-toggle-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: white;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    transition: transform var(--vs-transition) var(--vs-ease);
+    box-shadow: var(--vs-shadow-sm);
+}
+
+[data-theme="cloud"] .vs-toggle-track.active .vs-toggle-thumb {
+    transform: translateX(20px);
+}
+
+/* ── Navigation ── */
+
+[data-theme="cloud"] .vs-navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 24px;
+    border-bottom: 1px solid var(--vs-border);
+    background: var(--vs-bg);
+}
+
+[data-theme="cloud"] .vs-navbar-brand {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--vs-fg);
+    letter-spacing: -0.02em;
+}
+
+[data-theme="cloud"] .vs-navbar-links {
+    display: flex;
+    gap: 24px;
+    list-style: none;
+}
+
+[data-theme="cloud"] .vs-navbar-links a {
+    font-size: 14px;
+    color: var(--vs-muted-fg);
+    text-decoration: none;
+    transition: color var(--vs-transition) var(--vs-ease);
+}
+
+[data-theme="cloud"] .vs-navbar-links a:hover {
+    color: var(--vs-fg);
+}
+
+/* ── Tabs ── */
+
+[data-theme="cloud"] .vs-tabs {
+    display: flex;
+    gap: 0;
+    border-bottom: 1px solid var(--vs-border);
+}
+
+[data-theme="cloud"] .vs-tab {
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--vs-muted-fg);
+    border-bottom: 2px solid transparent;
+    cursor: pointer;
+    transition: all var(--vs-transition) var(--vs-ease);
+    background: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    font-family: var(--vs-font-sans);
+}
+
+[data-theme="cloud"] .vs-tab:hover {
+    color: var(--vs-fg);
+}
+
+[data-theme="cloud"] .vs-tab-active {
+    color: var(--vs-fg);
+    border-bottom-color: var(--vs-primary);
+}
+
+/* ── Breadcrumb ── */
+
+[data-theme="cloud"] .vs-breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    color: var(--vs-muted-fg);
+}
+
+[data-theme="cloud"] .vs-breadcrumb a {
+    color: var(--vs-muted-fg);
+    text-decoration: none;
+    transition: color var(--vs-transition) var(--vs-ease);
+}
+
+[data-theme="cloud"] .vs-breadcrumb a:hover {
+    color: var(--vs-fg);
+}
+
+[data-theme="cloud"] .vs-breadcrumb .current {
+    color: var(--vs-fg);
+    font-weight: 500;
+}
+
+/* ── Badges ── */
+
+[data-theme="cloud"] .vs-badge {
+    display: inline-flex;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 3px 10px;
+    border-radius: 999px;
+    background: var(--vs-muted);
+    color: var(--vs-fg);
+}
+
+[data-theme="cloud"] .vs-badge-success {
+    background: #dcfce7;
+    color: #166534;
+}
+
+[data-theme="cloud"] .vs-badge-warning {
+    background: #fef3c7;
+    color: #92400e;
+}
+
+[data-theme="cloud"] .vs-badge-destructive {
+    background: #fee2e2;
+    color: #991b1b;
+}
+
+/* ── Alert ── */
+
+[data-theme="cloud"] .vs-alert {
+    display: flex;
+    gap: 12px;
+    padding: 16px;
+    border-radius: var(--vs-radius);
+    font-size: 14px;
+    border: 1px solid var(--vs-border);
+    background: var(--vs-muted);
+}
+
+[data-theme="cloud"] .vs-alert-success {
+    background: #f0fdf4;
+    border-color: #bbf7d0;
+}
+
+[data-theme="cloud"] .vs-alert-warning {
+    background: #fffbeb;
+    border-color: #fde68a;
+}
+
+[data-theme="cloud"] .vs-alert-error {
+    background: #fef2f2;
+    border-color: #fecaca;
+}
+
+/* ── Progress ── */
+
+[data-theme="cloud"] .vs-progress {
+    width: 100%;
+    height: 6px;
+    background: var(--vs-muted);
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+[data-theme="cloud"] .vs-progress-bar {
+    height: 100%;
+    background: var(--vs-primary);
+    border-radius: 3px;
+    transition: width 500ms var(--vs-ease);
+}
+
+/* ── Skeleton ── */
+
+[data-theme="cloud"] .vs-skeleton {
+    background: linear-gradient(90deg,
+            var(--vs-muted) 25%,
+            var(--vs-border) 50%,
+            var(--vs-muted) 75%);
+    background-size: 200% 100%;
+    animation: vs-shimmer 1.5s ease-in-out infinite;
+    border-radius: var(--vs-radius);
+}
+
+@keyframes vs-shimmer {
+    0% {
+        background-position: 200% 0;
+    }
+
+    100% {
+        background-position: -200% 0;
+    }
+}
+
+/* ── Typography ── */
+
+[data-theme="cloud"] .vs-heading {
+    font-family: var(--vs-font-heading);
+    font-weight: 600;
+    letter-spacing: -0.025em;
+    line-height: 1.2;
+    color: var(--vs-fg);
+}
+
+[data-theme="cloud"] .vs-h1 {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+[data-theme="cloud"] .vs-h2 {
+    font-size: 30px;
+}
+
+[data-theme="cloud"] .vs-h3 {
+    font-size: 24px;
+}
+
+[data-theme="cloud"] .vs-h4 {
+    font-size: 20px;
+}
+
+[data-theme="cloud"] .vs-h5 {
+    font-size: 16px;
+}
+
+[data-theme="cloud"] .vs-h6 {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+[data-theme="cloud"] .vs-body {
+    font-size: 16px;
+    line-height: 1.7;
+    color: var(--vs-fg);
+}
+
+[data-theme="cloud"] .vs-lead {
+    font-size: 20px;
+    line-height: 1.6;
+    color: var(--vs-muted-fg);
+    font-weight: 300;
+}
+
+[data-theme="cloud"] .vs-blockquote {
+    border-left: 2px solid var(--vs-border);
+    padding-left: 20px;
+    margin: 0;
+    font-style: italic;
+    color: var(--vs-muted-fg);
+}
+
+[data-theme="cloud"] .vs-code {
+    font-family: var(--vs-font-mono);
+    font-size: 13px;
+    background: var(--vs-muted);
+    padding: 2px 6px;
+    border-radius: 4px;
+    color: var(--vs-fg);
+}
+
+[data-theme="cloud"] .vs-code-block {
+    font-family: var(--vs-font-mono);
+    font-size: 13px;
+    line-height: 1.7;
+    background: var(--vs-muted);
+    padding: 20px;
+    border-radius: var(--vs-radius);
+    overflow-x: auto;
+    color: var(--vs-fg);
+}
+
+/* ── Divider ── */
+
+[data-theme="cloud"] .vs-divider {
+    border: none;
+    height: 1px;
+    background: var(--vs-border);
+    margin: 24px 0;
+}
+
+/* ── DECORATIVE IDENTITY ELEMENTS ──
+ * These are what make Clean Slate feel distinct:
+ * 1. Ultra-subtle hover lifts (not aggressive transforms)
+ * 2. Hairline borders with generous whitespace
+ * 3. Understated focus rings (double-ring pattern)
+ * Nothing screams. Everything whispers.
+ * ── */

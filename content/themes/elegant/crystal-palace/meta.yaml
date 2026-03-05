@@ -1,0 +1,16 @@
+name: "Crystal Palace"
+slug: "crystal-palace"
+category: "elegant"
+description: "Diamond-cut edges, ice-clear luxury."
+tags: ["elegant", "crystal", "palace"]
+mood: ["elegant", "luxurious"]
+supportsDarkMode: true
+fonts:
+  - family: "Inter"
+    weights: [400, 500, 600, 700]
+    source: "google"
+  - family: "JetBrains Mono"
+    weights: [400, 500]
+    source: "google"
+author: "vsaint"
+version: "1.0.0"

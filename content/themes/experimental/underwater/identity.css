@@ -1,0 +1,615 @@
+/* ═══════════════════════════════════════════
+ * Vsaint Theme Identity: Raw Grid
+ * Category: Brutalist
+ * 
+ * Layer 2 — Design Identity
+ * What makes Raw Grid feel like Raw Grid:
+ * - Zero border-radius anywhere
+ * - Thick, hard 3px borders on everything
+ * - Hard offset shadows (no blur)
+ * - Monospace typography everywhere
+ * - Uppercase labels & headings
+ * - No subtle animations — instant state changes
+ * ═══════════════════════════════════════════ */
+
+/* ── Showcase Container ── */
+
+[data-theme="underwater"] .vs-showcase {
+    padding: 32px;
+    background: var(--vs-bg);
+    color: var(--vs-fg);
+    font-family: var(--vs-font-sans);
+    line-height: 1.6;
+}
+
+/* ── Buttons ── */
+
+[data-theme="underwater"] .vs-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-family: var(--vs-font-mono);
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 1;
+    padding: 12px 24px;
+    border-radius: 0;
+    border: 3px solid var(--vs-border);
+    cursor: pointer;
+    transition: none;
+    outline: none;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+[data-theme="underwater"] .vs-btn:focus-visible {
+    outline: 3px solid var(--vs-ring);
+    outline-offset: 2px;
+}
+
+[data-theme="underwater"] .vs-btn:active {
+    transform: translate(2px, 2px);
+    box-shadow: none !important;
+}
+
+[data-theme="underwater"] .vs-btn-primary {
+    background: var(--vs-primary);
+    color: var(--vs-primary-fg);
+    border-color: var(--vs-primary);
+    box-shadow: var(--vs-shadow-md);
+}
+
+[data-theme="underwater"] .vs-btn-secondary {
+    background: var(--vs-secondary);
+    color: var(--vs-secondary-fg);
+    box-shadow: var(--vs-shadow-md);
+}
+
+[data-theme="underwater"] .vs-btn-outline {
+    background: transparent;
+    color: var(--vs-fg);
+    box-shadow: var(--vs-shadow-sm);
+}
+
+[data-theme="underwater"] .vs-btn-ghost {
+    background: transparent;
+    color: var(--vs-fg);
+    border-color: transparent;
+}
+
+[data-theme="underwater"] .vs-btn-ghost:hover {
+    border-color: var(--vs-border);
+}
+
+[data-theme="underwater"] .vs-btn-destructive {
+    background: var(--vs-destructive);
+    color: var(--vs-destructive-fg);
+    border-color: var(--vs-destructive);
+    box-shadow: var(--vs-shadow-md);
+}
+
+[data-theme="underwater"] .vs-btn-link {
+    background: transparent;
+    color: var(--vs-fg);
+    border: none;
+    padding: 0;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    text-decoration-thickness: 3px;
+}
+
+[data-theme="underwater"] .vs-btn-sm {
+    font-size: 11px;
+    padding: 8px 16px;
+}
+
+[data-theme="underwater"] .vs-btn-lg {
+    font-size: 15px;
+    padding: 16px 32px;
+}
+
+[data-theme="underwater"] .vs-btn:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+[data-theme="underwater"] .vs-btn-loading {
+    position: relative;
+    color: transparent !important;
+}
+
+[data-theme="underwater"] .vs-btn-loading::after {
+    content: "...";
+    position: absolute;
+    color: inherit;
+    font-size: 20px;
+    letter-spacing: 4px;
+    animation: vs-blink 500ms step-end infinite;
+}
+
+@keyframes vs-blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+/* ── Cards ── */
+
+[data-theme="underwater"] .vs-card {
+    background: var(--vs-bg);
+    border: 3px solid var(--vs-border);
+    border-radius: 0;
+    box-shadow: var(--vs-shadow-md);
+    overflow: hidden;
+}
+
+[data-theme="underwater"] .vs-card:hover {
+    box-shadow: var(--vs-shadow-lg);
+}
+
+[data-theme="underwater"] .vs-card-header {
+    padding: 20px 20px 0;
+    text-transform: uppercase;
+}
+
+[data-theme="underwater"] .vs-card-body {
+    padding: 12px 20px;
+}
+
+[data-theme="underwater"] .vs-card-footer {
+    padding: 0 20px 20px;
+    display: flex;
+    gap: 8px;
+}
+
+[data-theme="underwater"] .vs-card-image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    filter: grayscale(100%) contrast(120%);
+}
+
+[data-theme="underwater"] .vs-card-pricing {
+    text-align: center;
+    padding: 28px 20px;
+}
+
+[data-theme="underwater"] .vs-card-pricing.featured {
+    background: var(--vs-primary);
+    color: var(--vs-primary-fg);
+    border-color: var(--vs-primary);
+}
+
+[data-theme="underwater"] .vs-card-pricing .price {
+    font-family: var(--vs-font-mono);
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1;
+    margin: 12px 0;
+}
+
+[data-theme="underwater"] .vs-card-pricing .period {
+    font-size: 14px;
+    opacity: 0.6;
+}
+
+[data-theme="underwater"] .vs-card-stat {
+    padding: 20px;
+}
+
+[data-theme="underwater"] .vs-card-stat .stat-value {
+    font-family: var(--vs-font-mono);
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+[data-theme="underwater"] .vs-card-stat .stat-label {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--vs-muted-fg);
+    margin-top: 8px;
+}
+
+/* ── Forms ── */
+
+[data-theme="underwater"] .vs-label {
+    display: block;
+    font-family: var(--vs-font-mono);
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 8px;
+    color: var(--vs-fg);
+}
+
+[data-theme="underwater"] .vs-input {
+    width: 100%;
+    padding: 12px;
+    font-size: 14px;
+    font-family: var(--vs-font-mono);
+    color: var(--vs-fg);
+    background: var(--vs-bg);
+    border: 3px solid var(--vs-border);
+    border-radius: 0;
+    outline: none;
+}
+
+[data-theme="underwater"] .vs-input:focus {
+    box-shadow: var(--vs-shadow-md);
+}
+
+[data-theme="underwater"] .vs-input::placeholder {
+    color: var(--vs-muted-fg);
+    font-style: italic;
+}
+
+[data-theme="underwater"] .vs-input-error {
+    border-color: var(--vs-destructive);
+}
+
+[data-theme="underwater"] .vs-input:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+[data-theme="underwater"] .vs-select {
+    width: 100%;
+    padding: 12px;
+    font-size: 14px;
+    font-family: var(--vs-font-mono);
+    color: var(--vs-fg);
+    background: var(--vs-bg);
+    border: 3px solid var(--vs-border);
+    border-radius: 0;
+    outline: none;
+    appearance: none;
+    cursor: pointer;
+}
+
+[data-theme="underwater"] .vs-textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 14px;
+    font-family: var(--vs-font-mono);
+    color: var(--vs-fg);
+    background: var(--vs-bg);
+    border: 3px solid var(--vs-border);
+    border-radius: 0;
+    outline: none;
+    resize: vertical;
+    min-height: 80px;
+}
+
+[data-theme="underwater"] .vs-textarea:focus {
+    box-shadow: var(--vs-shadow-md);
+}
+
+[data-theme="underwater"] .vs-form-group {
+    margin-bottom: 20px;
+}
+
+[data-theme="underwater"] .vs-checkbox,
+[data-theme="underwater"] .vs-radio {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-family: var(--vs-font-mono);
+    font-size: 13px;
+    cursor: pointer;
+}
+
+[data-theme="underwater"] .vs-checkbox input,
+[data-theme="underwater"] .vs-radio input {
+    width: 18px;
+    height: 18px;
+    accent-color: var(--vs-primary);
+}
+
+[data-theme="underwater"] .vs-toggle-track {
+    width: 48px;
+    height: 24px;
+    border: 3px solid var(--vs-border);
+    border-radius: 0;
+    background: var(--vs-muted);
+    position: relative;
+}
+
+[data-theme="underwater"] .vs-toggle-track.active {
+    background: var(--vs-primary);
+    border-color: var(--vs-primary);
+}
+
+[data-theme="underwater"] .vs-toggle-thumb {
+    width: 18px;
+    height: 18px;
+    border-radius: 0;
+    background: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+[data-theme="underwater"] .vs-toggle-track.active .vs-toggle-thumb {
+    left: 24px;
+}
+
+[data-theme="underwater"] .vs-toggle {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: var(--vs-font-mono);
+    font-size: 13px;
+    cursor: pointer;
+}
+
+/* ── Navigation ── */
+
+[data-theme="underwater"] .vs-navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 20px;
+    border: 3px solid var(--vs-border);
+    background: var(--vs-bg);
+}
+
+[data-theme="underwater"] .vs-navbar-brand {
+    font-family: var(--vs-font-mono);
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+[data-theme="underwater"] .vs-navbar-links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+[data-theme="underwater"] .vs-navbar-links a {
+    font-family: var(--vs-font-mono);
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--vs-muted-fg);
+    text-decoration: none;
+}
+
+[data-theme="underwater"] .vs-navbar-links a:hover {
+    color: var(--vs-fg);
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    text-decoration-thickness: 3px;
+}
+
+[data-theme="underwater"] .vs-tabs {
+    display: flex;
+    gap: 0;
+    border: 3px solid var(--vs-border);
+    border-bottom: none;
+}
+
+[data-theme="underwater"] .vs-tab {
+    padding: 12px 20px;
+    font-family: var(--vs-font-mono);
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--vs-muted-fg);
+    border: none;
+    border-right: 3px solid var(--vs-border);
+    background: transparent;
+    cursor: pointer;
+}
+
+[data-theme="underwater"] .vs-tab:last-child {
+    border-right: none;
+}
+
+[data-theme="underwater"] .vs-tab:hover {
+    background: var(--vs-muted);
+}
+
+[data-theme="underwater"] .vs-tab-active {
+    background: var(--vs-primary);
+    color: var(--vs-primary-fg);
+}
+
+[data-theme="underwater"] .vs-breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-family: var(--vs-font-mono);
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--vs-muted-fg);
+}
+
+[data-theme="underwater"] .vs-breadcrumb a {
+    color: var(--vs-muted-fg);
+    text-decoration: none;
+}
+
+[data-theme="underwater"] .vs-breadcrumb a:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+}
+
+[data-theme="underwater"] .vs-breadcrumb .current {
+    color: var(--vs-fg);
+    font-weight: 700;
+}
+
+/* ── Badges ── */
+
+[data-theme="underwater"] .vs-badge {
+    display: inline-flex;
+    font-family: var(--vs-font-mono);
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    padding: 4px 12px;
+    border: 2px solid var(--vs-border);
+    border-radius: 0;
+    background: var(--vs-bg);
+}
+
+[data-theme="underwater"] .vs-badge-success {
+    border-color: #16a34a;
+    color: #16a34a;
+}
+
+[data-theme="underwater"] .vs-badge-warning {
+    border-color: #d97706;
+    color: #d97706;
+}
+
+[data-theme="underwater"] .vs-badge-destructive {
+    border-color: var(--vs-destructive);
+    color: var(--vs-destructive);
+}
+
+/* ── Alert ── */
+
+[data-theme="underwater"] .vs-alert {
+    display: flex;
+    gap: 12px;
+    padding: 16px;
+    border: 3px solid var(--vs-border);
+    border-radius: 0;
+    font-family: var(--vs-font-mono);
+    font-size: 13px;
+}
+
+[data-theme="underwater"] .vs-alert-success {
+    border-color: #16a34a;
+    background: rgba(22, 163, 74, 0.05);
+}
+
+[data-theme="underwater"] .vs-alert-warning {
+    border-color: #d97706;
+    background: rgba(217, 119, 6, 0.05);
+}
+
+[data-theme="underwater"] .vs-alert-error {
+    border-color: var(--vs-destructive);
+    background: rgba(255, 0, 0, 0.05);
+}
+
+/* ── Progress ── */
+
+[data-theme="underwater"] .vs-progress {
+    width: 100%;
+    height: 12px;
+    background: var(--vs-muted);
+    border: 2px solid var(--vs-border);
+    border-radius: 0;
+}
+
+[data-theme="underwater"] .vs-progress-bar {
+    height: 100%;
+    background: var(--vs-primary);
+    border-radius: 0;
+}
+
+/* ── Skeleton ── */
+
+[data-theme="underwater"] .vs-skeleton {
+    background: var(--vs-muted);
+    border: 2px solid var(--vs-border);
+    border-radius: 0;
+    animation: vs-blink 800ms step-end infinite;
+}
+
+/* ── Typography ── */
+
+[data-theme="underwater"] .vs-heading {
+    font-family: var(--vs-font-heading);
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    line-height: 1.1;
+    text-transform: uppercase;
+    color: var(--vs-fg);
+}
+
+[data-theme="underwater"] .vs-h1 {
+    font-size: 42px;
+}
+
+[data-theme="underwater"] .vs-h2 {
+    font-size: 32px;
+}
+
+[data-theme="underwater"] .vs-h3 {
+    font-size: 24px;
+}
+
+[data-theme="underwater"] .vs-h4 {
+    font-size: 18px;
+}
+
+[data-theme="underwater"] .vs-h5 {
+    font-size: 14px;
+}
+
+[data-theme="underwater"] .vs-h6 {
+    font-size: 11px;
+    letter-spacing: 0.15em;
+}
+
+[data-theme="underwater"] .vs-body {
+    font-family: var(--vs-font-sans);
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+[data-theme="underwater"] .vs-lead {
+    font-family: var(--vs-font-sans);
+    font-size: 20px;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+[data-theme="underwater"] .vs-blockquote {
+    border-left: 6px solid var(--vs-primary);
+    padding-left: 20px;
+    margin: 0;
+    font-family: var(--vs-font-mono);
+    font-style: normal;
+}
+
+[data-theme="underwater"] .vs-code {
+    font-family: var(--vs-font-mono);
+    font-size: 13px;
+    background: var(--vs-muted);
+    border: 2px solid var(--vs-border);
+    padding: 2px 6px;
+    border-radius: 0;
+}
+
+[data-theme="underwater"] .vs-code-block {
+    font-family: var(--vs-font-mono);
+    font-size: 13px;
+    line-height: 1.6;
+    background: var(--vs-primary);
+    color: var(--vs-primary-fg);
+    padding: 20px;
+    border: 3px solid var(--vs-border);
+    border-radius: 0;
+    overflow-x: auto;
+}
+
+[data-theme="underwater"] .vs-divider {
+    border: none;
+    height: 3px;
+    background: var(--vs-border);
+    margin: 24px 0;
+}

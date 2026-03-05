@@ -1,0 +1,68 @@
+/* ═══════════════════════════════════════════
+ * Vsaint Theme Tokens: Clean Slate
+ * Category: Minimal
+ * 
+ * Layer 1 — Design Tokens
+ * CSS custom properties for quick theming.
+ * ═══════════════════════════════════════════ */
+
+[data-theme="crystal-palace"] {
+    /* ── Colors ── */
+    --vs-primary: #18181b;
+    --vs-primary-fg: #ffffff;
+    --vs-secondary: #f4f4f5;
+    --vs-secondary-fg: #18181b;
+    --vs-bg: #ffffff;
+    --vs-fg: #09090b;
+    --vs-muted: #f9fafb;
+    --vs-muted-fg: #6b7280;
+    --vs-border: #e5e7eb;
+    --vs-ring: #18181b;
+    --vs-accent: #f4f4f5;
+    --vs-accent-fg: #18181b;
+    --vs-destructive: #ef4444;
+    --vs-destructive-fg: #ffffff;
+
+    /* ── Typography ── */
+    --vs-font-sans: "Inter", system-ui, -apple-system, sans-serif;
+    --vs-font-mono: "JetBrains Mono", "Fira Code", monospace;
+    --vs-font-heading: "Inter", system-ui, -apple-system, sans-serif;
+
+    /* ── Shape ── */
+    --vs-radius: 8px;
+
+    /* ── Depth ── */
+    --vs-shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.04);
+    --vs-shadow-md: 0 2px 8px rgba(0, 0, 0, 0.06);
+    --vs-shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.08);
+
+    /* ── Spacing ── */
+    --vs-space-unit: 4px;
+
+    /* ── Animation ── */
+    --vs-transition: 150ms;
+    --vs-ease: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ── Dark Mode ── */
+
+[data-theme="crystal-palace"][data-mode="dark"] {
+    --vs-primary: #ffffff;
+    --vs-primary-fg: #09090b;
+    --vs-secondary: #27272a;
+    --vs-secondary-fg: #fafafa;
+    --vs-bg: #09090b;
+    --vs-fg: #fafafa;
+    --vs-muted: #18181b;
+    --vs-muted-fg: #a1a1aa;
+    --vs-border: #27272a;
+    --vs-ring: #d4d4d8;
+    --vs-accent: #27272a;
+    --vs-accent-fg: #fafafa;
+    --vs-destructive: #dc2626;
+    --vs-destructive-fg: #ffffff;
+
+    --vs-shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
+    --vs-shadow-md: 0 2px 8px rgba(0, 0, 0, 0.4);
+    --vs-shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.5);
+}

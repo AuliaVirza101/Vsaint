@@ -1,0 +1,16 @@
+name: "Dough"
+slug: "dough"
+category: "neumorphism"
+description: "Bread dough texture, warm risen shapes."
+tags: ["neumorphism", "dough"]
+mood: ["clean", "warm"]
+supportsDarkMode: true
+fonts:
+  - family: "Inter"
+    weights: [400, 500, 600, 700]
+    source: "google"
+  - family: "JetBrains Mono"
+    weights: [400, 500]
+    source: "google"
+author: "vsaint"
+version: "1.0.0"

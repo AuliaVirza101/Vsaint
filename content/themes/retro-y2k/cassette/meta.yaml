@@ -1,0 +1,16 @@
+name: "Cassette"
+slug: "cassette"
+category: "retro-y2k"
+description: "80s tape deck vibes, warm analog tones."
+tags: ["retro-y2k", "cassette"]
+mood: ["playful", "creative"]
+supportsDarkMode: true
+fonts:
+  - family: "Inter"
+    weights: [400, 500, 600, 700]
+    source: "google"
+  - family: "JetBrains Mono"
+    weights: [400, 500]
+    source: "google"
+author: "vsaint"
+version: "1.0.0"

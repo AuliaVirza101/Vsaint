@@ -1,0 +1,16 @@
+name: "Real Estate"
+slug: "real-estate"
+category: "corporate"
+description: "Warm professional, earthy tones."
+tags: ["corporate", "real", "estate"]
+mood: ["professional", "clean"]
+supportsDarkMode: true
+fonts:
+  - family: "Inter"
+    weights: [400, 500, 600, 700]
+    source: "google"
+  - family: "JetBrains Mono"
+    weights: [400, 500]
+    source: "google"
+author: "vsaint"
+version: "1.0.0"

@@ -1,0 +1,16 @@
+name: "Jelly"
+slug: "jelly"
+category: "playful"
+description: "Wobbly jelly shapes, translucent bounce."
+tags: ["playful", "jelly"]
+mood: ["playful", "fun"]
+supportsDarkMode: true
+fonts:
+  - family: "Inter"
+    weights: [400, 500, 600, 700]
+    source: "google"
+  - family: "JetBrains Mono"
+    weights: [400, 500]
+    source: "google"
+author: "vsaint"
+version: "1.0.0"

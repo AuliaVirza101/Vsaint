@@ -1,0 +1,16 @@
+name: "Woodstock"
+slug: "woodstock"
+category: "retro-y2k"
+description: "Tie-dye colors, peace sign energy, groovy."
+tags: ["retro-y2k", "woodstock"]
+mood: ["playful", "creative"]
+supportsDarkMode: true
+fonts:
+  - family: "Inter"
+    weights: [400, 500, 600, 700]
+    source: "google"
+  - family: "JetBrains Mono"
+    weights: [400, 500]
+    source: "google"
+author: "vsaint"
+version: "1.0.0"

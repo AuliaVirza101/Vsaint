@@ -1,0 +1,16 @@
+name: "Serif Noir"
+slug: "serif-noir"
+category: "elegant"
+description: "High contrast B&W, elegant serif headings."
+tags: ["elegant", "serif", "noir"]
+mood: ["elegant", "luxurious"]
+supportsDarkMode: true
+fonts:
+  - family: "Inter"
+    weights: [400, 500, 600, 700]
+    source: "google"
+  - family: "JetBrains Mono"
+    weights: [400, 500]
+    source: "google"
+author: "vsaint"
+version: "1.0.0"

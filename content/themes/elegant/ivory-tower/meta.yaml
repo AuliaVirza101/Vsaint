@@ -1,0 +1,16 @@
+name: "Ivory Tower"
+slug: "ivory-tower"
+category: "elegant"
+description: "Pure white marble, classical columns."
+tags: ["elegant", "ivory", "tower"]
+mood: ["elegant", "luxurious"]
+supportsDarkMode: true
+fonts:
+  - family: "Inter"
+    weights: [400, 500, 600, 700]
+    source: "google"
+  - family: "JetBrains Mono"
+    weights: [400, 500]
+    source: "google"
+author: "vsaint"
+version: "1.0.0"

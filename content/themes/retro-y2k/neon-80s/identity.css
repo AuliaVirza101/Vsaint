@@ -1,0 +1,608 @@
+/* ═══════════════════════════════════════════
+ * Vsaint Theme Identity: Sunset Vaporwave
+ * Category: Retro / Y2K
+ * 
+ * Layer 2 — Design Identity
+ * What makes Sunset Vaporwave feel unique:
+ * - Sunset gradient accents on buttons and headers
+ * - Super-round 20px border radius
+ * - Bouncy spring animations
+ * - VT323 pixel font for code/mono
+ * - Pastel pink/purple palette
+ * - Playful, energetic hover effects
+ * ═══════════════════════════════════════════ */
+
+/* ── Showcase Container ── */
+
+[data-theme="neon-80s"] .vs-showcase {
+    padding: 32px;
+    background: var(--vs-bg);
+    color: var(--vs-fg);
+    font-family: var(--vs-font-sans);
+    line-height: 1.6;
+}
+
+/* ── Buttons ── */
+
+[data-theme="neon-80s"] .vs-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-family: var(--vs-font-sans);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1;
+    padding: 12px 24px;
+    border-radius: 999px;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: all var(--vs-transition) var(--vs-ease);
+    outline: none;
+}
+
+[data-theme="neon-80s"] .vs-btn:focus-visible {
+    box-shadow: 0 0 0 3px rgba(255, 107, 157, 0.3);
+}
+
+[data-theme="neon-80s"] .vs-btn-primary {
+    background: var(--vs-gradient-sunset);
+    color: white;
+    box-shadow: var(--vs-shadow-md);
+}
+
+[data-theme="neon-80s"] .vs-btn-primary:hover {
+    transform: translateY(-2px) scale(1.02);
+    box-shadow: var(--vs-shadow-lg);
+}
+
+[data-theme="neon-80s"] .vs-btn-secondary {
+    background: var(--vs-secondary);
+    color: var(--vs-secondary-fg);
+}
+
+[data-theme="neon-80s"] .vs-btn-secondary:hover {
+    transform: translateY(-1px);
+}
+
+[data-theme="neon-80s"] .vs-btn-outline {
+    background: transparent;
+    color: var(--vs-fg);
+    border-color: var(--vs-border);
+}
+
+[data-theme="neon-80s"] .vs-btn-outline:hover {
+    border-color: var(--vs-primary);
+    color: var(--vs-primary);
+    transform: translateY(-1px);
+}
+
+[data-theme="neon-80s"] .vs-btn-ghost {
+    background: transparent;
+    color: var(--vs-fg);
+}
+
+[data-theme="neon-80s"] .vs-btn-ghost:hover {
+    background: var(--vs-muted);
+}
+
+[data-theme="neon-80s"] .vs-btn-destructive {
+    background: var(--vs-destructive);
+    color: var(--vs-destructive-fg);
+    box-shadow: var(--vs-shadow-md);
+}
+
+[data-theme="neon-80s"] .vs-btn-link {
+    background: transparent;
+    color: var(--vs-primary);
+    padding: 0;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    text-decoration-style: wavy;
+}
+
+[data-theme="neon-80s"] .vs-btn-sm {
+    font-size: 13px;
+    padding: 8px 18px;
+}
+
+[data-theme="neon-80s"] .vs-btn-lg {
+    font-size: 16px;
+    padding: 16px 32px;
+}
+
+[data-theme="neon-80s"] .vs-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+[data-theme="neon-80s"] .vs-btn-loading {
+    position: relative;
+    color: transparent !important;
+}
+
+[data-theme="neon-80s"] .vs-btn-loading::after {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    border-top-color: white;
+    border-radius: 50%;
+    animation: vs-spin-vapor 600ms linear infinite;
+}
+
+@keyframes vs-spin-vapor {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* ── Cards ── */
+
+[data-theme="neon-80s"] .vs-card {
+    background: var(--vs-bg);
+    border: 2px solid var(--vs-border);
+    border-radius: var(--vs-radius);
+    overflow: hidden;
+    transition: all var(--vs-transition) var(--vs-ease);
+}
+
+[data-theme="neon-80s"] .vs-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--vs-shadow-lg);
+    border-color: var(--vs-primary);
+}
+
+[data-theme="neon-80s"] .vs-card-header {
+    padding: 24px 24px 0;
+}
+
+[data-theme="neon-80s"] .vs-card-body {
+    padding: 16px 24px;
+}
+
+[data-theme="neon-80s"] .vs-card-footer {
+    padding: 0 24px 24px;
+    display: flex;
+    gap: 8px;
+}
+
+[data-theme="neon-80s"] .vs-card-image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+[data-theme="neon-80s"] .vs-card-pricing {
+    text-align: center;
+    padding: 32px 24px;
+}
+
+[data-theme="neon-80s"] .vs-card-pricing.featured {
+    background: var(--vs-gradient-sunset);
+    color: white;
+    border-color: transparent;
+}
+
+[data-theme="neon-80s"] .vs-card-pricing .price {
+    font-size: 52px;
+    font-weight: 800;
+    line-height: 1;
+    margin: 16px 0;
+}
+
+[data-theme="neon-80s"] .vs-card-pricing .period {
+    font-size: 14px;
+    opacity: 0.7;
+}
+
+[data-theme="neon-80s"] .vs-card-stat {
+    padding: 24px;
+}
+
+[data-theme="neon-80s"] .vs-card-stat .stat-value {
+    font-size: 36px;
+    font-weight: 800;
+    color: var(--vs-primary);
+}
+
+[data-theme="neon-80s"] .vs-card-stat .stat-label {
+    font-size: 13px;
+    color: var(--vs-muted-fg);
+    margin-top: 4px;
+}
+
+/* ── Forms ── */
+
+[data-theme="neon-80s"] .vs-label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+[data-theme="neon-80s"] .vs-input {
+    width: 100%;
+    padding: 12px 16px;
+    font-size: 14px;
+    font-family: var(--vs-font-sans);
+    color: var(--vs-fg);
+    background: white;
+    border: 2px solid var(--vs-border);
+    border-radius: 14px;
+    outline: none;
+    transition: all var(--vs-transition) var(--vs-ease);
+}
+
+[data-theme="neon-80s"] .vs-input:focus {
+    border-color: var(--vs-primary);
+    box-shadow: 0 0 0 3px rgba(255, 107, 157, 0.15);
+}
+
+[data-theme="neon-80s"] .vs-input::placeholder {
+    color: var(--vs-muted-fg);
+}
+
+[data-theme="neon-80s"] .vs-input-error {
+    border-color: var(--vs-destructive);
+}
+
+[data-theme="neon-80s"] .vs-input:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+[data-theme="neon-80s"] .vs-select {
+    width: 100%;
+    padding: 12px 16px;
+    font-size: 14px;
+    font-family: var(--vs-font-sans);
+    color: var(--vs-fg);
+    background: white;
+    border: 2px solid var(--vs-border);
+    border-radius: 14px;
+    outline: none;
+    appearance: none;
+    cursor: pointer;
+}
+
+[data-theme="neon-80s"] .vs-textarea {
+    width: 100%;
+    padding: 12px 16px;
+    font-size: 14px;
+    font-family: var(--vs-font-sans);
+    color: var(--vs-fg);
+    background: white;
+    border: 2px solid var(--vs-border);
+    border-radius: 14px;
+    outline: none;
+    resize: vertical;
+    min-height: 80px;
+}
+
+[data-theme="neon-80s"] .vs-textarea:focus {
+    border-color: var(--vs-primary);
+    box-shadow: 0 0 0 3px rgba(255, 107, 157, 0.15);
+}
+
+[data-theme="neon-80s"] .vs-form-group {
+    margin-bottom: 20px;
+}
+
+[data-theme="neon-80s"] .vs-checkbox,
+[data-theme="neon-80s"] .vs-radio {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+[data-theme="neon-80s"] .vs-checkbox input,
+[data-theme="neon-80s"] .vs-radio input {
+    width: 18px;
+    height: 18px;
+    accent-color: var(--vs-primary);
+}
+
+[data-theme="neon-80s"] .vs-toggle {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+[data-theme="neon-80s"] .vs-toggle-track {
+    width: 48px;
+    height: 26px;
+    border-radius: 13px;
+    background: var(--vs-border);
+    position: relative;
+    transition: all var(--vs-transition) var(--vs-ease);
+}
+
+[data-theme="neon-80s"] .vs-toggle-track.active {
+    background: var(--vs-gradient-sunset);
+}
+
+[data-theme="neon-80s"] .vs-toggle-thumb {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: white;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    transition: transform var(--vs-transition) var(--vs-ease);
+    box-shadow: var(--vs-shadow-sm);
+}
+
+[data-theme="neon-80s"] .vs-toggle-track.active .vs-toggle-thumb {
+    transform: translateX(22px);
+}
+
+/* ── Navigation ── */
+
+[data-theme="neon-80s"] .vs-navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 24px;
+    border: 2px solid var(--vs-border);
+    border-radius: 999px;
+    background: white;
+}
+
+[data-theme="neon-80s"] .vs-navbar-brand {
+    font-size: 18px;
+    font-weight: 800;
+    background: var(--vs-gradient-sunset);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+[data-theme="neon-80s"] .vs-navbar-links {
+    display: flex;
+    gap: 24px;
+    list-style: none;
+}
+
+[data-theme="neon-80s"] .vs-navbar-links a {
+    font-size: 14px;
+    color: var(--vs-muted-fg);
+    text-decoration: none;
+    transition: color var(--vs-transition) var(--vs-ease);
+}
+
+[data-theme="neon-80s"] .vs-navbar-links a:hover {
+    color: var(--vs-primary);
+}
+
+[data-theme="neon-80s"] .vs-tabs {
+    display: flex;
+    gap: 4px;
+}
+
+[data-theme="neon-80s"] .vs-tab {
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--vs-muted-fg);
+    border: none;
+    border-radius: 999px;
+    background: transparent;
+    cursor: pointer;
+    transition: all var(--vs-transition) var(--vs-ease);
+    font-family: var(--vs-font-sans);
+}
+
+[data-theme="neon-80s"] .vs-tab:hover {
+    background: var(--vs-muted);
+}
+
+[data-theme="neon-80s"] .vs-tab-active {
+    background: var(--vs-gradient-sunset);
+    color: white;
+}
+
+[data-theme="neon-80s"] .vs-breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    color: var(--vs-muted-fg);
+}
+
+[data-theme="neon-80s"] .vs-breadcrumb a {
+    color: var(--vs-muted-fg);
+    text-decoration: none;
+}
+
+[data-theme="neon-80s"] .vs-breadcrumb a:hover {
+    color: var(--vs-primary);
+}
+
+[data-theme="neon-80s"] .vs-breadcrumb .current {
+    color: var(--vs-primary);
+    font-weight: 600;
+}
+
+/* ── Badges ── */
+
+[data-theme="neon-80s"] .vs-badge {
+    display: inline-flex;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 4px 14px;
+    border-radius: 999px;
+    background: var(--vs-muted);
+    color: var(--vs-fg);
+}
+
+[data-theme="neon-80s"] .vs-badge-success {
+    background: #dcfce7;
+    color: #166534;
+}
+
+[data-theme="neon-80s"] .vs-badge-warning {
+    background: #fef3c7;
+    color: #92400e;
+}
+
+[data-theme="neon-80s"] .vs-badge-destructive {
+    background: #fee2e2;
+    color: #991b1b;
+}
+
+/* ── Alert ── */
+
+[data-theme="neon-80s"] .vs-alert {
+    display: flex;
+    gap: 12px;
+    padding: 16px;
+    border-radius: var(--vs-radius);
+    font-size: 14px;
+    border: 2px solid var(--vs-border);
+    background: white;
+}
+
+[data-theme="neon-80s"] .vs-alert-success {
+    border-color: #86efac;
+    background: #f0fdf4;
+}
+
+[data-theme="neon-80s"] .vs-alert-warning {
+    border-color: #fde68a;
+    background: #fffbeb;
+}
+
+[data-theme="neon-80s"] .vs-alert-error {
+    border-color: #fca5a5;
+    background: #fef2f2;
+}
+
+/* ── Progress ── */
+
+[data-theme="neon-80s"] .vs-progress {
+    width: 100%;
+    height: 10px;
+    background: var(--vs-muted);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+[data-theme="neon-80s"] .vs-progress-bar {
+    height: 100%;
+    background: var(--vs-gradient-sunset);
+    border-radius: 5px;
+}
+
+/* ── Skeleton ── */
+
+[data-theme="neon-80s"] .vs-skeleton {
+    background: linear-gradient(90deg, var(--vs-muted) 25%, #fff0f5 50%, var(--vs-muted) 75%);
+    background-size: 200% 100%;
+    animation: vs-shimmer-vapor 1.5s ease-in-out infinite;
+    border-radius: var(--vs-radius);
+}
+
+@keyframes vs-shimmer-vapor {
+    0% {
+        background-position: 200% 0;
+    }
+
+    100% {
+        background-position: -200% 0;
+    }
+}
+
+/* ── Typography ── */
+
+[data-theme="neon-80s"] .vs-heading {
+    font-family: var(--vs-font-heading);
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+    color: var(--vs-fg);
+}
+
+[data-theme="neon-80s"] .vs-h1 {
+    font-size: 40px;
+    font-weight: 800;
+    background: var(--vs-gradient-sunset);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+[data-theme="neon-80s"] .vs-h2 {
+    font-size: 32px;
+}
+
+[data-theme="neon-80s"] .vs-h3 {
+    font-size: 24px;
+}
+
+[data-theme="neon-80s"] .vs-h4 {
+    font-size: 20px;
+}
+
+[data-theme="neon-80s"] .vs-h5 {
+    font-size: 16px;
+}
+
+[data-theme="neon-80s"] .vs-h6 {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--vs-primary);
+}
+
+[data-theme="neon-80s"] .vs-body {
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+[data-theme="neon-80s"] .vs-lead {
+    font-size: 20px;
+    line-height: 1.6;
+    color: var(--vs-muted-fg);
+    font-weight: 300;
+}
+
+[data-theme="neon-80s"] .vs-blockquote {
+    border-left: 4px solid var(--vs-primary);
+    padding-left: 20px;
+    margin: 0;
+    font-style: italic;
+    color: var(--vs-muted-fg);
+}
+
+[data-theme="neon-80s"] .vs-code {
+    font-family: var(--vs-font-mono);
+    font-size: 16px;
+    background: var(--vs-muted);
+    padding: 2px 8px;
+    border-radius: 6px;
+}
+
+[data-theme="neon-80s"] .vs-code-block {
+    font-family: var(--vs-font-mono);
+    font-size: 16px;
+    line-height: 1.6;
+    background: var(--vs-fg);
+    color: var(--vs-bg);
+    padding: 20px;
+    border-radius: var(--vs-radius);
+    overflow-x: auto;
+}
+
+[data-theme="neon-80s"] .vs-divider {
+    border: none;
+    height: 2px;
+    background: var(--vs-gradient-sunset);
+    margin: 24px 0;
+    border-radius: 1px;
+}

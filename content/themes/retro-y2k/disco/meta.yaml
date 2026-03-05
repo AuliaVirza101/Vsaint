@@ -1,0 +1,16 @@
+name: "Disco"
+slug: "disco"
+category: "retro-y2k"
+description: "70s disco ball shimmer, gold and purple."
+tags: ["retro-y2k", "disco"]
+mood: ["playful", "creative"]
+supportsDarkMode: true
+fonts:
+  - family: "Inter"
+    weights: [400, 500, 600, 700]
+    source: "google"
+  - family: "JetBrains Mono"
+    weights: [400, 500]
+    source: "google"
+author: "vsaint"
+version: "1.0.0"

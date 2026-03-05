@@ -1,0 +1,42 @@
+/* Neo-Brutal — Pop colors, thick borders, fun brutalism */
+[data-theme="neo-brutal"] {
+    --vs-primary: #6c5ce7;
+    --vs-primary-fg: #ffffff;
+    --vs-secondary: #fdcb6e;
+    --vs-secondary-fg: #1a1a1a;
+    --vs-bg: #ffffff;
+    --vs-fg: #1a1a1a;
+    --vs-muted: #f0f0f0;
+    --vs-muted-fg: #666666;
+    --vs-border: #1a1a1a;
+    --vs-ring: #6c5ce7;
+    --vs-accent: #00b894;
+    --vs-accent-fg: #ffffff;
+    --vs-destructive: #d63031;
+    --vs-destructive-fg: #ffffff;
+    --vs-font-sans: "Syne", system-ui, sans-serif;
+    --vs-font-mono: "Space Mono", monospace;
+    --vs-font-heading: "Syne", system-ui, sans-serif;
+    --vs-radius: 0px;
+    --vs-shadow-sm: 3px 3px 0 #1a1a1a;
+    --vs-shadow-md: 5px 5px 0 #1a1a1a;
+    --vs-shadow-lg: 8px 8px 0 #1a1a1a;
+    --vs-space-unit: 4px;
+    --vs-transition: 100ms;
+    --vs-ease: linear;
+}
+
+[data-theme="neo-brutal"][data-mode="dark"] {
+    --vs-primary: #a29bfe;
+    --vs-primary-fg: #1a1a1a;
+    --vs-secondary: #ffeaa7;
+    --vs-secondary-fg: #1a1a1a;
+    --vs-bg: #1a1a1a;
+    --vs-fg: #ffffff;
+    --vs-muted: #2d2d2d;
+    --vs-muted-fg: #aaaaaa;
+    --vs-border: #ffffff;
+    --vs-shadow-sm: 3px 3px 0 #ffffff;
+    --vs-shadow-md: 5px 5px 0 #ffffff;
+    --vs-shadow-lg: 8px 8px 0 #ffffff;
+}

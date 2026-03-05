@@ -1,0 +1,16 @@
+name: "Stamp"
+slug: "stamp"
+category: "brutalist"
+description: "Rubber stamp aesthetic, ink bleed edges, postal typography."
+tags: ["brutalist", "stamp", "postal", "ink", "vintage"]
+mood: ["bold", "warm"]
+supportsDarkMode: true
+fonts:
+  - family: "Special Elite"
+    weights: [400]
+    source: "google"
+  - family: "Courier Prime"
+    weights: [400, 700]
+    source: "google"
+author: "vsaint"
+version: "1.0.0"

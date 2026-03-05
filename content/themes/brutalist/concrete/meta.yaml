@@ -1,0 +1,16 @@
+name: "Concrete"
+slug: "concrete"
+category: "brutalist"
+description: "Raw concrete texture vibes, industrial grey, exposed structure."
+tags: ["brutalist", "concrete", "industrial", "grey", "raw"]
+mood: ["bold", "dark"]
+supportsDarkMode: true
+fonts:
+  - family: "Bebas Neue"
+    weights: [400]
+    source: "google"
+  - family: "IBM Plex Mono"
+    weights: [400, 500]
+    source: "google"
+author: "vsaint"
+version: "1.0.0"

@@ -1,0 +1,16 @@
+name: "Pixel Grid"
+slug: "pixel-grid"
+category: "brutalist"
+description: "8-bit pixel aesthetic meets brutalist structure. Retro meets raw."
+tags: ["brutalist", "pixel", "8bit", "retro", "grid"]
+mood: ["playful", "experimental"]
+supportsDarkMode: true
+fonts:
+  - family: "Press Start 2P"
+    weights: [400]
+    source: "google"
+  - family: "VT323"
+    weights: [400]
+    source: "google"
+author: "vsaint"
+version: "1.0.0"

@@ -1,0 +1,35 @@
+/* Pixel Grid — 8-bit pixel aesthetic */
+[data-theme="pixel-grid"] {
+    --vs-primary: #2ecc71;
+    --vs-primary-fg: #1a1a1a;
+    --vs-secondary: #2c3e50;
+    --vs-secondary-fg: #ecf0f1;
+    --vs-bg: #1a1a2e;
+    --vs-fg: #ecf0f1;
+    --vs-muted: #16213e;
+    --vs-muted-fg: #7f8c8d;
+    --vs-border: #2ecc71;
+    --vs-ring: #2ecc71;
+    --vs-accent: #e74c3c;
+    --vs-accent-fg: #ffffff;
+    --vs-destructive: #e74c3c;
+    --vs-destructive-fg: #ffffff;
+    --vs-font-sans: "Press Start 2P", monospace;
+    --vs-font-mono: "VT323", monospace;
+    --vs-font-heading: "Press Start 2P", monospace;
+    --vs-radius: 0px;
+    --vs-shadow-sm: 2px 2px 0 #2ecc71;
+    --vs-shadow-md: 4px 4px 0 #2ecc71;
+    --vs-shadow-lg: 6px 6px 0 #2ecc71;
+    --vs-space-unit: 4px;
+    --vs-transition: 0ms;
+    --vs-ease: linear;
+}
+
+[data-theme="pixel-grid"][data-mode="dark"] {
+    --vs-bg: #0a0a15;
+    --vs-fg: #2ecc71;
+    --vs-muted: #0d0d1a;
+    --vs-muted-fg: #555;
+    --vs-border: #2ecc71;
+}

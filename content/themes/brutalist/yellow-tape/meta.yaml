@@ -1,0 +1,16 @@
+name: "Yellow Tape"
+slug: "yellow-tape"
+category: "brutalist"
+description: "Hazard yellow and black, construction zone energy, danger ahead."
+tags: ["brutalist", "yellow", "hazard", "construction", "warning"]
+mood: ["bold", "experimental"]
+supportsDarkMode: false
+fonts:
+  - family: "Oswald"
+    weights: [400, 500, 600, 700]
+    source: "google"
+  - family: "Space Mono"
+    weights: [400, 700]
+    source: "google"
+author: "vsaint"
+version: "1.0.0"

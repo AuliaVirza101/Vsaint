@@ -1,0 +1,16 @@
+name: "Neo-Brutal"
+slug: "neo-brutal"
+category: "brutalist"
+description: "Pop colors meet thick borders. Brutalism with a smile."
+tags: ["brutalist", "neo", "pop", "colorful", "bold"]
+mood: ["bold", "playful"]
+supportsDarkMode: true
+fonts:
+  - family: "Syne"
+    weights: [400, 500, 600, 700, 800]
+    source: "google"
+  - family: "Space Mono"
+    weights: [400, 700]
+    source: "google"
+author: "vsaint"
+version: "1.0.0"

@@ -1,0 +1,38 @@
+/* Cut Out — Magazine collage, mixed media */
+[data-theme="cut-out"] {
+    --vs-primary: #e74c3c;
+    --vs-primary-fg: #ffffff;
+    --vs-secondary: #3498db;
+    --vs-secondary-fg: #ffffff;
+    --vs-bg: #ecf0f1;
+    --vs-fg: #2c3e50;
+    --vs-muted: #d5dbdb;
+    --vs-muted-fg: #7f8c8d;
+    --vs-border: #2c3e50;
+    --vs-ring: #e74c3c;
+    --vs-accent: #f39c12;
+    --vs-accent-fg: #2c3e50;
+    --vs-destructive: #e74c3c;
+    --vs-destructive-fg: #ffffff;
+    --vs-font-sans: "Permanent Marker", cursive;
+    --vs-font-mono: "Space Mono", monospace;
+    --vs-font-heading: "Permanent Marker", cursive;
+    --vs-radius: 0px;
+    --vs-shadow-sm: 2px 2px 0 #2c3e50;
+    --vs-shadow-md: 4px 4px 0 #2c3e50;
+    --vs-shadow-lg: 6px 6px 0 #2c3e50;
+    --vs-space-unit: 4px;
+    --vs-transition: 50ms;
+    --vs-ease: linear;
+}
+
+[data-theme="cut-out"][data-mode="dark"] {
+    --vs-bg: #2c3e50;
+    --vs-fg: #ecf0f1;
+    --vs-muted: #34495e;
+    --vs-muted-fg: #95a5a6;
+    --vs-border: #ecf0f1;
+    --vs-shadow-sm: 2px 2px 0 #7f8c8d;
+    --vs-shadow-md: 4px 4px 0 #7f8c8d;
+    --vs-shadow-lg: 6px 6px 0 #7f8c8d;
+}

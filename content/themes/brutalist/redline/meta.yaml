@@ -1,0 +1,16 @@
+name: "Redline"
+slug: "redline"
+category: "brutalist"
+description: "Red and white only. Maximum contrast, zero compromise."
+tags: ["brutalist", "red", "contrast", "bold", "minimal"]
+mood: ["bold", "dark"]
+supportsDarkMode: false
+fonts:
+  - family: "Anton"
+    weights: [400]
+    source: "google"
+  - family: "Fira Mono"
+    weights: [400, 500]
+    source: "google"
+author: "vsaint"
+version: "1.0.0"

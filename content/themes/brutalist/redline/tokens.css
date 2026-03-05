@@ -1,0 +1,27 @@
+/* Redline — Red and white only, maximum contrast */
+[data-theme="redline"] {
+    --vs-primary: #cc0000;
+    --vs-primary-fg: #ffffff;
+    --vs-secondary: #f5f5f5;
+    --vs-secondary-fg: #cc0000;
+    --vs-bg: #ffffff;
+    --vs-fg: #cc0000;
+    --vs-muted: #fff0f0;
+    --vs-muted-fg: #990000;
+    --vs-border: #cc0000;
+    --vs-ring: #cc0000;
+    --vs-accent: #990000;
+    --vs-accent-fg: #ffffff;
+    --vs-destructive: #660000;
+    --vs-destructive-fg: #ffffff;
+    --vs-font-sans: "Anton", system-ui, sans-serif;
+    --vs-font-mono: "Fira Mono", monospace;
+    --vs-font-heading: "Anton", system-ui, sans-serif;
+    --vs-radius: 0px;
+    --vs-shadow-sm: 3px 3px 0 #cc0000;
+    --vs-shadow-md: 5px 5px 0 #cc0000;
+    --vs-shadow-lg: 8px 8px 0 #cc0000;
+    --vs-space-unit: 4px;
+    --vs-transition: 0ms;
+    --vs-ease: linear;
+}

@@ -1,0 +1,27 @@
+/* Yellow Tape — Hazard yellow and black */
+[data-theme="yellow-tape"] {
+    --vs-primary: #1a1a1a;
+    --vs-primary-fg: #ffd32a;
+    --vs-secondary: #ffd32a;
+    --vs-secondary-fg: #1a1a1a;
+    --vs-bg: #ffd32a;
+    --vs-fg: #1a1a1a;
+    --vs-muted: #f0c800;
+    --vs-muted-fg: #444444;
+    --vs-border: #1a1a1a;
+    --vs-ring: #1a1a1a;
+    --vs-accent: #1a1a1a;
+    --vs-accent-fg: #ffd32a;
+    --vs-destructive: #cc0000;
+    --vs-destructive-fg: #ffffff;
+    --vs-font-sans: "Oswald", system-ui, sans-serif;
+    --vs-font-mono: "Space Mono", monospace;
+    --vs-font-heading: "Oswald", system-ui, sans-serif;
+    --vs-radius: 0px;
+    --vs-shadow-sm: 3px 3px 0 #1a1a1a;
+    --vs-shadow-md: 5px 5px 0 #1a1a1a;
+    --vs-shadow-lg: 8px 8px 0 #1a1a1a;
+    --vs-space-unit: 4px;
+    --vs-transition: 0ms;
+    --vs-ease: linear;
+}

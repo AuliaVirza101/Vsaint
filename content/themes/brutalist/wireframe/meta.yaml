@@ -1,0 +1,16 @@
+name: "Wireframe"
+slug: "wireframe"
+category: "brutalist"
+description: "Black and white only, dashed borders, technical drawing blueprint."
+tags: ["brutalist", "wireframe", "blueprint", "technical", "dashed"]
+mood: ["experimental", "professional"]
+supportsDarkMode: false
+fonts:
+  - family: "Courier Prime"
+    weights: [400, 700]
+    source: "google"
+  - family: "Courier Prime"
+    weights: [400, 700]
+    source: "google"
+author: "vsaint"
+version: "1.0.0"

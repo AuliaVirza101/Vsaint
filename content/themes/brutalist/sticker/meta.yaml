@@ -1,0 +1,16 @@
+name: "Sticker"
+slug: "sticker"
+category: "brutalist"
+description: "Rotated elements, sticker-bomb aesthetic, chaotic energy."
+tags: ["brutalist", "sticker", "chaotic", "fun", "rotation"]
+mood: ["playful", "experimental"]
+supportsDarkMode: true
+fonts:
+  - family: "Archivo Black"
+    weights: [400]
+    source: "google"
+  - family: "Space Mono"
+    weights: [400, 700]
+    source: "google"
+author: "vsaint"
+version: "1.0.0"

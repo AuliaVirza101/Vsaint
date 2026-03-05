@@ -1,0 +1,38 @@
+/* Sticker — Chaotic sticker-bomb energy */
+[data-theme="sticker"] {
+    --vs-primary: #e84393;
+    --vs-primary-fg: #ffffff;
+    --vs-secondary: #00cec9;
+    --vs-secondary-fg: #1a1a1a;
+    --vs-bg: #ffeaa7;
+    --vs-fg: #1a1a1a;
+    --vs-muted: #f8e58c;
+    --vs-muted-fg: #666666;
+    --vs-border: #1a1a1a;
+    --vs-ring: #e84393;
+    --vs-accent: #6c5ce7;
+    --vs-accent-fg: #ffffff;
+    --vs-destructive: #d63031;
+    --vs-destructive-fg: #ffffff;
+    --vs-font-sans: "Archivo Black", system-ui, sans-serif;
+    --vs-font-mono: "Space Mono", monospace;
+    --vs-font-heading: "Archivo Black", system-ui, sans-serif;
+    --vs-radius: 0px;
+    --vs-shadow-sm: 3px 3px 0 #1a1a1a;
+    --vs-shadow-md: 5px 5px 0 #1a1a1a;
+    --vs-shadow-lg: 8px 8px 0 #1a1a1a;
+    --vs-space-unit: 4px;
+    --vs-transition: 50ms;
+    --vs-ease: linear;
+}
+
+[data-theme="sticker"][data-mode="dark"] {
+    --vs-bg: #2d3436;
+    --vs-fg: #ffeaa7;
+    --vs-muted: #353b3d;
+    --vs-muted-fg: #b2bec3;
+    --vs-border: #ffeaa7;
+    --vs-shadow-sm: 3px 3px 0 #ffeaa7;
+    --vs-shadow-md: 5px 5px 0 #ffeaa7;
+    --vs-shadow-lg: 8px 8px 0 #ffeaa7;
+}

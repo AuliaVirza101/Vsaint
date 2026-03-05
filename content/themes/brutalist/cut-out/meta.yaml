@@ -1,0 +1,16 @@
+name: "Cut Out"
+slug: "cut-out"
+category: "brutalist"
+description: "Magazine collage cut-out style, mixed media, ransom note elegance."
+tags: ["brutalist", "collage", "cutout", "mixed-media", "paper"]
+mood: ["experimental", "playful"]
+supportsDarkMode: true
+fonts:
+  - family: "Permanent Marker"
+    weights: [400]
+    source: "google"
+  - family: "Space Mono"
+    weights: [400, 700]
+    source: "google"
+author: "vsaint"
+version: "1.0.0"

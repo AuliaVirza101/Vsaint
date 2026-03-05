@@ -1,0 +1,27 @@
+/* Wireframe — Black and white blueprint */
+[data-theme="wireframe"] {
+    --vs-primary: #333333;
+    --vs-primary-fg: #ffffff;
+    --vs-secondary: #f5f5f5;
+    --vs-secondary-fg: #333333;
+    --vs-bg: #ffffff;
+    --vs-fg: #333333;
+    --vs-muted: #f8f8f8;
+    --vs-muted-fg: #999999;
+    --vs-border: #cccccc;
+    --vs-ring: #333333;
+    --vs-accent: #666666;
+    --vs-accent-fg: #ffffff;
+    --vs-destructive: #cc0000;
+    --vs-destructive-fg: #ffffff;
+    --vs-font-sans: "Courier Prime", monospace;
+    --vs-font-mono: "Courier Prime", monospace;
+    --vs-font-heading: "Courier Prime", monospace;
+    --vs-radius: 0px;
+    --vs-shadow-sm: none;
+    --vs-shadow-md: none;
+    --vs-shadow-lg: none;
+    --vs-space-unit: 4px;
+    --vs-transition: 0ms;
+    --vs-ease: linear;
+}

@@ -1,5 +1,6 @@
 import { getAllThemes } from "@/lib/themes";
 import { GalleryClient } from "@/components/gallery/GalleryClient";
+import { Logo } from "@/components/ui/Logo";
 
 export default function Home() {
     const themes = getAllThemes();
@@ -10,10 +11,9 @@ export default function Home() {
             <section className="relative overflow-hidden">
                 <div className="absolute inset-0 bg-gradient-to-b from-vsaint-50/50 to-transparent dark:from-vsaint-950/20 dark:to-transparent" />
                 <div className="relative max-w-6xl mx-auto px-6 pt-20 pb-16 text-center">
-                    <h1 className="text-5xl md:text-6xl font-extrabold tracking-tight mb-4">
-                        <span className="text-vsaint-500">V</span>
-                        <span className="text-zinc-900 dark:text-zinc-100">saint</span>
-                    </h1>
+                    <div className="flex justify-center mb-6">
+                        <Logo size="xl" />
+                    </div>
                     <p className="text-xl md:text-2xl text-zinc-500 dark:text-zinc-400 mb-3 font-light">
                         Find a design system you love. Ship it today.
                     </p>

@@ -12,6 +12,7 @@ import { NavigationShowcase } from "@/components/preview/showcase/NavigationShow
 import { FeedbackShowcase } from "@/components/preview/showcase/FeedbackShowcase";
 import { TypographyShowcase } from "@/components/preview/showcase/TypographyShowcase";
 import { CopyPanel } from "@/components/copy/CopyPanel";
+import { Logo } from "@/components/ui/Logo";
 import Link from "next/link";
 
 interface ThemeDetailClientProps {
@@ -29,8 +30,8 @@ export function ThemeDetailClient({ theme }: ThemeDetailClientProps) {
                 <div className="max-w-7xl mx-auto px-6 py-6">
                     {/* Breadcrumb */}
                     <nav className="flex items-center gap-2 text-sm text-zinc-400 dark:text-zinc-500 mb-4">
-                        <Link href="/" className="hover:text-zinc-600 dark:hover:text-zinc-300 transition-colors">
-                            Home
+                        <Link href="/" className="hover:text-zinc-600 dark:hover:text-zinc-300 transition-colors flex items-center" aria-label="Home">
+                            <Logo size="sm" />
                         </Link>
                         <span>/</span>
                         <span className="capitalize">{theme.category.replace("-", " / ")}</span>

@@ -1,75 +1,108 @@
-# Vsaint
-
 <div align="center">
-  <h3>Find a design system you love. Ship it today.</h3>
-  <p>Interactive visual reference with hundreds of CSS design systems featuring real identity — not just color swaps.</p>
+  <img src="https://raw.githubusercontent.com/AuliaVirza101/Vsaint/main/public/favicon.ico" width="80" height="80" alt="Vsaint Logo" />
+  <br/>
+  
+  <h1>Vsaint ⚡️</h1>
+  
+  <p>
+    <strong>Find a design system you love. Ship it today.</strong><br/>
+    Interactive visual reference with hundreds of CSS design systems featuring real identity.
+  </p>
+
+  <p>
+    <a href="https://github.com/AuliaVirza101/Vsaint"><img src="https://img.shields.io/badge/Themes-100-8B5CF6?style=for-the-badge&logo=css3&logoColor=white" alt="100 Themes"/></a>
+    <a href="https://nextjs.org/"><img src="https://img.shields.io/badge/Next.js-14-black?style=for-the-badge&logo=next.js&logoColor=white" alt="Next.js 14"/></a>
+    <a href="https://tailwindcss.com/"><img src="https://img.shields.io/badge/Tailwind-UI_Shell-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind CSS"/></a>
+    <a href="https://github.com/AuliaVirza101/Vsaint/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge" alt="MIT License"/></a>
+  </p>
 </div>
 
 ---
 
-## 🎨 The Vault: 100 Themes
+## 🎨 The Vault: 100 Production-Ready Themes
 
-Vsaint is a massive open-source library of highly opinionated, production-ready design systems. We've categorized them to help you find the exact mood you need:
+Vsaint isn't just a color palette generator. It focuses on **real design identities** — border radius, shadows, typography hierarchies, layout density, and interactive states. 
 
-- **Minimal & Clean** (10 themes)
-- **Brutalist & Neo-Brutal** (10 themes)
-- **Glassmorphism & Fluent** (10 themes)
-- **Dark & Cyberpunk** (10 themes)
-- **Retro & Y2K** (10 themes)
-- **Neumorphism & Soft UI** (10 themes)
-- **Elegant & Luxury** (10 themes)
-- **Playful & Fun** (10 themes)
-- **Corporate & Enterprise** (10 themes)
-- **Experimental & Conceptual** (10 themes)
+Filter through exactly what you need:
 
-## ✨ Features
+| Category | Description | Count | 
+| :--- | :--- | :---: |
+| 🔲 **Minimal & Clean** | High contrast, Swiss typography, white space | \`10\` |
+| 🏗️ **Brutalist** | Hard shadows, zero border-radius, pop colors | \`10\` |
+| 🧊 **Glassmorphism** | Blur effects, translucent backgrounds, ambient | \`10\` |
+| 🌃 **Dark & Cyberpunk** | Neons, pure blacks, sci-fi inspiration | \`10\` |
+| 📼 **Retro & Y2K** | Vaporwave, 90s web, pixel art, nostalgia | \`10\` |
+| ☁️ **Neumorphism** | Soft UI, extruded light/shadow styling | \`10\` |
+| 🍷 **Elegant & Luxury** | Minimal serifs, gold/silver accents, high-end | \`10\` |
+| 🎈 **Playful & Fun** | Bouncy shapes, primary colors, comic styles | \`10\` |
+| 🏢 **Corporate** | Professional, high-trust, data-dense | \`10\` |
+| 🧪 **Experimental** | Terminal UI, blueprints, ASCII art | \`10\` |
 
-- **Live Previews**: See every theme applied to real UI components (Buttons, Cards, Forms, Navbars, etc.)
-- **One-Click Copy**: Instantly copy the exact CSS Variables and Component CSS.
-- **Tailwind Integration**: Automatically copy the extended `tailwind.config.ts` mapping for seamless implementation.
-- **Search & Filter**: Find themes instantly by category, metadata, mood, or tags.
-- **Dark Mode Native**: Every theme ships with beautiful, carefully considered dark mode inversions.
+---
 
-## 🛠 Tech Stack
+## ✨ Why Vsaint?
 
-Vsaint's application layer is built for incredible speed and developer experience:
+<details open>
+<summary><b>1. Interactive Live Previews</b></summary>
+See every theme applied to real UI components (Buttons, Cards, Forms, Navbars, etc.) immediately. No guesswork.
+</details>
 
-- **Framework**: Next.js 14 (App Router)
-- **Language**: TypeScript
-- **Styling**: Tailwind CSS (for the site shell only) 
-- **Themes**: Pure vanilla CSS (CSS Variables)
-- **Code Highlighting**: Shiki
+<details open>
+<summary><b>2. 1-Click Copy & Paste</b></summary>
+Instantly copy the exact CSS Variables (\`tokens.css\`) and Component CSS (\`identity.css\`). Drop them directly into your app.
+</details>
 
-*Note: The actual themes themselves are pure CSS, making them framework-agnostic. You can drop them directly into React, Vue, Svelte, or vanilla HTML.*
+<details open>
+<summary><b>3. Tailwind CSS Integration</b></summary>
+Out of the box, Vsaint generates the \`tailwind.config.ts\` extensions so you can use the themes harmoniously with Tailwind utility classes.
+</details>
+
+<details open>
+<summary><b>4. Native Dark Mode</b></summary>
+Every theme ships with beautiful, carefully considered dark mode inversions — automatically handled by standard \`data-theme\` and \`prefers-color-scheme\`.
+</details>
+
+<br/>
 
 ## 🚀 Getting Started Locally
 
-Clone the repository and run the development server:
+Getting the gallery running on your local machine is extremely simple:
 
-```bash
+\`\`\`bash
+# 1. Clone the repository
 git clone https://github.com/AuliaVirza101/Vsaint.git
+
+# 2. Enter the directory
 cd Vsaint
 
-# Install dependencies
+# 3. Install dependencies
 pnpm install
 
-# Start development server
+# 4. Start development server
 pnpm dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-## 📁 Project Structure 
-
 \`\`\`
+
+🎯 Open [http://localhost:3000](http://localhost:3000) and start exploring.
+
+---
+
+## 📁 Project Architecture
+
+The architecture is built for speed, allowing 100+ themes to be hot-loaded at build time into statically generated pages.
+
+\`\`\`text
+Vsaint/
 ├── content/
-│   └── themes/              # All 100 themes (meta.yaml, tokens.css, identity.css)
+│   └── themes/              👈 All 100 themes live here (meta.yaml, tokens.css, identity.css)
 ├── src/
-│   ├── app/                 # Next.js App Router root
-│   ├── components/          # React components (Gallery, Preview, Copy panels)
-│   ├── lib/                 # Core utilities (Theme loaders, CSS/Tailwind generators)
-│   └── types/               # TypeScript definitions
+│   ├── app/                 👈 Next.js App Router root (Pages, Layouts)
+│   ├── components/          👈 React components (Gallery grid, Live Previews, Copiers)
+│   ├── lib/                 👈 Core utilities (Theme parsers, CSS/Tailwind generators)
+│   └── types/               👈 Exact TypeScript definitions
 \`\`\`
 
 ---
-*Built with passion by vsaint.*
+
+<div align="center">
+  <p>Built with 💜 by <b>vsaint</b></p>
+</div>

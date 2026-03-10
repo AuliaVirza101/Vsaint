@@ -48,8 +48,8 @@ export function Logo({ className = "", size = "md" }: LogoProps) {
                     fillOpacity="0.5"
                 />
             </svg>
-            <span className={`${textSizes[size]} text-zinc-900 dark:text-zinc-100 font-light tracking-[0.15em] ml-1`}>
-                SAINT
+            <span className={`${textSizes[size]} text-zinc-900 dark:text-zinc-100 font-extrabold tracking-tighter ml-0.5`}>
+                saint
             </span>
         </div>
     );

@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import type { Theme, ShowcaseTab } from "@/types/theme";
 import { SHOWCASE_TABS } from "@/types/theme";
 import { ThemePreview } from "@/components/preview/ThemePreview";
@@ -13,6 +13,8 @@ import { FeedbackShowcase } from "@/components/preview/showcase/FeedbackShowcase
 import { TypographyShowcase } from "@/components/preview/showcase/TypographyShowcase";
 import { CopyPanel } from "@/components/copy/CopyPanel";
 import { Logo } from "@/components/ui/Logo";
+import { ThemeToggle } from "@/components/ui/ThemeToggle";
+import { useTheme } from "next-themes";
 import Link from "next/link";
 
 interface ThemeDetailClientProps {
@@ -21,7 +23,14 @@ interface ThemeDetailClientProps {
 
 export function ThemeDetailClient({ theme }: ThemeDetailClientProps) {
     const [activeTab, setActiveTab] = useState<ShowcaseTab>("buttons");
-    const [mode, setMode] = useState<"light" | "dark">("light");
+    const { resolvedTheme } = useTheme();
+    const [mounted, setMounted] = useState(false);
+
+    useEffect(() => {
+        setMounted(true);
+    }, []);
+
+    const currentMode = mounted && resolvedTheme === "dark" ? "dark" : "light";
 
     return (
         <div className="min-h-screen">
@@ -65,14 +74,7 @@ export function ThemeDetailClient({ theme }: ThemeDetailClientProps) {
 
                         {/* Color Palette + Dark Mode Toggle */}
                         <div className="flex items-center gap-4">
-                            {theme.supportsDarkMode && (
-                                <button
-                                    onClick={() => setMode(mode === "light" ? "dark" : "light")}
-                                    className="text-sm px-3 py-1.5 rounded-lg border border-zinc-200 dark:border-zinc-700 hover:bg-zinc-50 dark:hover:bg-zinc-800 transition-colors"
-                                >
-                                    {mode === "light" ? "☀️ Light" : "🌙 Dark"}
-                                </button>
-                            )}
+                            <ThemeToggle className="border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-900" />
                         </div>
                     </div>
                 </div>
@@ -87,7 +89,7 @@ export function ThemeDetailClient({ theme }: ThemeDetailClientProps) {
                             activeTab={activeTab}
                             onTabChange={setActiveTab}
                         />
-                        <ThemePreview theme={theme} mode={mode}>
+                        <ThemePreview theme={theme} mode={currentMode}>
                             {activeTab === "buttons" && <ButtonShowcase />}
                             {activeTab === "cards" && <CardShowcase />}
                             {activeTab === "forms" && <FormShowcase />}

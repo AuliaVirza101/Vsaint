@@ -4,6 +4,7 @@ import { useState, useMemo } from "react";
 import type { Theme, ThemeCategory } from "@/types/theme";
 import { THEME_CATEGORIES } from "@/types/theme";
 import { ThemeGrid } from "./ThemeGrid";
+import { ThemeToggle } from "@/components/ui/ThemeToggle";
 
 interface GalleryClientProps {
     themes: Theme[];
@@ -57,41 +58,45 @@ export function GalleryClient({ themes }: GalleryClientProps) {
         <div>
             {/* Search + Filter Bar */}
             <div className="mb-8 space-y-4">
-                {/* Search Input */}
-                <div className="relative">
-                    <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
-                        <svg
-                            className="w-4 h-4 text-zinc-400"
-                            fill="none"
-                            stroke="currentColor"
-                            viewBox="0 0 24 24"
-                        >
-                            <path
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                                strokeWidth={2}
-                                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                            />
-                        </svg>
-                    </div>
-                    <input
-                        id="theme-search"
-                        type="text"
-                        placeholder="Search themes by name, category, tag, or mood..."
-                        value={search}
-                        onChange={(e) => setSearch(e.target.value)}
-                        className="w-full pl-11 pr-4 py-3 rounded-xl border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-800/50 text-zinc-900 dark:text-zinc-100 text-sm placeholder:text-zinc-400 dark:placeholder:text-zinc-500 focus:outline-none focus:ring-2 focus:ring-vsaint-500/30 focus:border-vsaint-500 transition-all duration-200"
-                    />
-                    {search && (
-                        <button
-                            onClick={() => setSearch("")}
-                            className="absolute inset-y-0 right-0 pr-4 flex items-center text-zinc-400 hover:text-zinc-600 dark:hover:text-zinc-300 transition-colors"
-                        >
-                            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                <div className="flex gap-4">
+                    {/* Search Input */}
+                    <div className="relative flex-1">
+                        <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
+                            <svg
+                                className="w-4 h-4 text-zinc-400"
+                                fill="none"
+                                stroke="currentColor"
+                                viewBox="0 0 24 24"
+                            >
+                                <path
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                    strokeWidth={2}
+                                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                                />
                             </svg>
-                        </button>
-                    )}
+                        </div>
+                        <input
+                            id="theme-search"
+                            type="text"
+                            placeholder="Search themes by name, category, tag, or mood..."
+                            value={search}
+                            onChange={(e) => setSearch(e.target.value)}
+                            className="w-full pl-11 pr-4 py-3 rounded-xl border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-800/50 text-zinc-900 dark:text-zinc-100 text-sm placeholder:text-zinc-400 dark:placeholder:text-zinc-500 focus:outline-none focus:ring-2 focus:ring-vsaint-500/30 focus:border-vsaint-500 transition-all duration-200"
+                        />
+                        {search && (
+                            <button
+                                onClick={() => setSearch("")}
+                                className="absolute inset-y-0 right-0 pr-4 flex items-center text-zinc-400 hover:text-zinc-600 dark:hover:text-zinc-300 transition-colors"
+                            >
+                                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                                </svg>
+                            </button>
+                        )}
+                    </div>
+                    {/* Theme Toggle */}
+                    <ThemeToggle className="flex-shrink-0 h-[46px] w-[46px] rounded-xl border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-800/50" />
                 </div>
 
                 {/* Category Filter Pills */}
